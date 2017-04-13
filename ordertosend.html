@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/order.css">
+		<link rel="stylesheet" href="css/media-100.css">
+		<!-- <link rel="stylesheet" href="css/order3.css?v=01291"> -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="yes" name="apple-touch-fullscreen">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1,user-scalable=no">
+
+		<title>待发货</title>
+	</head>
+
+	<body>
+		<!--<header class="header header_1">
+    <div class="fix_nav">
+        <div class="nav_inner">
+            <a class="nav-left back-icon" href="javascript:history.back();">返回</a>
+            <div class="tit">待发货</div>
+        </div>
+    </div>
+</header>-->
+		<div class="container">
+			<div class="grayback" id="grayback"></div>
+			<!--遮罩层-->
+			<div class="alertinfo" id="alertinfo">
+				<div class="confirmtext"><span class="glyphicon glyphicon-ok okstyle"></span>发货提醒成功</div>
+			</div>
+			<div class="row mt8">
+				<div class="orderlist2">
+					<div class="orderlist-stat">
+						<div class="logobar-logo logobar-left">黄雀</div>
+						<div class="logobar-right"><span class="logobar-text pull-right yellow">买家已付款</span></div>
+					</div>
+					<div class="orderlist-prod">
+						<div class="p-pic">
+							<a href="#"><img class="img-responsive" src="images/cartproduct_1.png"></a>
+						</div>
+						<div class="p-pic">
+							<a href="#"><img class="img-responsive" src="images/pro2.png"></a>
+						</div>
+						<div class="p-pic">
+							<a href="#"><img class="img-responsive" src="images/cartproduct_2.png"></a>
+						</div>
+					</div>
+					<div class="orderlist-coun">
+						<span class="fcblack">共<em>3</em>件商品  实付款：<em>¥<i id="totalPrice" class="fs16">1540.00</i></em></span>
+						<span class="order-btn"><a href="javascript:void(0)" class="btn btn-default alerttosend">提醒发货</a></span>
+					</div>
+				</div>
+			</div>
+			<div class="row mt8">
+				<div class="orderlist2">
+					<div class="orderlist-stat">
+						<div class="logobar-logo logobar-left">黄雀</div>
+						<div class="logobar-right"><span class="logobar-text pull-right yellow">买家已付款</span></div>
+					</div>
+					<div class="orderlist-prod">
+						<div class="p-pic">
+							<a href="#"><img class="img-responsive" src="images/cartproduct_1.png"></a>
+						</div>
+						<div class="p-info">
+							<a href="#">
+								<p class="p-title">SK II神仙水 护肤精华露面部护肤保湿紧致毛孔</p>
+							</a>
+						</div>
+					</div>
+					<div class="orderlist-coun">
+						<span class="fcblack">共<em>1</em>件商品  实付款：<em>¥<i id="totalPrice" class="fs16">1370.00</i></em></span>
+						<span class="order-btn"><a href="javascript:void(0)" class="btn btn-default alerttosend">提醒发货</a></span>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="clear"></div>
+		<!--<footer class="footer">
+  <div class="foot-con">
+	<div class="foot-con_2">
+		<a href="index.html">
+			<i class="navIcon home"></i>
+			<span class="text">首页</span>
+		</a>
+		
+		<a href="cartpage.html">
+			<i class="navIcon shop"></i>
+			<span class="text">购物车</span>		
+		</a>
+		<a href="self.html">
+			<i class="navIcon member"></i>
+			<span class="text">我的</span>
+		</a>
+	</div>
+  </div>
+ </footer>-->
+		<div class="ifooter">
+			<ul>
+				<li class="fl">
+					<a href="index.html">
+						<img src="images/home2.png" alt="" />
+						<span>首页</span>
+					</a>
+				</li>
+				<li class="fl">
+					<a href="cartpage.html">
+						<img src="images/shop.png" alt="" />
+						<span class="footet-shop">购物车</span>
+					</a>
+				</li>
+				<li class="fl">
+					<a href="self.html">
+						<img src="images/my2.png" alt="" />
+						<span class="footet-home">我的</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<script charset="utf-8" src="js/jquery-1.11.0.min.js"></script>
+		<script charset="utf-8" src="js/bootstrap.min.js"></script>
+		<script charset="utf-8" src="js/order.js"></script>
+		<script type="text/javascript">
+			// var contextPath = '';
+			/*function alertToSend(){
+			  $("#grayback").show();
+			  $("#alertinfo").show();
+			  var hdintv=setInterval(alertHide,3000);
+			  
+			}
+			function alertHide(){
+			  $("#grayback").hide();
+			  $("#alertinfo").hide();
+			}*/
+		</script>
+	</body>
+
+</html>

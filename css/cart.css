@@ -1,0 +1,160 @@
+/* 返回顶部 */
+.fanhui_cou{position: fixed;bottom:60px;right:10px;z-index: 10000;opacity:0.8;background:#fff;width:52px;height:0.52rem;border-radius: 50%;text-align: center;color:#909ca9;border:1px solid #8f9caa;display:none;}
+.fanhui_1{background:url(../images/bot_top_arrow.png) no-repeat;width:14px;height:0.14rem;background-size:14px;font-size:0.12rem;text-align: center;margin: 10px auto 0;}
+.fanhui_ding{padding-top: 2px;}
+.header{height:0.5rem;position: relative;}
+.container{padding-bottom:1rem}
+.fix_nav{height:0.5rem; line-height:0.5rem;top:0; left: 0; width: 100%; z-index:99;/* position: fixed; */}
+.nav_inner{max-width:7.68rem;margin:0 auto;background:#000000; position: relative;}
+.nav-left,.nav-right{width:0.6rem; height:0.2rem; line-height:0.2rem;position:absolute; top:0.15rem; display:block; overflow:hidden;font-size:0.156rem;color:#fff;text-indent:0.2rem}
+.nav-left{left:5px;}
+.back-icon{background:url(../images/back_icon.png) no-repeat; background-size: 0.2rem; -webkit-background-size: 0.2rem;}
+.back-text{font-size:.0.2rem;color:#fff}
+.tit{color: #fff;/* font-size: 18px; */font-weight: normal;height: 100%; text-align: center;font-size:0.18rem;}
+.list-group-item:first-child{border-top-left-radius:0;border-top-right-radius:0}
+.list-group-item:last-child{margin-bottom:0;border-bottom-right-radius:0;border-bottom-left-radius:0}
+.hproduct{padding:0.1rem; height: 1.16rem; min-height: 0.4rem;position: relative;border-bottom: 1px solid #e5e5e5;width:3.75rem;}
+.xwidth{width:4.45rem;overflow:hidden;border: none;}
+.p-pic{float:left; width:0.95rem;}
+.p-pic img{width:100%}
+.p-info{ margin-left:1.3rem;width: 68%;padding-right:0.88rem;font-size:0.14rem;height: 0.95rem;position: relative;}
+.p-info .p-title{color: #333; height:0.4rem;line-height:0.2rem;overflow: hidden;word-break: break-all; margin:0;font-size: 0.146rem;text-overflow: ellipsis;-webkit-line-clamp: 2;}
+.p-attr{color: #333;font-size: 0.12rem;margin: 0.08rem 0;}
+.p-origin{min-height: 0.26rem;height:0.26rem; margin:2px 0 0;bottom: 0;position: absolute;width: 75%;font-size: 0.17rem;}
+/*.price-down{color: #ffcc33; font-style: normal; font-size:0.13rem; margin-right:5px; vertical-align: top; font-family: "Helvetica Neue";}*/
+.mt5{ margin-top:0.05rem;}
+.mb8{margin-bottom:0.08rem!important}
+.gary{color:#999;}
+.gary2{color:#666;}
+.yellow{color:#ffcc33}
+.red,.red a{ color: #900!important;}
+.mr10{ margin-right:0.1rem;}
+.mt10{ margin-top:0.1rem;}
+.f22{font-size:0.22rem;}
+.fs17{font-size:0.17rem}
+.fs13{font-size:0.13rem}
+.fs15{font-size:0.15rem}
+.fs18{font-size:0.18rem}
+.height80{height:0.8rem}
+.clear{clear:both;}
+.fixed-foot{height: 0.48rem; z-index: 999; position: fixed; border-top:1px solid #ccc;border-bottom:1px solid #ccc;bottom:0.5rem;left: 0; right: 0;width:100%; }
+.fixed_inner{margin:0 auto;position: relative;background:#fff;max-width:7.68rem; height: 0.49rem;font-size: 0.15rem;}
+.pay-point{line-height:0.48rem; padding:0 0.1rem;}
+.icheck input[type="checkbox"],.icheck input[type="radio"] {display: none;}
+.icheck label{margin-bottom:0;}
+/*.icheck input[type="checkbox"] + label span,
+.icheck input[type="radio"] + label span {display:inline-block;width:0.2rem;height:0.2rem;position: relative;top:0;float:left; cursor:pointer; background:url(../images/cart-check.png) no-repeat;}
+*/.icheck input[type="checkbox"] + label span{background-position:0 0;background-size:0.2rem;top:-0.26rem}
+.icheck input[type="radio"] + label span{background-position:0 0;}
+.icheck input[type="checkbox"]:checked + label span{background-position:0 -0.2rem;background-size:0.2rem;top:-0.26rem}
+.icheck input[type="radio"]:checked + label span{background-position:0 0;}
+.buy-btn-fix{position:absolute; right:0; top:0;text-align: center;line-height:0.48rem;font-size:0.17rem;background:#ffcc33;z-index:100;}
+.btn-cart{background-color: #6a94e7;border-color: #6a94e7}
+.btn-buy{background-color: #ffcc33;border-color: #ffcc33;color: #333;width:1rem;height:0.48rem;display: inline-block}
+.bg-ccc-c-fff{
+	background-color: #ccc;
+	color: #fff;
+}
+.footer{height: 0.5rem;}
+.foot-con{width:100%;height:0.49rem;position:fixed; z-index:100; right:0; bottom:0;}
+.foot-con_2{margin:0 auto;max-width:7.68rem;background:#fff;height: 0.5rem;border-top:1px solid #ccc;}
+.foot-con_2 a:active{color:#666;}
+.foot-con_2 a:visited{color:#666;}
+.foot-con a{display: block; width:33.3333%; float:left; text-align:center; font-size: 0.12rem; position:relative;}
+.foot-con .navIcon{width: 0.28rem; height: 0.28rem; margin-top:0.03rem; display: inline-block; background:url(../images/footersprite.png) no-repeat; background-size: 0.85rem 0.28rem}
+.foot-con .badge{background-color: #f15353; position: absolute;right:50%; margin-right:-0.32rem; top: 0.02rem;}
+.foot-con .text{display:block; line-height: 1; margin-top: -0.03rem;}
+.foot-con .active .text{color:#6b92ed;}
+.foot-con .home{background-position: 0 0;}
+.foot-con .active .home{background-position: 0 -0.34rem;}
+.foot-con .shop{background-position: -0.28rem 0;}
+.foot-con .active .shop{background-position: -0.66rem -0.34rem;}
+.foot-con .member{background-position: -0.57rem 0;}
+.foot-con .active .member{background-position: -0.99rem -0.34rem;}
+.logobar{width:100%;height:0.45rem;background:#fff;padding:0 0.15rem}
+.logobar-logo{background:url(../images/logo2.png) no-repeat; background-size: 0.21rem; -webkit-background-size: 0.21rem} 
+.logobar-left, .logobar-right{width:45%;height:0.21rem;line-height:0.21rem;margin-top:0.13rem}
+.logobar-left{text-indent:0.25rem;font-size:0.15rem;float:left;color:#000}
+.logobar-right{float:right;font-size:0.136rem;color:#999}
+.logobar-text{padding:0 0.1rem}
+.bdright{border-right:1px solid #999}
+.p-cartprice{width:0.5rem;float:right;font-size:0.14rem;margin-top:-0.95rem}
+.p-cartcheck{width:0.2rem;height:0.2rem;display:inline-block;position: relative;top:0;cursor:pointer;
+	background:url(../images/cart-check.png)no-repeat;background-size:cover;-webkit-background-size:cover;float: left;margin: 0.4rem 0.08rem 0 0}
+.cartall{font-size:0.15rem;color:#333;font-weight: normal;}
+.totalcount{font-size:0.11rem;height: 0.48rem;width: 1.2rem;float: right;margin-right: 1.1rem;}
+.totalcount span{line-height: 0.18rem;display: inherit;padding-top: 0.04rem;text-align: right;}
+.check-label{position:relative;top:-0.3rem;z-index:100;}
+
+.control-num{float:right; margin:0; border-radius: 0.05rem;overflow: hidden; border: 0.01rem solid #ccc;}
+.control-num .btn-default{width:0.26rem; border-color: #ccc; margin-top:0; padding:4px 0;height:0.26rem;font-size: 0.2rem;line-height: 0.11rem;}
+.control-num input{width:0.36rem;border-left-color: #ccc;border-right-color: #ccc;height:0.258rem;font-size: 0.14rem !important;}
+.p-cartinvalid{width:0.2rem;float: left;margin: 0.4rem 0.08rem 0 0;font-size:0.08rem;background:#ccc;border-radius:0.02rem;color:#fff;text-align:center;}
+.btn-hidden{display:none;}
+.del-btn-fix{position:absolute; right:0; top:0;text-align: center;line-height:0.48rem;font-size:0.17rem;background:#ec1c00;z-index:10;}
+.btn-del{background-color:#ec1c00;border-color:#ec1c00;color: #fff;width:1rem;height:0.48rem;display: inline-block}
+.mvdelbtn{position:absolute; right:0; top:0;text-align: center;line-height:1.16rem;font-size:0.18rem;background:#ec1c00}
+.mvbtn{background-color:#ec1c00;border-color:#ec1c00;color: #fff;width:0.66rem;height:1.16rem;display: inline-block}
+.f-anim{-webkit-transition:left .2s linear;}
+.scrollhide{overflow:scroll}
+.shoppingcartimg{width:1.23rem;height:1.15rem;position:relative;top:0.34rem;left:1.3rem;}
+.shoppingcartimg img{width:100%;display:block;}
+.shoppingbtn{color:#333;background:#ffcc33;width:1.77rem;line-height:normal;display:inherit;margin:0.18rem auto;}
+.cart-text{margin-top:0.7rem;}
+.cashexp{width:375rem;height:0.4rem;background:#6c6c6c;display:none;}
+.cashexp span{display:block;color:#fff;}
+.removeicon{width:0.22rem;height:0.22rem;position:absolute;right:0.2rem;top:0.09rem;font-size:0.2rem;}
+.cashexp-text{line-height:0.4rem;text-indent:0.15rem;}
+.ifooter{
+	height: 0.5rem;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	z-index: 20;
+	background-color: #fff;
+	padding: 0.05rem 0;
+	border-top: 1px solid #ccc;
+}
+.ifooter li{
+	width: 33.33%;
+	float: left;
+}
+.ifooter li a{
+	width: 100%;
+	display: block;
+}
+.ifooter li img{
+	width: 0.25rem;
+	margin: 0 auto;
+	display: block;
+}
+.ifooter span{
+	display: block;
+	font-size: 0.11rem;
+	color: #999;
+	text-align: center;
+}
+.ifooter .footet-home{
+	color: #333;
+}
+.footet-shop{
+	margin-top: 0.02rem;
+}
+.c-333{
+	color: #333;
+}
+.control-numa{
+	width: 0.26rem;
+    border-color: #ccc;
+    margin-top: 0;
+    padding: 4px 0;
+    height: 0.26rem;
+    font-size: 0.2rem;
+    line-height: 0.11rem;
+    float: left;
+    text-align: center;
+   
+}
+.control-numa:active{
+	background-color: #ccc;
+}

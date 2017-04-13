@@ -1,0 +1,172 @@
+/*orderpage*/
+/*common header*/
+.header{height:0.5rem;position: relative;}
+.container{padding-bottom:0.55rem}
+.fix_nav{height:0.5rem; line-height:0.5rem;top:0; left: 0; width: 100%; z-index:99;/* position: fixed; */}
+.nav_inner{max-width:7.68rem;margin:0 auto;background:#000000; position: relative;}
+.nav-left,.nav-right{width:0.6rem; height:0.2rem; line-height:0.2rem;position:absolute; top:0.15rem; display:block; overflow:hidden;font-size:0.156rem;color:#fff;text-indent:0.2rem}
+.nav-left{left:5px;}
+.back-icon{background:url(../images/back_icon.png) no-repeat; background-size: 0.2rem; -webkit-background-size: 0.2rem;}
+.back-text{font-size:.0.2rem;color:#fff}
+.tit{color: #fff;/* font-size: 18px; */font-weight: normal;height: 100%; text-align: center;font-size:0.18rem;}
+.yellow{color:#ffcc33}
+.logobar-logo{background:url(../images/logo2.png) no-repeat; background-size: 0.21rem; -webkit-background-size: 0.21rem} 
+.logobar-left, .logobar-right{width:45%;height:0.21rem;line-height:0.21rem;margin-top:0.08rem}
+.logobar-left{text-indent:0.31rem;font-size:0.15rem;float:left;color:#000;margin-left:0.1rem;}
+.logobar-right{float:right;font-size:0.136rem;color:#999}
+.logobar-text{padding:0 0.1rem}
+.fs12{font-size:0.12rem}
+.fs15{font-size:0.15rem}
+.fs16{font-size:0.16rem}
+.fcblack{color:#333;}
+.mb8{margin-bottom:0.08rem!important}
+.mt8{margin-top:0.08rem!important}
+.clear{clear:both;}
+.orderlist{width:100%;height:1.85rem;background:#fff;overflow:hidden;font-size:0.14rem;}
+.orderlist2{width:100%;height:2.05rem;background:#fff;overflow:hidden;font-size:0.14rem;}
+.orderlist-stat{width:100%;height:0.38rem;font-size:0.14rem}
+.orderlist-prod{height:0.9rem;background:#f8f8f8;overflow:hidden}
+.orderlist-prod .p-pic{float: left;width: 0.7rem;margin: 0.1rem 0 0 0.1rem;}
+.orderlist-prod .p-info{padding-left: 0.95rem;width: 100%;padding-right: 0.35rem;}
+.orderlist-prod .p-info .p-title{color: #333;line-height: 0.26rem;overflow: hidden;word-break: break-all;margin: 0;font-size: 0.146rem;height: 0.9rem;padding: 0.1rem 0;text-overflow: ellipsis;-webkit-line-clamp: 2}
+.orderlist-coun{width:100%;height:0.55rem;text-align:right;padding-right:0.12rem;padding-top:0.1rem;font-size:0.14rem;}
+.footer{height: 0.5rem;}
+.foot-con{width:100%;height:0.49rem;position:fixed; z-index:100; right:0; bottom:0;}
+.foot-con_2{margin:0 auto;max-width:7.68rem;background:#fff;height: 0.5rem;border-top:1px solid #ccc;}
+.foot-con_2 a:active{color:#666;}
+.foot-con_2 a:visited{color:#666;}
+.foot-con a{display: block; width:33.3333%; float:left; text-align:center; font-size: 0.12rem; position:relative;}
+.foot-con .navIcon{width: 0.28rem; height: 0.28rem; margin-top:0.03rem; display: inline-block; background:url(../images/footersprite_1.png) no-repeat; background-size: 0.85rem 0.28rem}
+.foot-con .badge{background-color: #f15353; position: absolute;right:50%; margin-right:-0.32rem; top: 0.02rem;}
+.foot-con .text{display:block; line-height: 1; margin-top: -0.03rem;}
+.foot-con .active .text{color:#6b92ed;}
+.foot-con .home{background-position: 0 0;}
+.foot-con .active .home{background-position: 0 -0.34rem;}
+.foot-con .shop{background-position: -0.28rem 0;}
+.foot-con .active .shop{background-position: -0.66rem -0.34rem;}
+.foot-con .member{background-position: -0.57rem 0;}
+.foot-con .active .member{background-position: -0.99rem -0.34rem;}
+.btn-default{color:#333;width:0.75rem;height:0.27rem;line-height:0.25rem;padding:0;margin-left:0.1rem;}
+.order-btn{display:block;margin-top:0.08rem;}
+.btn-yellow{color:#ffcc33;border-color: #ffcc33}
+/*遮罩层*/
+.grayback{display:none;position:absolute;top:0%;left:0%;width:100%;height:100%;background-color: black;z-index:1001;-moz-opacity: 0.7;opacity:.70;  filter: alpha(opacity=70);}
+.confirminfo{display:none;position: absolute;top:2rem;left:0.32rem;width: 3.1rem;height:1.15rem; background-color:#fff; z-index:1002;border-radius:0.06rem;overflow: hidden;}
+.confirmtext{font-size:0.16rem;color:#333;text-align:center;height:0.75rem;line-height:0.75rem;border-radius:0.06rem 0.06rem 0 0;}
+.confirmbtn{width:100%;height:0.4rem;border-radius: 0 0 0.06rem 0.06rem;}
+.confirmbtn a{width:50%;font-size:0.16rem;display: block;float: left;text-align: center;line-height: 0.4rem}
+.confirm-left{border-top:0.01rem solid #ccc;border-radius:0 0 0 0.06rem;}
+.confirm-yellow{background-color:#ec1c00;border-radius:0 0 0.06rem 0;color: #fff;}
+.alertinfo{display:none;position: absolute;top:2.38rem;left:0.32rem;width: 3.1rem;height:0.75rem; background-color:#fff; z-index:1002;border-radius:0.06rem;}
+.okstyle{color:#ffcc33;font-size:0.17rem;margin-right:0.1rem;}
+.rf-pay{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #fff;
+	padding: 0.1rem;
+	display: none;
+	z-index:1003;
+	left:0;
+	color:#333;
+}
+.tac {
+	text-align: center;
+}
+.fl {
+	float: left;
+}
+.rfp-p{
+	height: 0.45rem;
+	line-height: 0.45rem;
+	border-top: 0.01rem solid #ccc;
+	border-bottom: 0.01rem solid #ccc;
+	color: #999;
+	padding:0 0.1rem;
+	font-size:0.14rem;
+}
+.rf-pay h4{
+	height: 0.4rem;
+	line-height: 0.4rem;
+	font-size: 0.177rem;
+	margin: 0.1rem 0;
+}
+.rf-pay h4 span{
+	font-size: 0.4rem;
+	color: #999;
+	font-weight: 100;
+}
+.fr {
+	float: right;
+}
+.rfp-pa{
+	font-size: 0.156rem;
+	margin: 0.2rem 0.1rem;
+}
+.rfp-pa span{
+	font-size: 0.234rem;
+}
+.bg-fc3{
+	background-color: #ffcc33;
+}
+.c-fff{
+	color: #fff;
+}
+.rf-pay button{
+	margin-top: 2rem;
+	font-size:0.198rem;
+	height:0.42rem;
+}
+/*支付成功跳转页paysuccess*/
+.paystatus{height:0.88rem;font-size:0.16rem;background:#ffcc33;color:#fff;padding:0 0.18rem;}
+.paystatus h4{font-size:0.188rem;margin-top:0.18rem;}
+.paystatus img{width:1.12rem;height:0.7rem;display:block;float:right;margin-top:-0.4rem;}
+.paysuc-info{width:100%;height:0.6rem;font-size:0.13rem;border-bottom:0.01rem solid #ccc;background:#fff;line-height: 0.22rem;padding-top: 0.08rem;color:#666;}
+.paysuctext{background:#fff;padding:0 0.1rem;}
+.paysuc-price{width:100%;height:0.96rem;font-size:0.13rem;background:#fff;margin-top:0.12rem;color:#666;}
+.paysuc-price a{font-size:0.15rem;width:0.85rem;height:0.3rem;color:#666;line-height:0.28rem;display:block;position:relative;top:0.35rem;left:1.35rem;margin-left:0;}
+/*订单为空页*/
+
+.odnothingimg{width:1.27rem;height:1.56rem;position:relative;top:0.2rem;left:1.2rem;}
+.odnothingimg img{width:100%;display:block;}
+.shoppingbtn{color:#333;background:#ffcc33;width:1.77rem;display:inherit;margin:0.18rem auto;}
+.fs13{font-size:0.13rem}
+.gary{color:#999;}
+.cart-text{margin-top:0.7rem;}
+
+.ifooter{
+	height: 0.5rem;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	z-index: 20;
+	background-color: #fff;
+	padding: 0.05rem 0;
+	border-top: 1px solid #ccc;
+}
+.ifooter li{
+	width: 33.33%;
+	float: left;
+}
+.ifooter li a{
+	width: 100%;
+	display: block;
+}
+.ifooter li img{
+	width: 0.25rem;
+	margin: 0 auto;
+	display: block;
+}
+.ifooter span{
+	display: block;
+	font-size: 0.11rem;
+	color: #999;
+	text-align: center;
+}
+.ifooter .footet-home{
+	color: #333;
+}
+.footet-shop{
+	margin-top: 0.02rem;
+}
+.btn-default:hover,.btn-default:active,.btn-default:visited{background:#fff!important;}

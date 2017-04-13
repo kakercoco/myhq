@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/cart.css">
+		<link rel="stylesheet" href="css/media-100.css">
+		<!-- <link rel="stylesheet" href="css/order3.css?v=01291"> -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="yes" name="apple-touch-fullscreen">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1,user-scalable=no">
+
+		<title>购物车</title>
+	</head>
+
+	<body>
+		<!-- <div class="fanhui_cou">
+	<div class="fanhui_1"></div>
+	<div class="fanhui_ding">顶部</div>
+</div>  -->
+		<header class="header header_1" style="display: none;">
+			<div class="fix_nav">
+				<div class="nav_inner">
+					<a class="nav-left back-icon" href="javascript:history.back();">返回</a>
+					<div class="tit">购物车</div>
+				</div>
+			</div>
+		</header>
+		<div class="container">
+			<div class="row mb8">
+				<div class="logobar">
+					<div class="logobar-logo logobar-left">黄雀商城</div>
+					<div class="logobar-right"><span class="logobar-text pull-right" id="cart-edit">编辑全部</span></div>
+				</div>
+			</div>
+			<div class="row mb8 scrollhide">
+				<!--  rowcar -->
+
+				<!-- <li class="list-group-item text-primary">
+		            <div class="icheck pull-left mr5">
+		                           <input type="checkbox" checked="checked" class="ids" prodStatus="1"  itemkey=""/>
+		                            <label class="checkLabel">
+		                       <span></span></label>
+		            </div>朗尊软件</li> -->
+				<div class="list-group-item hproduct xwidth" id="slider">
+					<div class="icheck pull-left height80">
+						<input type="checkbox" class="ids" prodStatus="1" itemkey="" value="0" />
+						<label class="checkLabel check-label"><span class="p-cartcheck"></span></label>
+					</div>
+					<div class="p-pic">
+						<a href="produce.html"><img class="img-responsive" src="images/cartproduct_1.png"></a>
+					</div>
+					<div class="p-info">
+						<a href="produce.html">
+							<p class="p-title">SK II神仙水 护肤精华露 新年珍藏版</p>
+						</a>
+
+						<div class="p-origin">
+							<p class="pull-left yellow">¥<em class="price">1370</em></p>
+							<div class="btn-group btn-group-sm control-num">
+								<a onclick="decrease(this)" href="javascript:void(0);" class="control-numa">-</a>
+								<input type="tel" class="btn gary2 Amount" readonly="readonly" value="1" maxlength="4" itemkey="">
+								<a onclick="increase(this)" href="javascript:void(0);" class="control-numa">+</a>
+							</div>
+						</div>
+
+					</div>
+					<div class="mvdelbtn" onclick="deleteitem(this)">
+						<a href="#" class="mvbtn">删除</a>
+					</div>
+				</div>
+
+			</div>
+			<!-- <li class="list-group-item clearfix"> -->
+			<div class="row mb8 scrollhide">
+				<!--  rowcar -->
+
+				<div class="list-group-item hproduct xwidth">
+					<!-- clearfix -->
+					<div class="icheck pull-left height80">
+						<input type="checkbox" class="ids" prodStatus="1" itemkey="" value="0" />
+						<label class="checkLabel check-label"><span class="p-cartcheck"></span></label>
+					</div>
+					<div class="p-pic">
+						<a href="produce.html"><img class="img-responsive" src="images/cartproduct_2.png"></a>
+					</div>
+					<div class="p-info">
+						<a href="produce.html">
+							<p class="p-title">贝研睡衣女士秋季纯棉睡裙 韩版可爱女士睡衣贴身舒适</p>
+						</a>
+						<!-- <p class="p-attr">
+                    	<span class="gray">化妆品净含量：230ml</span></p> -->
+						<div class="p-origin">
+							<p class="pull-left yellow">¥<em class="price">179</em></p>
+							<div class="btn-group btn-group-sm control-num">
+								<a onclick="decrease(this)" href="javascript:void(0);" class="control-numa">-</a>
+								<input type="tel" class="btn gary2 Amount" readonly="readonly" value="1" maxlength="4" itemkey="" prodId="" skuId="">
+								<a onclick="increase(this)" href="javascript:void(0);" class="control-numa">+</span></a>
+							</div>
+						</div>
+
+					</div>
+					<div class="mvdelbtn" onclick="deleteitem(this)">
+						<a href="#" class="mvbtn">删除</a>
+					</div>
+				</div>
+			</div>
+			<div class="row mb8 scrollhide">
+				<!--  rowcar invalid -->
+
+				<div class="list-group-item hproduct xwidth">
+					<!-- clearfix -->
+					<div class="icheck pull-left height80">
+						<!-- <input type="checkbox" checked="checked" class="ids" prodStatus="1"  itemkey="" value="1"/>
+                    	<label class="checkLabel check-label"><span class="p-cartcheck"></span></label> -->
+						<span class="p-cartinvalid">失效</span>
+					</div>
+					<div class="p-pic">
+						<a href="produce.html"><img class="img-responsive" src="images/cartproduct_3.png"></a>
+					</div>
+					<div class="p-info">
+						<a href="produce.html">
+							<p class="p-title">贝研睡衣女士秋季纯棉睡裙 韩版可爱女士睡衣贴身舒适</p>
+						</a>
+						<p class="p-attr"><span>抱歉，宝贝暂不能购买</span></p>
+					</div>
+					<div class="mvdelbtn" onclick="deleteitem(this)">
+						<a href="#" class="mvbtn">删除</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="fixed-foot">
+			<div class="cashexp" id="cashexp">
+				<span class="fs13 cashexp-text">优惠券使用后，取消订单不退还</span>
+				<a href="javascript:cashExpRemove()" class="removeicon"><span class="glyphicon glyphicon-remove-circle "></span></a>
+			</div>
+			<div class="fixed_inner">
+				<div class="pay-point">
+					<div class="icheck pull-left mr10">
+						<input type="checkbox" id="buy-sele-all" value="0">
+						<label for="buy-sele-all" class="cartall">
+                <span class="p-cartcheck"></span>全选
+            </label>
+					</div>
+					<div class="totalcount">
+						<span class="c-333">合计：<em class="yellow">¥<i id="totalPrice" class="fs17">0.00</i></em>
+            </span>
+						<span>已优惠¥<i>0</i><a href="javascript:cashExpShow()"> &nbsp;金额说明&gt;</a></span>
+					</div>
+				</div>
+				<div class="buy-btn-fix">
+					<a href="javascript:void(0)" class="btn-buy bg-ccc-c-fff">结算(<span id="Count">0</span>)</a>
+				</div>
+				<div class="del-btn-fix btn-hidden">
+					<a href="javascript:deleteAll();" class="btn-del">删除</a>
+				</div>
+			</div>
+			<div class="clear"></div>
+
+			<!--<footer class="footer">
+				<div class="foot-con">
+					<div class="foot-con_2">
+						<a href="index.html">
+							<i class="navIcon home"></i>
+							<span class="text">首页</span>
+						</a>
+				
+						<a href="cartpage.html">
+							<i class="navIcon shop"></i>
+							<span class="text">购物车</span>
+						</a>
+						<a href="self.html">
+							<i class="navIcon member"></i>
+							<span class="text">我的</span>
+						</a>
+					</div>
+				</div>
+			</footer>-->
+			<div class="ifooter">
+			<ul>
+				<li class="fl">
+					<a href="index.html">
+						<img src="images/home2.png" alt="" />
+						<span>首页</span>
+					</a>
+				</li>
+				<li class="fl">
+					<a href="cartpage.html">
+						<img src="images/shop02.png" alt="" />
+						<span class="footet-shop" style="color: #333;">购物车</span>
+					</a>
+				</li>
+				<li class="fl">
+					<a href="self.html">
+						<img src="images/my.png" alt="" />
+						<span>我的</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+			<script charset="utf-8" src="js/jquery-1.11.0.min.js"></script>
+			<!-- <script charset="utf-8" src="js/global.js?v=01291"></script> -->
+			<script charset="utf-8" src="js/bootstrap.min.js"></script>
+			<!-- <script charset="utf-8" src="js/template.js?v=01291"></script> -->
+			<script charset="utf-8" src="js/shopCart.js?v=01291"></script>
+			<!-- <script charset="utf-8" src="js/touchMove.js"></script> -->
+			<script type="text/javascript">
+				var contextPath = '';
+				//失效产品标题变灰
+				$(".p-cartinvalid").parent().parent().find(".p-title").css("color", "#ccc");
+				//点击编辑全部变换样式
+				$("#cart-edit").click(function() {
+					var textlength = this.innerHTML.length;
+					if(textlength == 4) {
+						this.innerHTML = "完成";
+						$(".p-cartcheck").css({ "background": "url(images/cart-check_2.png)no-repeat", "-webkit-background-size": "cover", "background-size": "cover" });
+						$(".totalcount").hide();
+						$(".buy-btn-fix").hide().next().removeClass("btn-hidden");
+					} else if(textlength == 2) {
+						this.innerHTML = "编辑全部";
+						$(".p-cartcheck").css({ "background": "url(images/cart-check.png)no-repeat", "-webkit-background-size": "cover", "background-size": "cover" });
+						$(".totalcount").show();
+						$(".buy-btn-fix").show().next().addClass("btn-hidden");
+					}
+
+				})
+				$('.buy-btn-fix').click(function(){
+					window.location.href="order.html";
+				})
+			</script>
+	</body>
+
+</html>

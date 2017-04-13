@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/cart.css">
+<link rel="stylesheet" href="css/media-100.css">
+<!-- <link rel="stylesheet" href="css/order3.css?v=01291"> -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="yes" name="apple-touch-fullscreen">
+<meta content="telephone=no" name="format-detection">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1,user-scalable=no">
+
+<title>购物车</title>
+</head>
+<body>
+<header class="header header_1">
+    <div class="fix_nav">
+        <div class="nav_inner">
+            <a class="nav-left back-icon" href="javascript:history.back();">返回</a>
+            <div class="tit">购物车</div>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div class="shoppingcartimg"><img src="images/shoppingcart.png" alt="购物车"/></div>
+    <center class="cart-text">
+    <p class="fs13 gray">购物车是空空哒，快去买买买</p>
+    <a href="index.html" type="button" class="btn btn-default fs15 shoppingbtn">去购物</a>
+    </center>
+</div>
+<footer class="footer">
+  <div class="foot-con">
+	<div class="foot-con_2">
+		<a href="index.html">
+			<i class="navIcon home"></i>
+			<span class="text">首页</span>
+		</a>
+		<!-- <a href="category.html">
+			<i class="navIcon sort"></i>
+			<span class="text">分类</span>
+		</a> -->
+		<a href="shopcart.html">
+			<i class="navIcon shop"></i>
+			<span class="text">购物车</span>		
+		</a>
+		<a href="userhome.html">
+			<i class="navIcon member"></i>
+			<span class="text">我的</span>
+		</a>
+	</div>
+  </div>
+ </footer>
+ <script charset="utf-8" src="js/jquery-1.11.0.min.js"></script>
+<!-- <script charset="utf-8" src="js/global.js?v=01291"></script> -->
+<script charset="utf-8" src="js/bootstrap.min.js"></script>
+<!-- <script charset="utf-8" src="js/template.js?v=01291"></script> -->
+<script charset="utf-8" src="js/shopCart.js?v=01291"></script>
+<!-- <script charset="utf-8" src="js/touchMove.js"></script> -->
+<script type="text/javascript">
+var contextPath = '';
+//失效产品标题变灰
+$(".p-cartinvalid").parent().parent().find(".p-title").css("color","#ccc");
+//点击编辑全部变换样式
+$("#cart-edit").click(function(){
+	var textlength=this.innerHTML.length;
+	if(textlength == 4){
+	    this.innerHTML="完成";
+	    $(".p-cartcheck").css({"background":"url(images/cart-check_2.png)no-repeat","-webkit-background-size":"cover","background-size":"cover"});
+	    $(".totalcount").hide();
+	    $(".buy-btn-fix").hide().next().removeClass("btn-hidden");
+	}else if(textlength == 2){
+        this.innerHTML="编辑全部";
+	    $(".p-cartcheck").css({"background":"url(images/cart-check.png)no-repeat","-webkit-background-size":"cover","background-size":"cover"});
+	    $(".totalcount").show();
+	    $(".buy-btn-fix").show().next().addClass("btn-hidden");
+	}
+	
+
+})
+</script>
+</body>
+</html>
