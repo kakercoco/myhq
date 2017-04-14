@@ -224,11 +224,21 @@
 						$(".p-cartcheck").css({ "background": "url(images/cart-check_2.png)no-repeat", "-webkit-background-size": "cover", "background-size": "cover" });
 						$(".totalcount").hide();
 						$(".buy-btn-fix").hide().next().removeClass("btn-hidden");
+						$(".ids").attr("checked", false);
+                        $(".ids").val(0);
+                        $("#buy-sele-all").attr("checked", false);
+            	        $("#buy-sele-all").val(0);
+
 					} else if(textlength == 2) {
 						this.innerHTML = "编辑全部";
 						$(".p-cartcheck").css({ "background": "url(images/cart-check.png)no-repeat", "-webkit-background-size": "cover", "background-size": "cover" });
 						$(".totalcount").show();
 						$(".buy-btn-fix").show().next().addClass("btn-hidden");
+						$(".ids").attr("checked", false);
+                        $(".ids").val(0);
+                        $("#buy-sele-all").attr("checked", false);
+            	        $("#buy-sele-all").val(0);
+
 					}
 
 				})
