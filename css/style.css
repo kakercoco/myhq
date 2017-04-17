@@ -2215,3 +2215,41 @@ a:hover, a:focus{
 	z-index: 10;
 }
 /*物流详情结束*/
+
+/*----------------------------------------------------*/
+/*app产品详情开始*/
+.p-num{
+	margin: 0.1rem;
+	background-color: #fff;
+	height: 0.32rem;
+	line-height: 0.32rem;
+	font-size: 0.156rem;
+	padding: 0 0.1rem;
+	border-radius: 0.05rem;
+}
+.p-list{
+	margin: 0.1rem;
+	border-radius: 0.05rem;
+}
+.p-list ul{
+	background-color: #fff;
+}
+.p-list h3{
+	height: 0.4rem;
+	line-height: 0.4rem;
+	font-size: 0.156rem;
+}
+.p-list li{
+	font-size: 0.156rem;
+	border-top: 0.01rem solid #f3f3f3;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	
+}
+.p-list li span{
+	border-right: 0.01rem solid #f3f3f3;
+	display: inline-block;
+	height: 0.4rem;
+	width: 0.65rem;
+}
+/*app详情结束*/
