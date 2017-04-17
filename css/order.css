@@ -170,3 +170,11 @@
 	margin-top: 0.02rem;
 }
 .btn-default:hover,.btn-default:active,.btn-default:visited{background:#fff!important;}
+.orderBtn{
+	font-size: 0.15rem;
+	background-color: #ffcc33;
+	margin-top: 0.1rem;
+	border-radius: 0.03rem;
+	color: #fff;
+	padding: 0.05rem;
+}
