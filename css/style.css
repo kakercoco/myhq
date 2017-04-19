@@ -1631,7 +1631,6 @@ a:hover, a:focus{
 	padding: 0 0.1rem;
 }
 .odc-xx{
-	height: 0.74rem;
 	background-color: #fff;
 	font-size: 0.146rem;
 	padding: 0.1rem;
@@ -2144,6 +2143,23 @@ a:hover, a:focus{
 .ps-cout-btn{margin:0.15rem auto!important;}
 .ordsuc-r{height:0.78rem;margin-right:0.3rem;}
 .ordsuc-r img{height:100%;margin-top:-0.05rem;}
+.odt-top{
+	height: 0.73rem;
+	background-color: #fff;
+	padding: 0 0.1rem;
+}
+.odt-add{
+	font-size: 0.135rem;
+	padding-left: 0.25rem;
+}
+.odt-name{
+	font-size: 0.146rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+}
+.odt-name img{
+	width: 0.15rem;
+}
 /*扫码确认收货*/
 /*--------------------------------------------------------------*/
 /*物流详情开始*/
