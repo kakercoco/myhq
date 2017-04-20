@@ -2287,3 +2287,87 @@ a:hover, a:focus{
 	width: 0.65rem;
 }
 /*app详情结束*/
+/*-------------------------------------------------------*/
+
+/*商品溯源信息开始*/
+.from-top{
+	height: 0.68rem;
+	background-color: #282824;
+}
+.from-top h2{
+	height: 100%;
+	line-height: 0.68rem;
+	font-size: 0.208rem;
+}
+.ft-wrap{
+	width: 2.1rem;
+	margin: 0 auto;
+}
+.ft-wrap img{
+	height: 0.3rem;
+}
+.from-cont{
+	background-color: #fff;
+	width: 3.13rem;
+	height: 4.12rem;
+	margin: 0.3rem auto;
+	padding: 0.15rem;
+}
+
+.from-cont img{
+	display: block;
+	width: 100%;
+}
+.ftc-btm{
+	height: 0.65rem;
+	position: relative;
+}
+.ftc-btm img{
+	height: 100%;
+	width: auto;
+}
+.ftc-btm .zhang{
+	position: absolute;
+	bottom: 0.6rem;
+	right: -0.15rem;
+	width: 1.12rem;
+	height: 1.12rem;
+	
+}
+.ftc-btm h4{
+	height: 80%;
+	width: 2rem;
+	font-size: 0.1667rem;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.from-foot{
+	width: 3.13rem;
+	margin: 0.3rem auto;
+}
+.from-foot a{
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+.from-foot a img{
+	width: 0.45rem;
+	display: block;
+}
+.from-foot a span{
+	display: block;
+	font-size: 0.105rem;
+	color: #666;
+	margin-top: 0.1rem;
+}
+.mr-40{
+	margin-right: 0.43rem;
+}
+
+
+
+
+/*商品溯源信息结束*/
