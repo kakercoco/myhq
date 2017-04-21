@@ -1,0 +1,105 @@
+/*顶部标题*/
+body{background-color:#fff;}
+.header{height:0.5rem;position: relative;}
+.main{padding:0;width:100%;height:auto;position:relative;top:-0.01rem;}
+.news-container{padding:0 0.1rem;font-size:0.16rem;color:#333;}
+.news-container h5{font-size:0.13rem;color:#999;}
+.news-container p{padding:0.1rem 0.05rem;text-indent:2em;margin:0;}
+.fix_nav{height:0.5rem; line-height:0.5rem;top:0; left: 0; width: 100%; z-index:99;/* position: fixed; */}
+.nav_inner{max-width:7.68rem;margin:0 auto;background:#000000; position: relative;}
+.nav-left,.nav-right{width:0.6rem; height:0.2rem; line-height:0.2rem;position:absolute; top:0.15rem; display:block; overflow:hidden;font-size:0.156rem;color:#fff;text-indent:0.2rem}
+.nav-left{left:5px;}
+.nav-right{right:5px;width:0.2rem;}
+.back-icon{background:url(../images/back_icon.png) no-repeat; background-size: 0.2rem; -webkit-background-size: 0.2rem;}
+.ellip-icon{background:url(../images/ellip.png) no-repeat; background-size: 0.2rem; -webkit-background-size: 0.2rem;}
+.back-text{font-size:.0.2rem;color:#fff}
+.tit{color: #fff;/* font-size: 18px; */font-weight: normal;height: 100%; text-align: center;font-size:0.19rem;}
+/*新闻主体*/
+.newslist{width:100%;height:1.56rem;position:relative;}
+.newslist img{display:block;}
+.newslist a{display:block;}
+.news1-title{font-size:0.16rem;
+	color:#fff;
+	padding:0 0.25rem;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space:nowrap;
+	position:absolute;
+	top:0.43rem;
+    z-index:3;
+    line-height:0.3rem;
+}
+
+.news-date{font-size:0.14rem;margin:0;}
+.news1bg{width:100%;
+	height:1.56rem;
+	position:absolute;
+	z-index:2;
+	background-color:#333;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+    top:0;
+    left:0;}
+.bdline1{display:block;width:1.4rem;height:0.02rem;background-color:#fff;margin:0.01rem 0;}
+.news2-title{float:right;
+	font-size:0.16rem;
+	color:#333;
+	padding:0.2rem 0.1rem;
+	width:44.5%;
+	line-height:0.22rem;
+	max-height:1.56rem;
+	overflow:hidden;
+}
+.fltl{float:left;}
+.fltr{float:right;}
+.dategray{color:#999;}
+.txcenter{text-align:center;}
+.bdline2{display:block;
+	width:0.28rem;
+	height:0.02rem;
+	background-color:#888;
+	margin:0.05rem 0;}
+.newsimgfull{width:100%;height:1.56rem}
+.newsimg208{width:55.5%;height:1.56rem}
+.news3-title{font-size:0.16rem;
+	color:#fff;
+	padding:0 1.12rem;	
+	text-overflow:ellipsis;
+	overflow:hidden;
+	line-height:0.22rem;
+	position:absolute;
+	top:0.4rem;
+    z-index:3;
+    }
+.bdline3{display:block;width:0.76rem;height:0.02rem;background-color:#fff;margin:0.03rem auto;}
+.news4-title{float:left;
+	font-size:0.16rem;
+	color:#333;
+	padding:0.2rem 0.1rem;
+	width:44.5%;
+	line-height:0.22rem;
+	max-height:1.56rem;
+	overflow:hidden;
+}
+.carousel-indicators{bottom:-0.06rem;}
+.carousel-inner img{width:100%;}
+.carousel-indicators li,.carousel-indicators .active{width:0.06rem;height:0.06rem;}
+.news-mc{width:100%;height:100%;position:absolute;top:0;left:0;background-color:#888;opacity:0.5;filter:alpha(opacity=50);z-index:10;}
+.share{width:100%;height:1.45rem;position:absolute;left:0;bottom:0.6rem;z-index:11;background-color:#fff;font-size:0.19rem;padding:0 0.25rem;}
+.share a{display:inline-block;width:0.54rem;height:0.54rem;margin: 0.15rem 0 0.15rem 0.37rem;}
+.share h4{margin-top:0.2rem;}
+.shweixin{background:url(../images/weixin.png) no-repeat;background-size:cover;}
+.shpyq{background:url(../images/pyq.png) no-repeat;background-size:cover;}
+.shweibo{background:url(../images/weibo.png) no-repeat;background-size:cover;}
+.cancelbtn{width:100%;
+	position:absolute;
+	z-index:11;
+	bottom:0;
+	height: 0.55rem;
+    font-size: 0.19rem;
+    text-align: center;    
+    line-height: 0.55rem;
+    background-color:#fff;
+    color:#333;
+    }
+ footer{display:none;}

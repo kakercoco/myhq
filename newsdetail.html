@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/news.css">
+<link rel="stylesheet" href="css/media-100.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="yes" name="apple-touch-fullscreen">
+<meta content="telephone=no" name="format-detection">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1,user-scalable=no">
+
+<title>公司新闻</title>
+</head>
+<body>
+<header class="header header_1">
+    <div class="fix_nav">
+        <div class="nav_inner">
+            <a class="nav-left back-icon" href="javascript:history.back();"></a>
+            <div class="tit">公司新闻</div>
+            <a class="nav-right ellip-icon" id="ellip-icon" href="#"></a>
+        </div>
+    </div>
+</header>
+<div class="news-container">
+    <h4 class="txcenter">标题标题标题标题标题标题</h4>
+    <h5><span>类型：类型类型</span><span class="fltr">2017-03-06</span></h5>
+    <div id="slidershow" class="carousel slide" data-ride="carousel" data-interval="5000">
+    <!-- 设置图片轮播的顺序 -->
+        <ol class="carousel-indicators">
+            <li class="active" data-target="#slidershow" data-slide-to="0">1</li>
+            <li data-target="#slidershow" data-slide-to="1">2</li>
+            <li data-target="#slidershow" data-slide-to="2">3</li>
+            <li data-target="#slidershow" data-slide-to="2">4</li>
+        </ol>
+        <!-- 设置轮播图片 -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <a href="##"><img src="images/newspic.png" alt=""></a>            
+            </div>
+            <div class="item">
+                <a href="##"><img src="images/newspic.png" alt=""></a>            
+            </div>
+            <div class="item">
+                <a href="##"><img src="images/newspic.png" alt=""></a>            
+            </div>
+            <div class="item">
+                <a href="##"><img src="images/newspic.png" alt=""></a>            
+            </div>
+        </div>
+    </div>
+    <p>正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文</p>
+    <p>正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文</p>
+</div>
+<footer>
+    <div class="news-mc"></div>
+    <div class="share">
+        <h4 class="txcenter dategray">分享到</h4>
+        <div>
+            <a href="#" class="shweixin"></a>
+            <a href="#" class="shpyq"></a>
+            <a href="#" class="shweibo"></a>
+        </div>
+    </div>
+    <div class="cancelbtn" id="cancelbtn">取消</div>
+</footer>
+<script charset="utf-8" src="js/jquery-1.11.0.min.js"></script>
+<script charset="utf-8" src="js/bootstrap.min.js"></script>
+<script charset="utf-8" src="js/shopCart.js"></script>
+<script type="text/javascript">
+$("#ellip-icon").click(function(){
+    $("footer").show();
+});
+$("#cancelbtn").click(function(){
+    $("footer").hide();
+})
+</script>
+</body>
+</html>
