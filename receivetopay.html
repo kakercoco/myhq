@@ -9,7 +9,8 @@
 		<link rel="stylesheet" type="text/css" href="css/media-100.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="http://webapi.amap.com/maps?v=1.3&key=5efbda3075d474c2aa578775121667f0"></script>
+		<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=5efbda3075d474c2aa578775121667f0"></script>
+		<script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
 	</head>
 
 	<body>
@@ -82,32 +83,46 @@
 		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/hq.js" type="text/javascript" charset="utf-8"></script>
 		<script>
-			var add='定位失败'
-			var arr=[]
-			navigator.geolocation.getCurrentPosition(
-				function(location) { //返回成功的数据	 		
-					AMap.plugin('AMap.Geocoder', function() {
-						var geocoder = new AMap.Geocoder({}); //地理编码
-						geocoder.getAddress([location.coords.longitude, location.coords.latitude],
-							function(status, result) {
-								if(status == 'complete') { //如果成功就返回数据 
-									add = result.regeocode.formattedAddress
-								}
-								arr=[location.coords.longitude, location.coords.latitude]
-								pushIt(add,arr);
-							})
-					})
-				})
-			
-			function pushIt(a,b){
-				//console.log(a+b)
+			var map, geolocation;
+				//加载地图，调用浏览器定位服务
+				map = new AMap.Map('', {
+					resizeEnable: true
+				});
+				map.plugin('AMap.Geolocation', function() {
+					geolocation = new AMap.Geolocation({
+						enableHighAccuracy: true, //是否使用高精度定位，默认:true
+						timeout: 10000, //超过10秒后停止定位，默认：无穷大
+						buttonOffset: new AMap.Pixel(10, 20), //定位按钮与设置的停靠位置的偏移量，默认：Pixel(10, 20)
+						zoomToAccuracy: true, //定位成功后调整地图视野范围使定位位置及精度范围视野内可见，默认：false
+						buttonPosition: 'RB'
+					});
+					map.addControl(geolocation);
+					geolocation.getCurrentPosition();
+					AMap.event.addListener(geolocation, 'complete', onComplete); //返回定位信息
+					AMap.event.addListener(geolocation, 'error', onError); //返回定位出错信息
+				});
+				//解析定位结果
+				function onComplete(data) {
+					var add=data.formattedAddress
+					var addx=data.position.getLng()
+					var addy=data.position.getLat()
+					pushIt(add,addx,addy)
+					
+				}
+				//解析定位错误信息
+				function onError(data) {
+					alert('定位失败') ;
+				}
+			function pushIt(a,b,c){
+				alert(a+b+c)
 				$.ajax({
 					type:"post",
 					url:"test.php",
 					async:true,
 					data:{
 						address:a,
-						addarr:b
+						addx:b,
+						addy:c
 					},
 					success:function(response,status){
 						console.log(response)
