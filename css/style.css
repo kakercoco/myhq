@@ -2303,17 +2303,24 @@ a:hover, a:focus{
 	font-size: 0.156rem;
 }
 .p-list li{
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 	font-size: 0.156rem;
 	border-top: 0.01rem solid #f3f3f3;
 	height: 0.4rem;
 	line-height: 0.4rem;
 	
 }
-.p-list li span{
+.p-list li span{.
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 	border-right: 0.01rem solid #f3f3f3;
 	display: inline-block;
 	height: 0.4rem;
 	width: 0.65rem;
+	float: left;
 }
 /*app详情结束*/
 /*-------------------------------------------------------*/
