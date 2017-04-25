@@ -11,7 +11,7 @@ $(".confirmno").click(function(){
 //确认删除弹出框弹出
 $(".confirmshow").click(function(e){
   $(e.target).attr("id","yes");
-  $('html,body').animate({scrollTop: '0px'}, 100);
+//$('html,body').animate({scrollTop: '0px'}, 100);
   $("#grayback").show();
   $("body").css("overflow","hidden");
   $("#confirminfo").show();
@@ -25,7 +25,7 @@ $(".confirmyes").click(function(){
 });
 //待发货发货提醒
 $(".alerttosend").click(function(){
-  $('html,body').animate({scrollTop: '0px'}, 100);
+//$('html,body').animate({scrollTop: '0px'}, 100);
   $("#grayback").show();
   $("body").css("overflow","hidden");
   $("#alertinfo").show();
@@ -44,7 +44,7 @@ $('.rf-close').click(function(){
     })
 //确认支付框弹出
 $(".rf-btn").click(function(){
-      $('html,body').animate({scrollTop: '0px'}, 100);
+//    $('html,body').animate({scrollTop: '0px'}, 100);
       $('#grayback').show();
       $("body").css("overflow","hidden");
       $('.rf-pay').slideDown();

@@ -50,17 +50,17 @@
 .order-btn{display:block;margin-top:0.08rem;}
 .btn-yellow{color:#ffcc33;border-color: #ffcc33}
 /*遮罩层*/
-.grayback{display:none;position:absolute;top:0%;left:0%;width:100%;height:100%;background-color: black;z-index:1001;-moz-opacity: 0.7;opacity:.70;  filter: alpha(opacity=70);}
-.confirminfo{display:none;position: absolute;top:2rem;left:0.32rem;width: 3.1rem;height:1.15rem; background-color:#fff; z-index:1002;border-radius:0.06rem;overflow: hidden;}
+.grayback{display:none;position:fixed;top:0%;left:0%;width:100%;height:100%;background-color: black;z-index:1001;-moz-opacity: 0.7;opacity:.70;  filter: alpha(opacity=70);}
+.confirminfo{display:none;position: fixed;top:2rem;left:0.32rem;width: 3.1rem;height:1.15rem; background-color:#fff; z-index:1002;border-radius:0.06rem;overflow: hidden;}
 .confirmtext{font-size:0.16rem;color:#333;text-align:center;height:0.75rem;line-height:0.75rem;border-radius:0.06rem 0.06rem 0 0;}
 .confirmbtn{width:100%;height:0.4rem;border-radius: 0 0 0.06rem 0.06rem;}
 .confirmbtn a{width:50%;font-size:0.16rem;display: block;float: left;text-align: center;line-height: 0.4rem}
 .confirm-left{border-top:0.01rem solid #ccc;border-radius:0 0 0 0.06rem;}
 .confirm-yellow{background-color:#ec1c00;border-radius:0 0 0.06rem 0;color: #fff;}
-.alertinfo{display:none;position: absolute;top:2.38rem;left:0.32rem;width: 3.1rem;height:0.75rem; background-color:#fff; z-index:1002;border-radius:0.06rem;}
+.alertinfo{display:none;position: fixed;top:2.38rem;left:0.32rem;width: 3.1rem;height:0.75rem; background-color:#fff; z-index:1002;border-radius:0.06rem;}
 .okstyle{color:#ffcc33;font-size:0.17rem;margin-right:0.1rem;}
 .rf-pay{
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	width: 100%;
 	background-color: #fff;
