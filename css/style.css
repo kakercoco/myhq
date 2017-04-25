@@ -2135,7 +2135,36 @@ a:hover, a:focus{
 .feed-btn{
 	height: 0.4rem;
 }
-
+.myabt-img img{
+	width: 100%;
+}
+.myabt-cont{
+	margin: 0.35rem;
+}
+.myabt-cont h3{
+	height: 0.4rem;
+	line-height: 0.4rem;
+	font-size: 0.156rem;
+}
+.myabt-cont p{
+	font-size: 0.125rem;
+	color: #999;
+}
+.abt-phone{
+	height: 0.25rem;
+	line-height: 0.25rem;
+	margin: 0 0.35rem;
+}
+.abt-phone a{
+	font-size: 0.156rem;
+	height: 100%;
+	display: block;
+}
+.abt-phone img{
+	float: left;
+	height: 100%;
+	margin-right: 0.1rem;
+}
 /*我的结束*/
 /*-------------------------------------------------------------*/
 /*扫码确认收货*/
