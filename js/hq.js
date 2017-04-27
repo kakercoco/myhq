@@ -132,8 +132,7 @@ $(function(){
 				$('.r-alert').fadeIn('fast')
 				$('.r-wrap').css('z-index','20')
 			}else{
-				$('.r-wrap').show()
-				$('.rf-pay').slideDown()
+				window.location.href="wchatpay.html"
 			}
 			
 		})
@@ -145,10 +144,10 @@ $(function(){
 		$('.ra-s').click(function(){
 			window.location.href="paysuccess.html";
 		})
-		$('.rf-close').click(function(){
-			$('.r-wrap').hide()
-			$('.rf-pay').slideUp()
-		})
+//		$('.rf-close').click(function(){
+//			$('.r-wrap').hide()
+//			$('.rf-pay').slideUp()
+//		})
 		$('.rt-add').click(function(){
 			window.location.href="goodsadd.html";
 		})

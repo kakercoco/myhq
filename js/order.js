@@ -37,18 +37,18 @@ function alertHide(){
   $("#alertinfo").hide();
 }
 //确认支付框关闭
-$('.rf-close').click(function(){
-      $('#grayback').hide();
-      $("body").css("overflow","auto");
-      $('.rf-pay').slideUp();
-    })
-//确认支付框弹出
-$(".rf-btn").click(function(){
-//    $('html,body').animate({scrollTop: '0px'}, 100);
-      $('#grayback').show();
-      $("body").css("overflow","hidden");
-      $('.rf-pay').slideDown();
-    })
+//$('.rf-close').click(function(){
+//    $('#grayback').hide();
+//    $("body").css("overflow","auto");
+//    $('.rf-pay').slideUp();
+//  })
+////确认支付框弹出
+//$(".rf-btn").click(function(){
+////    $('html,body').animate({scrollTop: '0px'}, 100);
+//    $('#grayback').show();
+//    $("body").css("overflow","hidden");
+//    $('.rf-pay').slideDown();
+//  })
 
 
 })

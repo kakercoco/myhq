@@ -1255,7 +1255,7 @@ a:hover, a:focus{
 }
 .rfp-pa{
 	font-size: 0.156rem;
-	margin: 0.1rem;
+	margin: 0.3rem 0;
 }
 .rfp-pa span{
 	font-size: 0.234rem;
@@ -2407,3 +2407,18 @@ a:hover, a:focus{
 
 
 /*商品溯源信息结束*/
+/*-----------------------------*/
+/*微信支付页面开始*/
+.wechat{
+	padding: 0.1rem;
+}
+.wechat h4{
+	height: 0.8rem;
+	line-height: 0.8rem;
+	font-size: 0.187rem;
+}
+.wechat a{
+	margin-top: 1.5rem;
+	display: block;
+}
+/*微信支付页面结束*/
