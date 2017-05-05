@@ -245,6 +245,12 @@
 				$('.buy-btn-fix').click(function(){
 					window.location.href="order.html";
 				})
+				var needRefresh = sessionStorage.getItem("need-refresh");
+			    if(needRefresh){
+			        sessionStorage.removeItem("need-refresh");
+			        location.reload();
+			    }
+
 			</script>
 	</body>
 
