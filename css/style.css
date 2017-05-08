@@ -287,6 +287,7 @@ a:hover, a:focus{
 	color: #ffcc33;
 }
 .buy-c h5{
+	padding-top: 0.02rem;
 	font-weight: bold;
 	font-size: 0.135rem;
 	margin-bottom: 0.05rem;
@@ -1146,8 +1147,8 @@ a:hover, a:focus{
 	width: 50%;
 }
 .rc-list h5{
+	padding-top: 0.02rem;
 	font-size: 0.135rem;
-	height: 0.3rem;
 	overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
