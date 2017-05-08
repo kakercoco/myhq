@@ -1147,6 +1147,7 @@ a:hover, a:focus{
 	padding: 0.1rem;
 	background-color: #fff;
 	height: 1.11rem;
+	overflow: hidden;
 }
 .rc-ltem img{
 	width: 0.94rem;
