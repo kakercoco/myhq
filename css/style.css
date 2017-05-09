@@ -322,7 +322,6 @@ a:hover, a:focus{
 	float: left;
 	overflow: hidden;
 	margin-right: 0.1rem;
-	font-weight: bold;
 }
 .buy-s{
 	padding: 0.05rem 0.1rem;
@@ -365,7 +364,7 @@ a:hover, a:focus{
 }
 .bgc-00{
 	background-color: transparent;
-	font-size: 0.13rem;
+	font-size: 0.15rem;
 	padding: 0;
 }
 .ifooter{
