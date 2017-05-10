@@ -127,12 +127,12 @@
 .paysuc-price a{font-size:0.15rem;width:0.85rem;height:0.3rem;color:#666;line-height:0.28rem;display:block;position:relative;top:0.35rem;left:1.35rem;margin-left:0;}
 /*订单为空页*/
 
-.odnothingimg{width:1.27rem;height:1.56rem;position:relative;top:0.2rem;left:1.2rem;}
+.odnothingimg{width:1.5rem;height:1.56rem;margin: 0.4rem auto 0;}
 .odnothingimg img{width:100%;display:block;}
-.shoppingbtn{color:#333;background:#ffcc33;width:1.77rem;display:inherit;margin:0.18rem auto;}
+.shoppingbtn{color:#333;background:#ffcc33;width:1.77rem;display:inherit;margin:0.18rem auto;height: 0.3rem;line-height: 0.3rem;border-radius: 0.05rem;}
 .fs13{font-size:0.13rem}
 .gary{color:#999;}
-.cart-text{margin-top:0.7rem;}
+.cart-text{margin-top:0.4rem;}
 
 .ifooter{
 	height: 0.5rem;

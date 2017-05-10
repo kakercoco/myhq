@@ -97,10 +97,10 @@
 .mvbtn{background-color:#ec1c00;border-color:#ec1c00;color: #fff;width:0.66rem;height:1.16rem;display: inline-block}
 .f-anim{-webkit-transition:left .2s linear;}
 .scrollhide{overflow:scroll}
-.shoppingcartimg{width:1.23rem;height:1.15rem;position:relative;top:0.34rem;left:1.3rem;}
+.shoppingcartimg{width:1.5rem;height:1.15rem;margin: 0.4rem auto 0;}
 .shoppingcartimg img{width:100%;display:block;}
-.shoppingbtn{color:#333;background:#ffcc33;width:1.77rem;line-height:normal;display:inherit;margin:0.18rem auto;}
-.cart-text{margin-top:0.7rem;}
+.shoppingbtn{color:#333;background:#ffcc33;width:1.77rem;line-height:normal;display:inherit;margin:0.18rem auto;border: none;}
+.cart-text{margin-top:0.4rem;}
 .cashexp{width:375rem;height:0.4rem;background:#6c6c6c;display:none;}
 .cashexp span{display:block;color:#fff;}
 .removeicon{width:0.22rem;height:0.22rem;position:absolute;right:0.2rem;top:0.09rem;font-size:0.2rem;}
