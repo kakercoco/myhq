@@ -126,7 +126,7 @@ $(function(){
 			window.location.href="produce.html";
 		})
 		$('.rf-btn').click(function(){
-			$(".r-wrap").height($("body").height()); 
+			$(".r-wrap").height($("window").height()); 
 			if($('.rc-pay').html().indexOf('货到付款')!==-1){
 				$('.r-wrap').fadeIn('fast')
 				$('.r-alert').fadeIn('fast')

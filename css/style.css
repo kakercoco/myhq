@@ -337,7 +337,6 @@ a:hover, a:focus{
 	display: -webkit-box;
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
-	height: 0.39rem;
 }
 .buy-s p{
 	color: #333;
@@ -1273,8 +1272,8 @@ a:hover, a:focus{
 	margin-top: 2rem;
 }
 .r-wrap{
-	position: absolute;
-	top: -1.2rem;
+	position: fixed;
+	top: 0rem;
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0,0,0,0.5);
@@ -1313,9 +1312,27 @@ a:hover, a:focus{
 	border: none;
 	outline: none;
 }
-
-
-
+.r-loading{
+	width: 1.5rem;
+    height: 1.5rem;
+    background-color: #fff;
+    position: fixed;
+    top: 30%;
+    left: 32%;
+    border-radius: 0.05rem;
+    overflow: hidden;
+    display: none;
+    z-index: 20;
+}
+.r-loading img{
+	width: 0.8rem;
+	display: block;
+	margin: 0.2rem auto 0;
+}
+.r-loading p{
+	font-size: 0.12rem;
+	margin-top: 0.2rem;
+}
 
 
 
