@@ -381,7 +381,7 @@ a:hover, a:focus{
 	background-color: transparent;
 	font-size: 0.16rem;
 	padding: 0;
-	color:#ec1c00;
+	color:#ff7c08;
 }
 .ifooter{
 	height: 0.5rem;
@@ -592,7 +592,7 @@ a:hover, a:focus{
 }
 .pl-tc .pl-tcp{
 	font-size: 0.2rem;
-	color: #ec1c00;
+	color: #ff7c08;
 	margin-right: 0.2rem;
 }
 .pl-tb{
@@ -1000,7 +1000,7 @@ a:hover, a:focus{
 	color: #fff !important;
 }
 .c-fc3{
-	color: #ffcc33;
+	color: #ff7c08;
 }
 .carousel-control.left,.carousel-control.right{
 	background-image: none;
@@ -1214,7 +1214,7 @@ a:hover, a:focus{
 	color: #666;
 }
 .rc-sel .rc-quan{
-	color: #ffcc33;
+	color: #ff7c08;
 	font-weight: normal;
 }
 .rc-sel b{
