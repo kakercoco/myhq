@@ -228,7 +228,7 @@
                         $(".ids").val(0);
                         $("#buy-sele-all").attr("checked", false);
             	        $("#buy-sele-all").val(0);
-
+						calculateTotal();
 					} else if(textlength == 2) {
 						this.innerHTML = "编辑全部";
 						$(".p-cartcheck").css({ "background": "url(images/cart-check.png)no-repeat", "-webkit-background-size": "cover", "background-size": "cover" });
@@ -238,11 +238,17 @@
                         $(".ids").val(0);
                         $("#buy-sele-all").attr("checked", false);
             	        $("#buy-sele-all").val(0);
-
+						calculateTotal();
 					}
 
 				})
 				$('.buy-btn-fix').click(function(){
+					$(".p-cartcheck").css({ "background": "url(images/cart-check.png)no-repeat", "-webkit-background-size": "cover", "background-size": "cover" });
+					$(".ids").attr("checked", false);
+                    $(".ids").val(0);
+                    $("#buy-sele-all").attr("checked", false);
+            	    $("#buy-sele-all").val(0);
+            	    calculateTotal();
 					window.location.href="order.html";
 				})
 				var needRefresh = sessionStorage.getItem("need-refresh");
