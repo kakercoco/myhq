@@ -1573,9 +1573,17 @@ a:hover, a:focus{
 	padding: 0.1rem;
 	height: 0.88rem;
 }
+.quanl-l h5{
+	font-weight: bold;
+}
+.quanl-l h5 small{
+	padding: 0.02rem;
+	margin-left: 0.1rem;
+	border-radius: 0.02rem;
+}
 .quanl-r{
 	width: 31%;
-	padding: 0.1rem;
+	padding: 0.13rem;
 }
 .quanl-l h4 span{
 	font-size: 0.25rem;
@@ -1583,6 +1591,7 @@ a:hover, a:focus{
 .quanl-l b{
 	font-size: 0.125rem;
 	display: block;
+	color: #666;
 }
 .quanl-l p{
 	color: #999;
@@ -1590,26 +1599,62 @@ a:hover, a:focus{
 }
 .quanl-l p img{
 	height: 0.12rem;
-	margin-right: 0.1rem;
+	margin-right: 0.05rem;
 }
 .quanl-r{
 	height: 0.88rem;
+	position: relative;
+}
+.quanl-r img{
+	position: absolute;
+	top:0.22rem ;
+	left: -0.22rem;
+	width: 0.45rem;
+	
+}
+.quanl-r h5{
+	font-size: 0.25rem;
+}
+.quanl-r h5 small{
+	font-size: 0.15rem;
 }
 .quanl-r a{
 	width: 0.58rem;
-	height: 0.28rem;
-	line-height: 0.28rem;
+	height: 0.2rem;
+	line-height: 0.18rem;
 	display: block;
 	text-align: center;
-	font-size: 0.135rem;
-	margin: 0.2rem auto;
-	border-radius: 0.03rem;
+	font-size: 0.105rem;
+	margin: 0.1rem auto;
+	border-radius: 0.1rem;
+}
+.c-f7c08{
+	color: #ffcc33;
+}
+.bg-liner{
+	background:linear-gradient(to right,#ffcc33,#ff9933);
+}
+.border-1{
+	border: 0.01rem solid #ffcc33;
+}
+.quan-dif{
+	border-top:0.01rem solid #999;
+	position: relative;
+	margin: 0.2rem 0.1rem;
+}
+.quan-dif span{
+	position: absolute;
+	top: -0.1rem;
+	left: 35%;
+	background-color: #f3f3f3;
+	padding: 0 0.2rem;
+	font-size: 0.105rem;
 }
 .c-333{
 	color: #333;
 }
 .c-999{
-	color: #999;
+	color: #999 !important;
 }
 .unquan{
 	padding: 0.1rem;
