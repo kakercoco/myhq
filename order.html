@@ -82,7 +82,7 @@
 					<span class="fl">支付方式</span><span class="fr rc-pay">货到付款<b class="fr"><img src="images/myback.png" class="fr mt-15"/></b></span>
 				</li>
 				<li class="rc-sel">
-					<span class="fl">配送方式</span><span class="fr">快递 免邮<b></b></span>
+					<span class="fl">配送方式</span><span class="fr rc-choose"><i>快递</i><b class="fr"><img src="images/myback.png" class="fr mt-15"/></b></span>
 				</li>
 			</ul>
 			<div class="rc-detail mt-10">
@@ -97,12 +97,21 @@
 		<div class="r-foot">
 			<button class="fr bg-fc3 rf-btn">提交订单</button>
 			<p class="fr rf-p">合计: <span class="c-fc3">¥ 1540</span></p>
-			<!--<div class="rf-pay">
-				<h4 class="tac"><span class="fl rf-close">×</span>付款详情</h4>
-				<p class="rfp-p">付款方式<span class="fr">微信支付</span></p>
-				<p class="rfp-pa">需付款<span class="fr">1370.00元</span></p>
-				<a href="paysuccess.html"><button class="btn btn-block bg-fc3 c-fff">确认付款</button></a>
-			</div>-->
+			<div class="r-choose">
+				<ul>
+					<li>
+						<p class="fl"><i class="bg-fc33 gdc-ri tac"><img src="images/duig2.png"/></i></p>
+						<h4>快递</h4>
+						<small>快递费：6.0</small>
+					</li>
+					<li>
+						<p class="fl"><i class="gdc-ri tac"><img src="images/duig2.png"/></i></p>
+						<h4>到店自提</h4>
+						<small>门店地址：天长市天长街道园林路广厦花园一号楼4号门店 </small>
+					</li>
+				</ul>
+				<button class="btn bg-fc3">完成</button>
+			</div>
 		</div>
 		<div class="r-alert">
 			<p class="tac"><img src="images/quan03.png" class="mr-10"/>订单提交后不可取消</p>
@@ -117,6 +126,21 @@
 		<script src="js/hq.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			sessionStorage.setItem("need-refresh", true);
+			$('.rc-choose').click(function(){
+				$('.r-choose').slideDown()
+				$('.r-wrap').show()
+			})
+			$('.r-choose button').click(function(){
+				$('.r-choose').slideUp()
+				$('.r-wrap').hide()
+			})
+			$('.r-choose li').click(function(){
+				$('.r-choose').slideUp()
+				$('.r-wrap').hide()
+				$('.r-choose .gdc-ri').removeClass('bg-fc33')
+				$(this).find('.gdc-ri').addClass('bg-fc33')
+				$('.rc-choose i').html($(this).children('h4').html())
+			})
 		</script>
 	</body>
 

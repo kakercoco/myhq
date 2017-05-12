@@ -1263,6 +1263,42 @@ a:hover, a:focus{
 	font-size: 0.14rem;
 	z-index: 15;
 }
+.r-choose{
+	position: absolute;
+	bottom: 0rem;
+	left: 0;
+	background-color: #fff;
+	width: 100%;
+	display: none;
+}
+.r-choose small{
+	margin-top: 0.1rem;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.rc-choose i{
+	font-style: normal;
+}
+.r-choose li{
+	line-height: 0.2rem;
+	height: 1rem;
+	margin: 0.1rem;
+	padding: 0.2rem 0;
+	border-bottom:0.01rem solid #ccc;
+}
+.r-choose li p{
+	height: 100%;
+}
+.r-choose .gdc-ri{
+	margin: 0 0.2rem;
+}
+.r-choose button{
+	width: 95%;
+	margin: 0.3rem 0.1rem 0.1rem;
+}
 .rf-btn{
 	width: 1.12rem;
 	height: 0.5rem;
