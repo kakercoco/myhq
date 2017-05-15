@@ -243,10 +243,13 @@ a:hover, a:focus{
 .timer span{
 	background-color: #666;
 	color: #fff;
-	font-size: 0.0729rem;
+	font-size: 0.12rem;
 	padding: 0.02rem;
 	width: 0.12rem;
 	height: 0.12rem;
+}
+.fw-b{
+	font-weight: bold;
 }
 .timer i{
 	font-style: normal;
@@ -258,6 +261,23 @@ a:hover, a:focus{
 }
 #timerhh,#timermm,#timerss{
 	
+}
+.buy-t-hot{
+	height: 0.6rem;
+}
+.buy-t-hot p{
+	height: 0.4rem;
+}
+.buy-t-hot .yellowb{
+	top:0.27rem;
+}
+.buy-t-hot .timer{
+	clear: left;height: 0.1rem;
+	line-height: 0.1rem; 
+	margin-left: 0.2rem;
+}
+.c-red{
+	color:#ec1c00
 }
 .buy-c{
 	width: 100%;
@@ -2318,8 +2338,17 @@ a:hover, a:focus{
 /*我的结束*/
 /*-------------------------------------------------------------*/
 /*扫码确认收货*/
-.confirmrec{border-radius:0;height:0.42rem;position:fixed;bottom:0;font-size:0.15rem;}
+.confirmrec{height:0.42rem;position:fixed;bottom:0;font-size:0.15rem;width: 100%;}
 .ps-cout-btn{margin:0.15rem auto!important;}
+.confirmrec button{
+	height: 100%;
+	width: 50%;
+	border-radius: 0;
+	color: #fff;
+}
+.bg-333{
+	background-color: #333;
+}
 .ordsuc-r{height:0.78rem;margin-right:0.3rem;}
 .ordsuc-r img{height:100%;margin-top:-0.05rem;}
 .odt-top{
