@@ -2596,10 +2596,74 @@ a:hover, a:focus{
 .mr-40{
 	margin-right: 0.43rem;
 }
-
-
-
-
+.from-add{
+	width: 3.13rem;
+    margin: 0rem auto;
+}
+.from-add h3{
+	font-size: 0.125rem;
+	width:0.85rem ;
+	height: 0.28rem;
+	line-height: 0.28rem;
+	background: linear-gradient(to right,#1593ff,#0351b8);
+	border-radius: 0.05rem;
+}
+.from-add ul li{
+	font-size: 0.115rem;
+	width: 100%;
+	height: 0.28rem;
+}
+.from-add ul{
+	margin: 0.2rem 0;
+}
+.from-add li span{
+	height: 100%;
+	display: inline-block;
+	line-height: 0.28rem;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.from-add li span:nth-child(1){
+	width: 40%;
+}
+.from-add li span:nth-child(2){
+	width: 60%;
+}
+.from-add li:nth-child(even) span:nth-child(1){
+	background-color: #dbdbdb;
+	color: #fff;
+}
+.from-add li:nth-child(even) span:nth-child(2){
+	background-color: #1593ff;
+	color: #fff;
+}
+.from-add li:nth-child(odd) span:nth-child(1){
+	background-color: #f9f9f9;
+	color: #d2d2d2;
+}
+.from-add li:nth-child(odd) span:nth-child(2){
+	background-color: #aee8ff;
+	color: #106b99;
+}
+.from-mes-title{
+	margin: 0.15rem 0.3rem;
+	font-size: 0.125rem;
+	height: 0.28rem;
+	line-height: 0.28rem;
+	background: linear-gradient(to right,#1593ff,#0351b8);
+	border-radius: 0.05rem;
+	width: 1.62rem;
+	text-align: center;
+	color: #fff;
+}
+.from-add-img{
+	width:100% ;
+}
+.frommes{
+	width: 3.13rem;
+	margin: 0 auto;
+}
 /*商品溯源信息结束*/
 /*-----------------------------*/
 /*微信支付页面开始*/
