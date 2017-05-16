@@ -262,13 +262,17 @@ a:hover, a:focus{
 	
 }
 .buy-t-hot{
-	height: 0.6rem;
+	height: 0.65rem;
 }
 .buy-t-hot p{
 	height: 0.4rem;
 }
 .buy-t-hot .yellowb{
-	top:0.27rem;
+	top:0.2rem;
+	height: 0.3rem;
+}
+.bg-fff{
+	background-color: #fff;
 }
 .buy-t-hot .timer{
 	clear: left;height: 0.1rem;
