@@ -261,7 +261,7 @@ a:hover, a:focus{
 #timerhh,#timermm,#timerss{
 	
 }
-.buy-t-hot{
+/*.buy-t-hot{
 	height: 0.65rem;
 }
 .buy-t-hot p{
@@ -270,15 +270,15 @@ a:hover, a:focus{
 .buy-t-hot .yellowb{
 	top:0.2rem;
 	height: 0.3rem;
-}
+}*/
 .bg-fff{
 	background-color: #fff;
 }
-.buy-t-hot .timer{
+/*.buy-t-hot .timer{
 	clear: left;height: 0.1rem;
 	line-height: 0.1rem; 
 	margin-left: 0.2rem;
-}
+}*/
 .c-red{
 	color:#ec1c00
 }
@@ -303,6 +303,7 @@ a:hover, a:focus{
 .dog{
 	line-height: 0.36rem;
 	margin-right: 0.05rem;
+	display: none;
 }
 .dog img{
 	height: 0.25rem;
