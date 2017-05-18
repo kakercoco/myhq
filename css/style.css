@@ -2725,3 +2725,34 @@ a:hover, a:focus{
 	display: block;
 }
 /*微信支付页面结束*/
+/*--------------------------------------------*/
+/*员工认证页面开始*/
+.iso-img{
+	width: 1rem;
+	margin: 0.2rem auto;
+	text-align: center;
+}
+.iso img{
+	width: 100%;
+}
+.iso-bg{
+	position: relative;
+	width: 2.6rem;
+	margin: 1rem auto;
+}
+.iso-data{
+	position: absolute;
+	bottom: 0.4rem;
+	left: 0.71rem;
+}
+.iso-data p{
+	font-size: 0.12rem;
+	color: #333;
+}
+.iso-data h3{
+	font-size: 0.167rem;
+	color: #333;
+	margin: 0.06rem 0;
+	text-decoration: underline;
+}
+/*员工认证页面结束*/
