@@ -2164,7 +2164,13 @@ a:hover, a:focus{
 	border: none;
 }
 .telphone{
-	width: 95%;
+	width: 90%;
+}
+.myphone .iso-h4{
+	padding: 0 0.2rem;
+}
+.h-40{
+	height: 0.4rem;
 }
 .huoqu{
 	width: 0.89rem;
@@ -2442,16 +2448,14 @@ a:hover, a:focus{
 	line-height: 0.25rem;
 }
 .wl-cent{
-	height: 0.48rem;
 	background-color: #fff;
 	padding: 0.1rem;
 	line-height: 0.48rem;
 }
 .wl-cent img{
-	height: 100%;
+	width: 0.28rem;
 }
 .wl-cent p{
-	height: 0.28rem;
 	line-height: 0.28rem;
 	font-size: 0.1355rem;
 }
