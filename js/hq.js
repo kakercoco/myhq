@@ -177,6 +177,10 @@ $(function(){
 		$('.jage').click(function(){
 			num++
 			$('.pf-shop i').html(num)
+			$('.shop-add-alert').fadeIn()
+			setTimeout(function(){
+				$('.shop-add-alert').fadeOut()
+			},2000)
 		})
 		$('.huoqu').click(function(){
 			var dm=60

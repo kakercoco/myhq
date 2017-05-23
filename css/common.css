@@ -26,3 +26,24 @@ h1, h2, h3{font-family: "黑体",Arial, Helvetica, sans-serif;}
 	.category h4{margin:5px 0 10px 0; font-size:16px;}
 	.category img{width:50%;}
 }
+.mt-2{
+	margin-top: 0.02rem;
+}
+.ifooter li{
+	position: relative;
+}
+.ifooter li section{
+	font-style: normal;
+    position: absolute;
+    top: -0.05rem;
+    right: 0.45rem;
+    width: 0.15rem;
+    height: 0.15rem;
+    display: block;
+    font-size: 0.12rem;
+    background-color: #FFCC33;
+    color: #fff;
+    border-radius: 0.1rem;
+    text-align: center;
+    line-height: 0.15rem;
+}
