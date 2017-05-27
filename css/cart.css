@@ -15,8 +15,8 @@
 .list-group-item:last-child{margin-bottom:0;border-bottom-right-radius:0;border-bottom-left-radius:0}
 .hproduct{padding:0.1rem; height: 1.16rem; min-height: 0.4rem;position: relative;border-bottom: 1px solid #e5e5e5;width:3.75rem;}
 .xwidth{width:4.45rem;overflow:hidden;border: none;}
-.p-pic{float:left; width:0.95rem;}
-.p-pic img{width:100%}
+.p-pic{float:left; height:0.95rem;}
+.p-pic img{height:100%}
 .p-info{ margin-left:1.3rem;width: 68%;padding-right:0.88rem;font-size:0.14rem;height: 0.95rem;position: relative;}
 .p-info .p-title{color: #333; height:0.4rem;line-height:0.2rem;overflow: hidden;word-break: break-all; margin:0;font-size: 0.146rem;text-overflow: ellipsis;-webkit-line-clamp: 2;}
 .p-attr{color: #333;font-size: 0.12rem;margin: 0.08rem 0;}

@@ -581,7 +581,7 @@ a:hover, a:focus{
 
 /*产品详情页开始*/
 .itop2{
-	height: 4rem;
+	height: auto;
 }
 .top2{
 	background-color: rgba(255,255,255,0.8);
@@ -641,6 +641,7 @@ a:hover, a:focus{
 	height: 0.6rem;
 }
 .pl-tt h3{
+	padding-top: 0.05rem;
 	font-size: 0.156rem;
 	overflow: hidden;
     text-overflow: ellipsis;
@@ -710,7 +711,9 @@ a:hover, a:focus{
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
-	max-width: 70%;
+	max-width: 73%;
+	display: inline-block;
+	height: 100%;
 }
 .pl-cont i{
 	font-size: 0.3rem;
@@ -992,6 +995,16 @@ a:hover, a:focus{
 	border-bottom: 1px solid #ddd;
 	line-height: 0.45rem;
 	font-size: 0.146rem;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.p-dizhi li small{
+	font-size: 0.146rem;
+	max-width: 70%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 .p-arg b{
 	margin-left: 0.3rem;
@@ -1145,6 +1158,7 @@ a:hover, a:focus{
 .kb p b{
 	color: red;
 	margin-right: 0.2rem;
+	font-size: 0.2rem;
 }
 .kb p span{
 	color: #999;
