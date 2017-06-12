@@ -10,6 +10,9 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
 		<style type="text/css">
+			.container  {
+				overflow: hidden;
+			}
 			.container img {
 				width: 100%;
 			}
@@ -192,7 +195,7 @@
 				</div>
 			</div>
 			<img src="images/buybg.jpg" class="buy-bg"/>
-			<div class="buy" style="margin-top: 0;" id="1F">
+			<div class="buy clearfix" style="margin-top: 0;" id="1F">
 				<div class="buy-t">
 					<span class="fr show_more">更多</span>
 					<p class="tac fw-b"><span class="c-f7c08">热</span>销单品</p>
@@ -253,18 +256,34 @@
 									<p><span class="bgc-000 bgc-00">¥1280</span> 285人付款</p>
 								</a>
 								</div>
+							<div class="item " data-order="6">
+							
+								<a href="produce.html">
+									<img src="images/qq4.png" />
+									<h5>韩国代购春夏女西装裤 春夏女西装裤 春夏女西装裤 修身显瘦休闲百搭小脚裤</h5>
+									<p><span class="bgc-000 bgc-00">¥1280</span> 285人付款</p>
+								</a>
+								</div>
+							<div class="item " data-order="6">
+							
+								<a href="produce.html">
+									<img src="images/qq4.png" />
+									<h5>韩国代购春夏女西装裤 春夏女西装裤 春夏女西装裤 修身显瘦休闲百搭小脚裤</h5>
+									<p><span class="bgc-000 bgc-00">¥1280</span> 285人付款</p>
+								</a>
+								</div>
 							</div>
 					</div>
 				
 				</div>
 			</div>
-			<div class="buy" style="margin-top: 0;" id="2F">
+			<div class="buy clearfix" style="margin-top: 0;" id="2F">
 				<div class="buy-t">
 					<span class="fr show_more">更多</span>
 					<p class="tac fw-b"><span class="c-f7c08">电</span>竞器材</p>
 				</div>
 				<div class="buy-s">
-					<div class="container">
+					<div class="container height_auto">
 					
 						<div class="my-gallery-container">
 						
@@ -319,6 +338,7 @@
 									<p><span class="bgc-000 bgc-00">¥1280</span> 285人付款</p>
 								</a>
 								</div>
+							
 							</div>
 					</div>
 				
@@ -359,6 +379,17 @@
 		<script src="js/mp.mansory.min.js" type="text/javascript" charset="utf-8"></script>
 		<script>
 			$(document).ready(function($) {
+				var item_height=$('.buy .container .item').height()*3+0.15*100*3+"px"
+				$('.container').height(item_height)
+				$('.show_more').click(function(){
+					if($(this).html()=="更多"){
+						$(this).parent().parent().find('.container').css('overflow','visible')
+						$(this).html("收起")
+					}else{
+						$(this).parent().parent().find('.container').css('overflow','hidden')
+						$(this).html("更多")
+					}
+				})
 				$('#myCarousel').carousel({
 					interval: 100000
 				}); //每隔5秒自动轮播 
