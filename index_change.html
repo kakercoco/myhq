@@ -91,31 +91,31 @@
 		<div class="nav">
 			<ul>
 				<li class="tac">
-					<a href="#1F">
+					<a href="#1F" onclick="open_more(1)">
 						<img src="images/nav01.png"/>
 						<span>个人洗护</span>
 					</a>
 				</li>
 				<li class="tac">
-					<a href="#2F">
+					<a href="#2F" onclick="open_more(2)">
 						<img src="images/nav02.png"/>
 						<span>家庭清洁</span>
 					</a>
 				</li>
 				<li class="tac">
-					<a href="#3F">
+					<a href="#3F" onclick="open_more(3)">
 						<img src="images/nav03.png"/>
-						<span>家庭清洁</span>
-					</a>
-				</li>
-				<li class="tac">
-					<a href="#4F">
-						<img src="images/nav04.png"/>
 						<span>粮油干货</span>
 					</a>
 				</li>
 				<li class="tac">
-					<a href="#5F">
+					<a href="#4F" onclick="open_more(4)">
+						<img src="images/nav04.png"/>
+						<span>食品饮料</span>
+					</a>
+				</li>
+				<li class="tac">
+					<a href="#5F" onclick="open_more(5)">
 						<img src="images/nav05.png"/>
 						<span>物勒工名</span>
 					</a>
@@ -197,7 +197,6 @@
 			<img src="images/buybg.jpg" class="buy-bg"/>
 			<div class="buy clearfix" style="margin-top: 0;" id="1F">
 				<div class="buy-t">
-					<span class="fr show_more">更多</span>
 					<p class="tac fw-b"><span class="c-f7c08">热</span>销单品</p>
 				</div>
 				<div class="buy-s">
@@ -274,12 +273,15 @@
 								</div>
 							</div>
 					</div>
-				
+					
+				</div>
+				<div class="buy-show-more bg-fff tac">
+					<img src="images/myback.png" alt="" class="fr" />
+					<section onclick="show_hide(this,1)" class="c-fc3 show_more">点击加载更多</section>
 				</div>
 			</div>
 			<div class="buy clearfix" style="margin-top: 0;" id="2F">
 				<div class="buy-t">
-					<span class="fr show_more">更多</span>
 					<p class="tac fw-b"><span class="c-f7c08">电</span>竞器材</p>
 				</div>
 				<div class="buy-s">
@@ -338,10 +340,22 @@
 									<p><span class="bgc-000 bgc-00">¥1280</span> 285人付款</p>
 								</a>
 								</div>
+							<div class="item " data-order="6">
+							
+								<a href="produce.html">
+									<img src="images/qq4.png" />
+									<h5>韩国代购春夏女西装裤 春夏女西装裤 春夏女西装裤 修身显瘦休闲百搭小脚裤</h5>
+									<p><span class="bgc-000 bgc-00">¥1280</span> 285人付款</p>
+								</a>
+								</div>
 							
 							</div>
 					</div>
 				
+				</div>
+				<div class="buy-show-more bg-fff tac">
+					<img src="images/myback.png" alt="" class="fr" />
+					<section onclick="show_hide(this,2)" class="c-fc3 show_more">点击加载更多</section>
 				</div>
 			</div>
 		</div>
@@ -378,18 +392,44 @@
 		<script src="js/hq.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/mp.mansory.min.js" type="text/javascript" charset="utf-8"></script>
 		<script>
+			function open_more(i){
+					var item_li=$('.nav li a')
+					var item_show=$('.show_more')[i-1]
+					var item_cont=$('.container')[i-1]
+					var item_img=$('.buy-show-more img')[i-1]
+					item_cont.style.overflow='visible'
+					item_show.innerHTML="收起"
+					item_img.style.transform="rotate(-90deg)"
+					localStorage.setItem(i,i)
+			}
+			function show_hide(t,i){
+				if($(t).html()=="点击加载更多"){
+						$(t).parent().parent().find('.container').css('overflow','visible')
+						$(t).parent().find('img').css('transform','rotate(-90deg)')
+						$(t).html("收起")
+						localStorage.setItem(i,i)
+					}else{
+						$(t).parent().parent().find('.container').css('overflow','hidden')
+						$(t).parent().find('img').css('transform','rotate(90deg)')
+						$(t).html("点击加载更多")
+						localStorage.removeItem(i)
+					}
+			}
+			 
 			$(document).ready(function($) {
+				
+				$(".nav a").click(function() {
+				    $("html, body").animate({
+				      scrollTop: $($(this).attr("href")).offset().top + "px"
+				    }, {
+				      duration: 500,
+				      easing: "swing"
+				    });
+				    return false;
+				});
 				var item_height=$('.buy .container .item').height()*3+0.15*100*3+"px"
 				$('.container').height(item_height)
-				$('.show_more').click(function(){
-					if($(this).html()=="更多"){
-						$(this).parent().parent().find('.container').css('overflow','visible')
-						$(this).html("收起")
-					}else{
-						$(this).parent().parent().find('.container').css('overflow','hidden')
-						$(this).html("更多")
-					}
-				})
+				
 				$('#myCarousel').carousel({
 					interval: 100000
 				}); //每隔5秒自动轮播 
@@ -407,9 +447,32 @@
 						//make somthing with items
 					}
 				});
-				
+				if (localStorage.getItem('1')==1) {
+					$('.container')[0].style.overflow='visible'
+					$('.show_more')[0].innerHTML="收起"
+					$('.buy-show-more img')[0].style.transform="rotate(-90deg)"
+				}
+				if(localStorage.getItem('2')==2){
+					$('.container')[1].style.overflow='visible'
+					$('.show_more')[1].innerHTML="收起"
+					$('.buy-show-more img')[1].style.transform="rotate(-90deg)"
+				}
+				if(localStorage.getItem('3')==3){
+					$('.container')[2].style.overflow='visible'
+					$('.show_more')[2].innerHTML="收起"
+					$('.buy-show-more img')[2].style.transform="rotate(-90deg)"
+				}
+				if(localStorage.getItem('4')==4){
+					$('.container')[3].style.overflow='visible'
+					$('.show_more')[3].innerHTML="收起"
+					$('.buy-show-more img')[3].style.transform="rotate(-90deg)"
+				}
+				if(localStorage.getItem('5')==5){
+					$('.container')[4].style.overflow='visible'
+					$('.show_more')[4].innerHTML="收起"
+					$('.buy-show-more img')[4].style.transform="rotate(-90deg)"
+				}
 			});
-			
 		</script>
 	</body>
 

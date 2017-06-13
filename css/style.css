@@ -336,6 +336,10 @@ a:hover, a:focus{
 .buy-c li img{
 	width: 75%;
 }
+.buy-c .section-r img{
+	width: auto;
+	height: 100%;
+}
 .buy-s li img{
 	height: auto;
 }
@@ -655,14 +659,26 @@ a:hover, a:focus{
 	width: 0.5rem;
 }
 .show_more{
-	height: 0.46rem;
-	line-height: 0.46rem;
-	margin-right: 0.1rem;
+	height: 0.4rem;
 	font-size: 0.14rem;
-	color: #999;
+	line-height: 0.4rem;
+	width: 100%;
+	margin: 0 auto;
 }
-
-
+.buy-show-more{
+	height: 0.4rem;
+	margin: 0 0.12rem;
+	clear: both;
+	position: relative;
+}
+.buy-show-more img{
+	height: 0.15rem;
+	transform: rotate(90deg);
+	position: absolute;
+	right: 0.1rem;
+	top: 0.1rem;
+	z-index: 0;
+}
 
 
 
@@ -1509,6 +1525,15 @@ a:hover, a:focus{
 .r-choose button{
 	width: 95%;
 	margin: 0.3rem 0.1rem 0.1rem;
+}
+.rc-comment{
+	outline: none;
+	border: none;
+	color: #333;
+	width: 80%;
+}
+.rc-comment::-webkit-input-placeholder{
+	color: #ccc!important;
 }
 .rf-btn{
 	width: 1.12rem;
