@@ -29,6 +29,7 @@ body {
 	font-size: 0.1rem;
 	color: #333;
 	padding-bottom: 0.5rem;
+	overflow-x: hidden;
 }
 .clearfix:after{
 	width: 0;
@@ -350,7 +351,6 @@ a:hover, a:focus{
 	padding-top: 0.02rem;
 	font-weight: bold;
 	font-size: 0.12rem;
-	margin-bottom: 0.05rem;
 	overflow:hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -646,6 +646,8 @@ a:hover, a:focus{
 	line-height: 0.45rem;
 	font-size: 0.12rem;
 	padding: 0 0.1rem;
+	position: absolute;
+	bottom: 0;
 }
 .buy-cl h5 span{
 	font-size: 0.22rem;
@@ -2030,6 +2032,13 @@ a:hover, a:focus{
 }
 .odc-xx p{
 	font-size: 0.135rem;
+}
+.odc-mes h4{
+	float: left;
+}
+.odc-mes p{
+	float: right;
+	width: 75%;
 }
 .odc-detail {
     height: 0.79rem;

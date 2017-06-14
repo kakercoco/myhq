@@ -400,19 +400,22 @@
 					item_cont.style.overflow='visible'
 					item_show.innerHTML="收起"
 					item_img.style.transform="rotate(-90deg)"
-					localStorage.setItem(i,i)
+					sessionStorage.setItem(i,i)
 			}
 			function show_hide(t,i){
 				if($(t).html()=="点击加载更多"){
 						$(t).parent().parent().find('.container').css('overflow','visible')
 						$(t).parent().find('img').css('transform','rotate(-90deg)')
 						$(t).html("收起")
-						localStorage.setItem(i,i)
+						sessionStorage.setItem(i,i)
 					}else{
 						$(t).parent().parent().find('.container').css('overflow','hidden')
 						$(t).parent().find('img').css('transform','rotate(90deg)')
 						$(t).html("点击加载更多")
-						localStorage.removeItem(i)
+						sessionStorage.removeItem(i)
+						var a_top=$(t).parent().parent().offset().top
+						$(document).scrollTop(a_top)
+						
 					}
 			}
 			 
@@ -447,27 +450,27 @@
 						//make somthing with items
 					}
 				});
-				if (localStorage.getItem('1')==1) {
+				if (sessionStorage.getItem('1')==1) {
 					$('.container')[0].style.overflow='visible'
 					$('.show_more')[0].innerHTML="收起"
 					$('.buy-show-more img')[0].style.transform="rotate(-90deg)"
 				}
-				if(localStorage.getItem('2')==2){
+				if(sessionStorage.getItem('2')==2){
 					$('.container')[1].style.overflow='visible'
 					$('.show_more')[1].innerHTML="收起"
 					$('.buy-show-more img')[1].style.transform="rotate(-90deg)"
 				}
-				if(localStorage.getItem('3')==3){
+				if(sessionStorage.getItem('3')==3){
 					$('.container')[2].style.overflow='visible'
 					$('.show_more')[2].innerHTML="收起"
 					$('.buy-show-more img')[2].style.transform="rotate(-90deg)"
 				}
-				if(localStorage.getItem('4')==4){
+				if(sessionStorage.getItem('4')==4){
 					$('.container')[3].style.overflow='visible'
 					$('.show_more')[3].innerHTML="收起"
 					$('.buy-show-more img')[3].style.transform="rotate(-90deg)"
 				}
-				if(localStorage.getItem('5')==5){
+				if(sessionStorage.getItem('5')==5){
 					$('.container')[4].style.overflow='visible'
 					$('.show_more')[4].innerHTML="收起"
 					$('.buy-show-more img')[4].style.transform="rotate(-90deg)"
