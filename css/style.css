@@ -1711,6 +1711,73 @@ a:hover, a:focus{
 	line-height: 0.31rem;
 	margin: 0.1rem 0rem 0.1rem 0.6rem;
 }
+.ps-wrap{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	top: 0;
+}
+.ps-alert{
+	width: 85%;
+	margin: 0.5rem auto;
+	
+}
+.ps-a-title img{
+	width: 100%;
+}
+.ps-a-ul{
+	background: linear-gradient(to bottom,#ff572f,#ffcb32);
+	width: 100%;
+	padding: 0.1rem;
+	margin-top:-0.05rem ;
+	border-radius: 0 0 0.1rem 0.1rem;
+	padding-bottom: 0.3rem;
+}
+.ps-a-ul li{
+	width: 100%;
+	background: url(../images/ps_alert_li.png);
+	background-size: cover;
+	height: 0.8rem;
+	padding: 0 0.3rem;
+	overflow: hidden;
+}
+.ps-a-li-left{
+	width: 30%;
+	height: 100%;
+	padding-top: 0.2rem;
+}
+.ps-a-li-left h5{
+	font-size: 0.25rem;
+}
+.ps-a-li-left h5 small{
+	font-size: 0.12rem;
+}
+.ps-a-li-right{
+	width: 30%;
+	padding-top: 0.2rem;
+	height: 100%;
+}
+.ps-a-li-right span{
+	padding:0 0.1rem;
+	border-radius: 0.2rem;
+	background-color: #ff7c08;
+	display: block;
+	height: 0.2rem;
+	width: 0.5rem;
+	line-height: 0.2rem;
+	margin: 0.1rem auto;
+	
+}
+.ps-a-li-cent{
+	width: 40%;
+	line-height: 0.8rem;
+	font-size: 0.14rem;
+}
+.ps-a-close img{
+	width: 0.4rem;
+}
+
 /*付款成功結束*/
 /*------------------------------------------*/
 /*收货地址管理开始*/
@@ -1819,6 +1886,12 @@ a:hover, a:focus{
 	margin-left: 0.1rem;
 	border-radius: 0.02rem;
 }
+.quanl-l h5 small:nth-of-type(2){
+	margin: 0;
+}
+.c-ccc{
+	color: #ccc;
+}
 .quanl-r{
 	width: 31%;
 	padding: 0.13rem;
@@ -1830,10 +1903,11 @@ a:hover, a:focus{
 	font-size: 0.125rem;
 	display: block;
 	color: #666;
+	margin-top: 0.17rem;
 }
 .quanl-l p{
 	color: #999;
-	font-size: 0.105rem;
+	font-size: 0.10rem;
 }
 .quanl-l p img{
 	height: 0.12rem;
@@ -1865,6 +1939,10 @@ a:hover, a:focus{
 	font-size: 0.105rem;
 	margin: 0.1rem auto;
 	border-radius: 0.1rem;
+}
+.quanl-r .quanl-rn{
+	width: 100%;
+	margin: 0.05rem 0;
 }
 .c-f7c08{
 	color: #ffcc33;

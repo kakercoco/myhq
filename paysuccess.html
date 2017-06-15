@@ -32,9 +32,49 @@
 				<a href="index.html">返回首页</a>
 			</div>
 		</div>
+		<div class="ps-wrap">
+			<div class="ps-alert" >
+				<p class="ps-a-title"><img src="images/ps_alert.png"/></p>
+				<ul class="ps-a-ul">
+					<li>
+						<div class="fl ps-a-li-left tac">
+							<h5 class="c-fc3 fw-b"><small class="c-fc3">￥</small>10</h5>
+							<p class="mt-5">满100元可用</p>
+						</div>
+						<p class="fl ps-a-li-cent tac fw-b">全品类优惠券</p>
+						<div class="fr ps-a-li-right tac">
+							<p class="c-fc3">24小时后可用</p>
+							<span class="c-fff">去查看</span>
+						</div>
+					</li>
+					<li>
+						<div class="fl ps-a-li-left tac">
+							<h5 class="c-fc3 fw-b"><small class="c-fc3">￥</small>10</h5>
+							<p class="mt-5">满100元可用</p>
+						</div>
+						<p class="fl ps-a-li-cent tac fw-b">全品类优惠券</p>
+						<div class="fr ps-a-li-right tac">
+							<p class="c-fc3">24小时后可用</p>
+							<span class="c-fff">去查看</span>
+						</div>
+					</li>
+					
+					
+				</ul>
+				<p class="tac ps-a-close mt-20"><img src="images/close.png"/></p>
+			</div>
+		</div>
 		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/hq.js" type="text/javascript" charset="utf-8"></script>
-		
+		<script type="text/javascript">
+			$('.ps-a-close').click(function(){
+				$('.ps-wrap').fadeOut()
+			})
+			$('.ps-a-li-right span').click(function(){
+				location.href ='myquan.html'
+			})
+			
+		</script>
 	</body>
 
 </html>
