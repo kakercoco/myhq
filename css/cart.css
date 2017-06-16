@@ -88,7 +88,7 @@
 
 .control-num{float:right; margin:0; border-radius: 0.05rem;overflow: hidden; border: 0.01rem solid #ccc;}
 .control-num .btn-default{width:0.26rem; border-color: #ccc; margin-top:0; padding:4px 0;height:0.26rem;font-size: 0.2rem;line-height: 0.11rem;}
-.control-num input{width:0.36rem;border-left-color: #ccc;border-right-color: #ccc;height:0.258rem;font-size: 0.14rem !important;}
+.control-num input{width:0.36rem;border-left-color: #ccc;border-right-color: #ccc;height:0.258rem;font-size: 0.14rem !important;outline: none !important;padding: 0!important;border-top: none;float: left;border-bottom: none;text-align: center;border-radius: 0;}
 .p-cartinvalid{width:0.2rem;float: left;margin: 0.4rem 0.08rem 0 0;font-size:0.08rem;background:#ccc;border-radius:0.02rem;color:#fff;text-align:center;}
 .btn-hidden{display:none;}
 .del-btn-fix{position:absolute; right:0; top:0;text-align: center;line-height:0.48rem;font-size:0.17rem;background:#ec1c00;z-index:10;}

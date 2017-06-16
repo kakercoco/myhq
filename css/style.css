@@ -1474,6 +1474,13 @@ a:hover, a:focus{
 	background-color: #eee;
 	padding: 0;
 }
+.rc-add-rec input{
+	width: 0.2rem;
+	height: 100%;
+	outline: none;
+	border: none;
+	text-align: center;
+}
 .rc-add-rec a{
 	
 }.rc-add-rec strong{
@@ -1764,7 +1771,7 @@ a:hover, a:focus{
 	background-color: #ff7c08;
 	display: block;
 	height: 0.2rem;
-	width: 0.5rem;
+	width: 0.6rem;
 	line-height: 0.2rem;
 	margin: 0.1rem auto;
 	
@@ -1881,6 +1888,16 @@ a:hover, a:focus{
 .quanl-l h5{
 	font-weight: bold;
 }
+.quanl-l h5 span{
+	overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 49%;
+    float: left;
+    height: 0.17rem;
+    line-height: 0.18rem;
+    white-space: nowrap;
+    font-size: 0.15rem;
+}
 .quanl-l h5 small{
 	padding: 0.02rem;
 	margin-left: 0.1rem;
@@ -1939,6 +1956,9 @@ a:hover, a:focus{
 	font-size: 0.105rem;
 	margin: 0.1rem auto;
 	border-radius: 0.1rem;
+}
+.quanl-r a.bg-liner{
+	line-height: 0.2rem;
 }
 .quanl-r .quanl-rn{
 	width: 100%;
@@ -2086,7 +2106,7 @@ a:hover, a:focus{
 }
 .odspc-r img{
 	height: 0.15rem;
-	margin-top: 0.3rem;
+	margin-top: 0.2rem;
 	clear: both;
 }
 .odc-zf{
