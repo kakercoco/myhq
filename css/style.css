@@ -398,6 +398,7 @@ a:hover, a:focus{
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
 	line-height: 0.2rem;
+	min-height: 0.466rem;
 }
 .buy-s p{
 	color: #333;

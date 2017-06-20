@@ -10,6 +10,9 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
 		<style type="text/css">
+			.container  {
+				overflow: hidden;
+			}
 			.container img {
 				width: 100%;
 			}
@@ -18,6 +21,8 @@
 				margin: 0.05rem 0.025rem;
 				padding-bottom:0.1rem ;
 				position: relative;
+				height: 2.76rem;
+				overflow: hidden;
 			}
 			.container .item .i-zero{
 				position: absolute;
@@ -48,13 +53,13 @@
 				<!-- 轮播（Carousel）项目 -->
 				<div class="carousel-inner">
 					<div class="item active">
-						<a href=""><img src="images/banner.png" alt="First slide"></a>
+						<a href="#"><img src="images/banner.png" alt="First slide"></a>
 					</div>
 					<div class="item">
-						<a href=""><img src="images/banner.png" alt="Second slide"></a>
+						<a href="#"><img src="images/banner.png" alt="Second slide"></a>
 					</div>
 					<div class="item">
-						<a href=""><img src="images/banner.png" alt="Third slide"></a>
+						<a href="#"><img src="images/banner.png" alt="Third slide"></a>
 					</div>
 				</div>
 				<!-- 轮播（Carousel）导航 -->
@@ -79,6 +84,43 @@
 					立即关注
 				</div>
 			</div>
+		</div>
+		<div class="banner-down">
+			<img src="images/banner_down.png"/>
+		</div>
+		<div class="nav">
+			<ul>
+				<li class="tac">
+					<a href="#1F" onclick="open_more(1)">
+						<img src="images/nav01.png"/>
+						<span>个人洗护</span>
+					</a>
+				</li>
+				<li class="tac">
+					<a href="#2F" onclick="open_more(2)">
+						<img src="images/nav02.png"/>
+						<span>家庭清洁</span>
+					</a>
+				</li>
+				<li class="tac">
+					<a href="#3F" onclick="open_more(3)">
+						<img src="images/nav03.png"/>
+						<span>粮油干货</span>
+					</a>
+				</li>
+				<li class="tac">
+					<a href="#4F" onclick="open_more(4)">
+						<img src="images/nav04.png"/>
+						<span>食品饮料</span>
+					</a>
+				</li>
+				<li class="tac">
+					<a href="#5F" onclick="open_more(5)">
+						<img src="images/nav05.png"/>
+						<span>物勒工名</span>
+					</a>
+				</li>
+			</ul>
 		</div>
 		<div class="erwei">
 			<div class="ewwrap">
@@ -111,43 +153,56 @@
 			</div>
 			<div class="buy">
 				<div class="buy-t buy-t-hot">
-					<p class="fl fw-b">爆款抢购</p>
-					<span class="yellowb"></span>
-					<div class="fr dog mt-10"><img src="images/dog.png"/></div>
-					<p class="timer fl"><i class="c-red">距结束仅剩</i><span id="timerhh"></span> : <span id="timermm"></span> : <span id="timerss"></span></p>
+					<p class="tac fw-b"><span class="c-f7c08">爆</span>款抢购</p>
+					
 				</div>
 				<div class="buy-c clearfix">
 					<ul>
-						<li class="fl">
+						<li class="fl buy-cl">
 							<a href="hot.html">
 								<img src="images/qq1.png"/>
-								<h5>SK II 多元元气面霜多元元气面霜</h5>
-								<p><span class="bgc-000">¥1280</span> 285人付款</p>
+								<h5 class="c-fff">¥<span class="">1280</span>气面霜多元元气面霜</h5>
 							</a>
 							<img src="images/zero.png" alt="" class="zero" />
-							<img src="images/hotIcon.png" class="hotIcon"/>	
+							<p class="timer fl"><span id="timerhh"></span> : <span id="timermm"></span> : <span id="timerss"></span></p>
 						</li>
-						<li class="fl">
+						<li class="fl buy-cr">
 							<a href="hot.html">
-								<img src="images/qq1.png"/>
-								<h5>SK II 多元元气面霜多元元气面多元元气面</h5>
-								<p><span class="bgc-000">¥1280</span> 285人付款</p>
+								<div class="section-l fl">
+									<span class="c-fc3">¥1280</span>
+									<h5>元元气面霜多元元气面多元元气面</h5>
+								</div>
+								<div class="section-r fr">
+									<img src="images/qq1.png"/>
+								</div>
 							</a>
-							<img src="images/hotIcon.png" class="hotIcon"/>
+							<img src="images/zero.png" alt="" class="zero" />
+							<p class="timer fl"><span >00</span> : <span >00</span> : <span >00</span></p>
+						</li>
+						<li class="fl buy-cr">
+							<a href="hot.html">
+								<div class="section-l fl">
+									<span class="c-fc3">¥1280</span>
+									<h5>元元气面霜多元元气面多元元气面</h5>
+								</div>
+								<div class="section-r fr">
+									<img src="images/qq1.png"/>
+								</div>
+							</a>
+							<p class="timer fl"><span >00</span> : <span >00</span> : <span >00</span></p>
 						</li>
 					</ul>
 				</div>
 			</div>
 			<img src="images/buybg.jpg" class="buy-bg"/>
-			<div class="buy" style="margin-top: 0;">
+			<div class="buy clearfix" style="margin-top: 0;" id="1F">
 				<div class="buy-t">
-					<p class="fl fw-b">热销单品</p>
-					<span class="yellowb"></span>
+					<p class="tac fw-b"><span class="c-f7c08">热</span>销单品</p>
 				</div>
 				<div class="buy-s">
 					<div class="container">
 					
-						<div id="my-gallery-container">
+						<div class="my-gallery-container">
 						
 							<div class="item" data-order="1">
 							<img src="images/zero.png" alt="" class="i-zero" />
@@ -200,9 +255,107 @@
 									<p><span class="bgc-000 bgc-00">¥1280</span> 285人付款</p>
 								</a>
 								</div>
+							<div class="item " data-order="6">
+							
+								<a href="produce.html">
+									<img src="images/qq4.png" />
+									<h5>韩国代购春夏女西装裤 春夏女西装裤 春夏女西装裤 修身显瘦休闲百搭小脚裤</h5>
+									<p><span class="bgc-000 bgc-00">¥1280</span> 285人付款</p>
+								</a>
+								</div>
+							<div class="item " data-order="6">
+							
+								<a href="produce.html">
+									<img src="images/qq4.png" />
+									<h5>韩国代购春夏女西装裤 春夏女西装裤 春夏女西装裤 修身显瘦休闲百搭小脚裤</h5>
+									<p><span class="bgc-000 bgc-00">¥1280</span> 285人付款</p>
+								</a>
+								</div>
+							</div>
+					</div>
+					
+				</div>
+				<div class="buy-show-more bg-fff tac">
+					<img src="images/myback.png" alt="" class="fr" />
+					<section onclick="show_hide(this,1)" class="c-fc3 show_more">点击加载更多</section>
+				</div>
+			</div>
+			<div class="buy clearfix" style="margin-top: 0;" id="2F">
+				<div class="buy-t">
+					<p class="tac fw-b"><span class="c-f7c08">电</span>竞器材</p>
+				</div>
+				<div class="buy-s">
+					<div class="container height_auto">
+					
+						<div class="my-gallery-container">
+						
+							<div class="item" data-order="1">
+							<img src="images/zero.png" alt="" class="i-zero" />
+								<a href="produce.html">
+									<img src="images/qq3.png" />
+									<h5>韩国代购春夏女西装裤 春夏女西装裤 春夏女西装裤 修身显瘦休闲百搭小脚裤</h5>
+									<p><span class="bgc-000 bgc-00">¥1280</span> 285人付款</p>
+								</a>
+								</div>
+						
+							<div class="item " data-order="2">
+							
+								<a href="produce.html">
+									<img src="images/qq4.png" />
+									<h5>韩国代购春夏女西装裤 春夏女西装裤 春夏女西装裤 修身显瘦休闲百搭小脚裤</h5>
+									<p><span class="bgc-000 bgc-00">¥1280</span> 285人付款</p>
+								</a>
+								</div>
+						
+							<div class="item " data-order="3">
+							
+								<a href="produce.html">
+									<img src="images/qq1.png" />
+									<h5>韩国代购春夏女西装裤 春夏女西装裤 春夏女西装裤 修身显瘦休闲百搭小脚裤</h5>
+									<p><span class="bgc-000 bgc-00">¥1280</span> 285人付款</p>
+								</a>
+								</div>
+						
+							<div class="item " data-order="4">
+							
+								<a href="produce.html">
+									<img src="images/qq4.png" />
+									<h5>韩国代购春夏女西装裤 春夏女西装裤 春夏女西装裤 修身显瘦休闲百搭小脚裤</h5>
+									<p><span class="bgc-000 bgc-00">¥1280</span> 285人付款</p>
+								</a>
+								</div>
+							<div class="item " data-order="5">
+							
+								<a href="produce.html">
+									<img src="images/qq4.png" />
+									<h5>韩国代购春夏女西装裤 春夏女西装裤 春夏女西装裤 修身显瘦休闲百搭小脚裤</h5>
+									<p><span class="bgc-000 bgc-00">¥1280</span> 285人付款</p>
+								</a>
+								</div>
+							<div class="item " data-order="6">
+							
+								<a href="produce.html">
+									<img src="images/qq4.png" />
+									<h5>韩国代购春夏女西装裤 春夏女西装裤 春夏女西装裤 修身显瘦休闲百搭小脚裤</h5>
+									<p><span class="bgc-000 bgc-00">¥1280</span> 285人付款</p>
+								</a>
+								</div>
+							<div class="item " data-order="6">
+							
+								<a href="produce.html">
+									<img src="images/qq4.png" />
+									<h5>韩国代购春夏女西装裤 春夏女西装裤 春夏女西装裤 修身显瘦休闲百搭小脚裤</h5>
+									<p><span class="bgc-000 bgc-00">¥1280</span> 285人付款</p>
+								</a>
+								</div>
+							
 							</div>
 					</div>
 				
+				</div>
+				<div class="buy-show-more bg-fff tac">
+					<img src="images/myback.png" alt="" class="fr" />
+					<section onclick="show_hide(this,2)" class="c-fc3 show_more">点击加载更多</section>
 				</div>
 			</div>
 		</div>
@@ -214,6 +367,12 @@
 						<span class="footet-home">首页</span>
 					</a>
 				</li>
+				<!--<li class="fl">
+					<a href="sort.html">
+						<img src="images/sort01.png" alt="" />
+						<span class="footet-home">分类</span>
+					</a>
+				</li>-->
 				<li class="fl">
 					<a href="cartpage.html">
 						<img src="images/shop.png" alt="" />
@@ -239,11 +398,51 @@
 		<script src="js/hq.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/mp.mansory.min.js" type="text/javascript" charset="utf-8"></script>
 		<script>
+			function open_more(i){
+					var item_li=$('.nav li a')
+					var item_show=$('.show_more')[i-1]
+					var item_cont=$('.container')[i-1]
+					var item_img=$('.buy-show-more img')[i-1]
+					item_cont.style.overflow='visible'
+					item_show.innerHTML="收起"
+					item_img.style.transform="rotate(-90deg)"
+					sessionStorage.setItem(i,i)
+			}
+			function show_hide(t,i){
+				if($(t).html()=="点击加载更多"){
+						$(t).parent().parent().find('.container').css('overflow','visible')
+						$(t).parent().find('img').css('transform','rotate(-90deg)')
+						$(t).html("收起")
+						sessionStorage.setItem(i,i)
+					}else{
+						$(t).parent().parent().find('.container').css('overflow','hidden')
+						$(t).parent().find('img').css('transform','rotate(90deg)')
+						$(t).html("点击加载更多")
+						sessionStorage.removeItem(i)
+						var a_top=$(t).parent().parent().offset().top
+						$(document).scrollTop(a_top)
+						
+					}
+			}
+			 
 			$(document).ready(function($) {
+				
+				$(".nav a").click(function() {
+				    $("html, body").animate({
+				      scrollTop: $($(this).attr("href")).offset().top + "px"
+				    }, {
+				      duration: 500,
+				      easing: "swing"
+				    });
+				    return false;
+				});
+				var item_height=$('.buy .container .item').height()*3+0.15*100*3+"px"
+				$('.container').height(item_height)
+				
 				$('#myCarousel').carousel({
 					interval: 100000
 				}); //每隔5秒自动轮播 
-				$("#my-gallery-container").mpmansory({
+				$(".my-gallery-container").mpmansory({
 					childrenClass: 'item', // default is a div
 					columnClasses: '', //add classes to items
 					breakpoints: {
@@ -257,9 +456,32 @@
 						//make somthing with items
 					}
 				});
-				
+				if (sessionStorage.getItem('1')==1) {
+					$('.container')[0].style.overflow='visible'
+					$('.show_more')[0].innerHTML="收起"
+					$('.buy-show-more img')[0].style.transform="rotate(-90deg)"
+				}
+				if(sessionStorage.getItem('2')==2){
+					$('.container')[1].style.overflow='visible'
+					$('.show_more')[1].innerHTML="收起"
+					$('.buy-show-more img')[1].style.transform="rotate(-90deg)"
+				}
+				if(sessionStorage.getItem('3')==3){
+					$('.container')[2].style.overflow='visible'
+					$('.show_more')[2].innerHTML="收起"
+					$('.buy-show-more img')[2].style.transform="rotate(-90deg)"
+				}
+				if(sessionStorage.getItem('4')==4){
+					$('.container')[3].style.overflow='visible'
+					$('.show_more')[3].innerHTML="收起"
+					$('.buy-show-more img')[3].style.transform="rotate(-90deg)"
+				}
+				if(sessionStorage.getItem('5')==5){
+					$('.container')[4].style.overflow='visible'
+					$('.show_more')[4].innerHTML="收起"
+					$('.buy-show-more img')[4].style.transform="rotate(-90deg)"
+				}
 			});
-			
 		</script>
 	</body>
 
