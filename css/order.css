@@ -10,10 +10,10 @@
 .back-text{font-size:.0.2rem;color:#fff}
 .tit{color: #fff;/* font-size: 18px; */font-weight: normal;height: 100%; text-align: center;font-size:0.18rem;}
 .yellow{color:#ffcc33}
-.logobar-logo{background:url(../images/logo2.png) no-repeat; background-size: 0.21rem; -webkit-background-size: 0.21rem} 
-.logobar-left, .logobar-right{width:45%;height:0.21rem;line-height:0.21rem;margin-top:0.08rem}
-.logobar-left{text-indent:0.31rem;font-size:0.15rem;float:left;color:#000;margin-left:0.1rem;}
-.logobar-right{float:right;font-size:0.136rem;color:#999}
+/*.logobar-logo{background:url(../images/logo2.png) no-repeat; background-size: 0.21rem; -webkit-background-size: 0.21rem} */
+.logobar-left, .logobar-right{height:0.21rem;line-height:0.21rem;margin-top:0.08rem}
+.logobar-left{font-size:0.15rem;float:left;color:#000;margin-left:0.1rem;width:60%;}
+.logobar-right{float:right;font-size:0.136rem;color:#999;width:35%;}
 .logobar-text{padding:0 0.1rem}
 .fs12{font-size:0.12rem}
 .fs15{font-size:0.15rem}
@@ -23,7 +23,7 @@
 .mt8{margin-top:0.08rem!important}
 .clear{clear:both;}
 .orderlist{width:100%;background:#fff;font-size:0.14rem;padding-bottom: 0.08rem;}
-.orderlist2{width:100%;height:2.05rem;background:#fff;overflow:hidden;font-size:0.14rem;}
+.orderlist2{width:100%;background:#fff;overflow:hidden;font-size:0.14rem;padding-bottom: 0.1rem;}
 .orderlist-stat{width:100%;height:0.38rem;font-size:0.14rem}
 .orderlist-prod{height:0.9rem;background:#f8f8f8;overflow:hidden}
 .orderlist-prod .p-pic{float: left;width: 0.7rem;margin: 0.1rem 0 0 0.1rem;}
