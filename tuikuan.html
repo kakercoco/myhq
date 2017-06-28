@@ -112,9 +112,14 @@
 					</div>
 				</div>
 			</div>
+			<div class="orderBtn tac">加载更多</div>
 		</div>
 		<div class="clear"></div>
 		<div class="tk-bg"></div>
+		<div class="confirminfo" id="confirminfo">
+		    <div class="confirmtext">确认删除此订单？</div>
+		    <div class="confirmbtn"><a href="javascript:void(0)" class="confirm-left confirmno">取消</a><a href="javascript:void(0)" class="confirm-yellow confirmyes">删除</a></div>
+		</div>
 		<div class="tk-alert">
 			<div>
 				<img src="images/duig.png"/>
@@ -150,10 +155,18 @@
 			$('.orderlist-coun span a').click(function(){
 				if ($(this).html()=="取消退货") {
 					$('.tk-bg').show()
-					$('.tk-alert').fadeIn()
+					$('.confirminfo').show()
 				}else{
 					alert('删除成功')
 				}
+			})
+			$(".confirmyes").click(function(){
+				$('.tk-alert').fadeIn()
+				$('.confirminfo').hide()
+			})
+			$(".confirmno").click(function(){
+				$('.tk-bg').hide()
+				$('.confirminfo').hide()
 			})
 			$('.tk-bg').click(function(){
 				$('.tk-bg').hide()

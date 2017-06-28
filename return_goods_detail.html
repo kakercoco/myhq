@@ -82,8 +82,37 @@
 		<div class="return-bg">
 			
 		</div>
+		<div class="tk-alert">
+			<div>
+				<img src="images/duig.png"/>
+				退货已取消
+			</div>
+		</div>
+		<div class="confirminfo" id="confirminfo">
+		    <div class="confirmtext">确认删除此订单？</div>
+		    <div class="confirmbtn"><a href="javascript:void(0)" class="confirm-left confirmno c-333">取消</a><a href="javascript:void(0)" class="confirm-yellow confirmyes">删除</a></div>
+		</div>
+
 		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/hq.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$('.user-submit').click(function(){
+				$('.return-bg').show()
+				$('.confirminfo').fadeIn()
+			})
+			$('.confirmyes').click(function(){
+				$('.confirminfo').hide()
+				$('.tk-alert').fadeIn()
+				setTimeout(function(){
+					$('.return-bg').hide()
+					$('.tk-alert').fadeOut()
+				},2000)
+			})
+			$('.confirmno').click(function(){
+				$('.return-bg').hide()
+				$('.confirminfo').hide()
+			})
+		</script>
 	</body>
 
 </html>
