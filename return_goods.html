@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width" name="viewport">
+		<title>申请退货</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/media-100.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			body {
+				padding: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="return-title">
+			<h4 class="fw-b">订单编号 20170609100019</h4>
+			<p class="c-999 mt-10">2017-06-09 12:30:00</p>
+			<p class="c-999">商品金额 ￥1500.00</p>
+		</div>
+		<div class="return-cont">
+			<h5 class="c-999 return-cont-h5">选择退货商品</h5>
+			<div class="return-cont-all">
+				<p class="fl"><span class="fl bg-fc33 tac"><img src="images/duig2.png"/></span>全选</p>
+				<p class="fr">已选择<i class="choose-num">9</i>件商品</p>
+			</div>
+			<ul>
+				<li class="clearfix" >
+					<div class="rgs-item-l fl">
+						<span class="fl bg-ccc tac"><input type="checkbox"  /><img src="images/duig2.png"/></span>
+						<img src="images/qq1.png" class="rgs-item-l-img" />
+					</div>
+					<div class="rgs-item-c fl">
+						<h5 class="c-999">SK II skii神仙水sk2面部护肤 精华液保湿紧致毛孔</h5>
+						<span class="mt-20 fl">数量：1</span>
+					</div>
+					<div class="rgs-item-r fr">
+						<b class="fr">￥200</b>
+						<del class="fr">￥199</del>
+						<p class="fr mt-10">
+							<a href="javascript:void(0)" class="fl" >-</a>
+							<input class="fl tac" type="tel" value="3" maxlength="2" onchange="this.value=this.value.replace(/\D/g,'')" readonly="readonly" />
+							<a href="javascript:void(0)" class="fl" >+</a>
+						</p>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="rgs-item-l fl">
+						<span class="fl bg-fc33 tac"><img src="images/duig2.png"/><input type="checkbox"   /></span>
+						<img src="images/qq1.png" class="rgs-item-l-img" />
+					</div>
+					<div class="rgs-item-c fl">
+						<h5>精华液保湿紧致毛孔</h5>
+						<span class="mt-20 fl">数量：1</span>
+					</div>
+					<div class="rgs-item-r fr">
+						<b class="fr">￥200</b>
+						<del class="fr">￥199</del>
+						<p class="fr mt-10">
+							<a href="javascript:void(0)" class="fl" onclick="reduceNum(this)">-</a>
+							<input class="fl tac" type="tel" value="3" maxlength="2" onchange="this.value=this.value.replace(/\D/g,'');chooseNum()" />
+							<a href="javascript:void(0)" class="fl" onclick="addNum(this)">+</a>
+						</p>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="rgs-item-l fl">
+						<span class="fl bg-fc33 tac"><input type="checkbox"  /><img src="images/duig2.png"/></span>
+						<img src="images/qq1.png" class="rgs-item-l-img" />
+					</div>
+					<div class="rgs-item-c fl">
+						<h5>SK II skii神仙水sk2面部护肤 精华液保湿紧致毛孔</h5>
+						<span class="mt-20 fl">数量：1</span>
+					</div>
+					<div class="rgs-item-r fr">
+						<b class="fr">￥200</b>
+						<del class="fr">￥199</del>
+						<p class="fr mt-10">
+							<a href="javascript:void(0)" class="fl" onclick="reduceNum(this)">-</a>
+							<input class="fl tac" type="tel" value="3" maxlength="2" onchange="this.value=this.value.replace(/\D/g,'');chooseNum()" />
+							<a href="javascript:void(0)" class="fl" onclick="addNum(this)">+</a>
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="return-why">
+			<h5>申请原因</h5>
+			<p>请选择原因<img src="images/myback.png" class="fr mt-5" /></p>
+			<div class="return-why-choose">
+				<h3 class="tac">请选择原因</h3>
+				<span class="c-999">×</span>
+				<ul class="mt-10">
+					<li class="tac">多拍 / 错拍 / 不想要了</li>
+					<li class="tac">商品成分与描述不符</li>
+					<li class="tac">功能缺失或未达标准</li>
+					<li class="tac">质量缺陷或性能故障</li>
+					<li class="tac">颜色 / 型号 / 参数与描述不符</li>
+					<li class="tac">商品损坏 / 污渍等</li>
+					<li class="tac">卖家发错货 / 少发 / 漏发</li>
+				</ul>
+				<button class="btn-block bg-fc3 btn">完成</button>
+			</div>
+		</div>
+		<div class="return-detail">
+			<h5>问题描述</h5>
+			<textarea name="detail" maxlength="150" placeholder="在此描述您遇到的具体问题"></textarea>
+		</div>
+		<div  class="mt-10 user-upimg">
+			<div id="result">
+			</div>
+		</div>
+		<div class="user-upbtn mt-10">
+			<p class="fl">
+				<input type="file" id="file_input" multiple />
+			</p>
+			<p class="fr c-999">
+				为了更好的处理您的问题，请上传问题图片，最 多5张，每张不超过5M，支持JPG、BMP、PNG
+			</p>
+		</div>
+		<div class="user-submit">
+			<p class="c-999">商品退回方式：自行寄回，与专属客服沟通后寄回。</p>
+			<button class="btn btn-block bg-fc3 mt-30">提交</button>
+		</div>
+		<div class="return-bg">
+			
+		</div>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/hq.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var result = document.getElementById("result"); //获取显示图片的div元素
+			var fileinput = document.getElementById("file_input"); //获取选择图片的input元素
+			var n=$('#result div').length
+			//这边是判断本浏览器是否支持这个API。
+			if(typeof FileReader === 'undefined') {
+				result.innerHTML = "抱歉，你的浏览器不支持 FileReader";
+				fileinput.setAttribute('disabled', 'disabled');
+			} else {
+				fileinput.addEventListener('change', readFile, false); //如果支持就监听改变事件，一旦改变了就运行readFile函数。
+			}
+
+			function readFile() {
+				var n=$('#result div').length+1
+				if (n>5) {
+					alert('上传最多不能超过五张')
+				} else{
+					$('.user-upimg').show()
+					var reader = true;
+					for(i = 0; i < this.files.length; i++) {
+						if(reader) {
+							reader = false
+							var file = this.files[i]; //获取file对象
+							//判断file的类型是不是图片类型
+							console.log(file)
+							if(!/image\/\w+/.test(file.type)) {
+								alert("文件必须为图片！");
+								return false;
+							}
+							var reader = new FileReader(); //声明一个FileReader实例
+							reader.readAsDataURL(file); //调用readAsDataURL方法来读取选中的图像文件
+							//最后在onload事件中，获取到成功读取的文件内容，并以插入一个img节点的方式显示选中的图片
+							reader.onload = function(e) {
+
+								result0 = '<img src="' + this.result + '" alt=""/>';
+								div = document.createElement('div');
+								div.innerHTML = result0;
+								result.appendChild(div); //注意插入的是dom元素
+								//						var newchild = '<div><div><img src="' + this.result + '" alt=""/></div></div>';
+								//						result.appendChild("<div>sdfsgf</div>")
+								reader = true;
+							}
+						}
+					}
+				}
+
+			}
+			//全选
+			$('.return-cont-all p span').click(function(){
+				if ($(this).hasClass('bg-fc33')) {
+					$(this).removeClass('bg-fc33')
+					$('.rgs-item-l span.bg-fc33').removeClass('bg-fc33')
+					chooseNum()
+				} else{
+					$(this).addClass('bg-fc33')
+					var span=$('.rgs-item-l span')
+					var len=span.length
+					for(i=0;i<len;i++){
+						if ($(span[i]).hasClass('bg-ccc')) {
+							
+						}else{
+							$(span[i]).addClass('bg-fc33')
+						}
+					}
+					chooseNum()
+				}
+			})
+			//单选
+			$('.rgs-item-l span').click(function(){
+				if ($(this).hasClass('bg-ccc')) {
+					
+				}else{
+					$(this).toggleClass('bg-fc33')
+					chooseNum()
+				}
+				var gou=$('.rgs-item-l span.bg-fc33').length
+				var ungou=$('.rgs-item-l span.bg-ccc').length
+				var all=$('.rgs-item-l span').length
+				console.log(gou+ungou)
+				if (all==gou+ungou) {
+					$('.return-cont-all p span').addClass('bg-fc33')
+				}else{
+					$('.return-cont-all p span').removeClass('bg-fc33')
+				}
+			})
+			//选择原因
+			$('.return-why p').click(function(){
+				$('.return-why-choose').slideDown()
+				$('.return-bg').show()
+			})
+			$('.return-why-choose span').click(function(){
+				$('.return-why-choose').slideUp()
+				$('.return-bg').hide()
+			})
+			$('.return-why-choose button').click(function(){
+				$('.return-why-choose').slideUp()
+				$('.return-bg').hide()
+			})
+			$('.return-why-choose li').click(function(){
+				$('.return-why p').html($(this).html())
+				$('.return-why-choose').slideUp()
+				$('.return-bg').hide()
+			})
+			function addNum(a){
+				var m=$(a).parent().children('input').val()
+				m++
+				if (m<=99) {
+					$(a).parent().children('input').val(m)
+				}
+				chooseNum()
+			}
+			function reduceNum(a){
+				var n=$(a).parent().children('input').val()
+				n--
+				if (n>=1) {
+					$(a).parent().children('input').val(n)
+				}
+				chooseNum()
+			}
+			//计算选中商品数
+			function chooseNum(){
+				var a=0
+				var span=$('.rgs-item-l span')
+				for (i=0;i<span.length;i++) {
+					if ($(span[i]).hasClass('bg-fc33')) {
+						a=Number($(span[i]).parent().parent().find("input[type='tel']").val())+a
+					} else{
+						
+					}
+				}
+				$('.choose-num').html(a)
+			}
+
+		</script>
+	</body>
+
+</html>

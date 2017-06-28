@@ -398,7 +398,7 @@ a:hover, a:focus{
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
 	line-height: 0.2rem;
-	min-height: 0.466rem;
+	min-height: 0.5rem;
 }
 .buy-s p{
 	color: #333;
@@ -667,6 +667,7 @@ a:hover, a:focus{
 	line-height: 0.4rem;
 	width: 100%;
 	margin: 0 auto;
+	background-color: #ffe79f;
 }
 .buy-show-more{
 	height: 0.4rem;
@@ -3030,3 +3031,307 @@ a:hover, a:focus{
 	text-decoration: underline;
 }
 /*员工认证页面结束*/
+/*申请退货开始*/
+.return-title{
+	padding: 0.1rem;
+	background-color: #fff;
+}
+.return-title h4{
+	font-size: 0.135rem;
+}
+.return-title span{
+	font-size: 0.135rem;
+	font-weight: bold;
+}
+.return-title p{
+	font-size: 0.115rem;
+}
+.return-cont{
+	/*padding: 0 0.1rem;*/
+}
+.return-cont-h5{
+	font-size: 0.115rem;
+	padding: 0.05rem 0.1rem;
+}
+.return-cont-all{
+	background-color: #fff;
+	padding: 0 0.1rem;
+	font-size: 0.135rem;
+	height: 0.35rem;
+	line-height: 0.35rem;
+}
+.return-cont-all p span{
+	display: inline-block;
+	width: 0.2rem;
+	height: 0.2rem;
+	border: 1px solid #ccc;
+	border-radius: 0.2rem;
+	margin-top: 0.07rem;
+	margin-right: 0.07rem;
+	line-height: 0.2rem;
+}
+.return-cont li{
+	background-color: #fff;
+	padding: 0.1rem;
+	height: 0.9rem;
+	margin-top: 0.02rem;
+	overflow: hidden;
+}
+.rgs-item-l{
+	width: 30%;
+}
+.rgs-item-l span{
+	display: inline-block;
+	width: 0.2rem;
+	height: 0.2rem;
+	border: 1px solid #ccc;
+	border-radius: 0.2rem;
+	margin-top: 0.25rem;
+	line-height: 0.2rem;
+	position: relative;
+}
+.rgs-item-l span input{
+	width: 0.2rem;
+	height: 0.2rem;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+.rgs-item-l-img{
+	height:0.7rem;
+}
+.rgs-item-c{
+	width: 40%;
+	height: 100%;
+}
+.rgs-item-c h5{
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 0.15rem;
+    font-size: 0.115rem;
+    font-weight: bold;
+    min-height: 0.3rem;
+}
+.rgs-item-r{
+	width: 30%;
+	height: 100%;
+}
+.rgs-item-r del{
+	clear: both;
+}
+.rgs-item-r b,.rgs-item-r del{
+	font-size: 0.115rem;
+}
+.rgs-item-r p{
+	clear: both;
+	font-size: 0.2rem;
+	width: 0.8rem;
+	border: 1px solid #999;
+	height: 0.25rem;
+	border-radius: 3px;
+}
+.rgs-item-r p input{
+	margin-top: 1px;
+	width: 0.27rem;
+	height: 0.21rem;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+	font-size: 0.15rem;
+}
+.rgs-item-r p a{
+	display: inline-block;
+	width: 0.25rem;
+	height: 100%;
+	line-height: 0.22rem;
+	text-align: center;
+	color: #999;
+}
+.rgs-item-r p a:nth-of-type(1){
+	border-right: 1px solid #999;
+}
+.rgs-item-r p a:nth-of-type(2){
+	border-left: 1px solid #999;
+}
+.return-why h5{
+	font-size: 0.115rem;
+    padding: 0.05rem 0.1rem;
+}
+.return-why p{
+	background-color: #fff;
+	padding: 0.1rem;
+	height: 0.5rem;
+	line-height: 0.3rem;
+	font-size: 0.135rem;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.return-why p img{
+	height: 0.15rem;
+}
+.return-why-choose{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	background-color: #fff;
+	z-index: 10;
+	padding: 0.1rem;
+	display: none;
+}
+.return-why-choose h3{
+	font-size: 0.177rem;
+	font-weight: bold;
+	height: 0.55rem;
+	line-height: 0.55rem;
+}
+.return-why-choose span{
+	position: absolute;
+	top:0.15rem;
+	left: 0.15rem;
+	font-size: 0.3rem;
+}
+.return-bg{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+}
+.return-why-choose ul{
+	height: 3.15rem;
+	overflow: scroll;
+}
+.return-why-choose li{
+	font-size: 0.136rem;
+	height: 0.45rem;
+	line-height: 0.45rem;
+	border-top:1px solid #ccc;
+	font-weight: bold;	
+}
+.return-detail{
+	padding: 0 0.1rem;
+}
+.return-detail h5{
+	font-size: 0.115rem;
+	margin: 0.05rem 0;
+}
+.return-detail textarea{
+	display: block;
+	width: 100%;
+	height: 1rem;
+	font-size: 0.115rem;
+	outline: none;
+	border: none;
+	resize:none ;
+}
+.user-upimg{
+	width: 100%;
+	height: 1rem;
+	background-color: #fff;
+	overflow-x:scroll ;
+	overflow-y: hidden;
+	display: none;
+}
+#result{
+	width: 120%;
+	height: 1rem;
+	padding: 0.1rem;
+	overflow: hidden;
+}
+#result div{
+	float: left;
+}
+#result div img{
+	height: 0.8rem;
+	width: 0.7rem;
+	margin-left: 0.1rem;
+}
+.user-upbtn{
+	width: 100%;
+	height: 1rem;
+	background-color: #fff;
+	padding: 0.1rem;
+}
+.user-upbtn p:nth-of-type(1){
+	position: relative;
+	width: 0.8rem;
+	height: 100%;
+	background: url(../images/user-up.png) no-repeat;
+	background-size: cover;
+}
+.user-upbtn p:nth-of-type(2){
+	width: 70%;
+	font-size: 0.115rem;
+}
+.user-upbtn input{
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+}
+.c-d2d2d2{
+	color: #d2d2d2;
+}
+.user-submit{
+	padding: 0.1rem;
+}
+.user-submit p{
+	font-size: 0.135rem;
+}
+.choose-num{
+	font-style: normal;
+}
+.rgs-item-l2{
+	width: 20%;
+}
+.rgs-item-c2{
+	width: 45%;
+}
+.return-img{
+	font-size: 0.115rem;
+    margin: 0.05rem 0.1rem;
+}
+.return-odc h5{
+	font-size: 0.115rem;
+	padding: 0.1rem ;
+}
+.return-odc-title{
+	height: 0.3rem;
+	line-height: 0.3rem;
+	font-size: 0.115rem;
+	padding: 0 0.1rem;
+}
+.return-odc-cont{
+	margin: 0.1rem;
+	height: 0.7rem;
+	overflow: hidden;
+}
+.return-odc-cont img{
+	height: 0.7rem;
+}
+.return-odc-down{
+	background-color: #fff;
+	padding: 0.1rem;
+	font-size: 0.115rem;
+}
+.return-odc-down {
+	text-align: right;
+}
+.return-odc-down button{
+	color: #ff7c08;
+    border-color: #ff7c08;
+    font-size: 0.135rem;
+}
+
+
+
+
+
+
+
+
+/*申请退货结束*/

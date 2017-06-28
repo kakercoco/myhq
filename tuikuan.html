@@ -24,7 +24,7 @@
 				<div class="orderlist2">
 					<div class="orderlist-stat">
 						<div class="logobar-left">订单编号：4545454545545</div>
-						<div class="logobar-right"><span class="logobar-text pull-right yellow">退款受理中</span></div>
+						<div class="logobar-right"><span class="logobar-text pull-right yellow">待审核</span></div>
 					</div>
 					<div class="orderlist-prod">
 						<div class="p-pic">
@@ -39,7 +39,8 @@
 					</div>
 					<div class="orderlist-coun">
 						<span class="fcblack">共<em>3</em>件商品  实付款：<em>¥<i id="totalPrice" class="fs16">1540.00</i></em></span>
-						<!--<span class="order-btn"><a href="javascript:void(0)" class="btn btn-default" disabled>退款/退货</a></span>-->
+						<p>2017-03-22 16:59:33</p>
+						<span class="order-btn"><a href="javascript:void(0)" class="btn btn-default" >取消退货</a></span>
 					</div>
 				</div>
 			</div>
@@ -47,8 +48,31 @@
 			<div class="row mt8">
 				<div class="orderlist2">
 					<div class="orderlist-stat">
-						<div class="logobar-left">黄雀</div>
-						<div class="logobar-right"><span class="logobar-text pull-right yellow">退款完毕</span></div>
+						<div class="logobar-left">订单编号：4545454545545</div>
+						<div class="logobar-right"><span class="logobar-text pull-right yellow">待退货</span></div>
+					</div>
+					<div class="orderlist-prod">
+						<div class="p-pic">
+							<a href="return_goods_detail.html"><img class="img-responsive" src="images/cartproduct_1.png"></a>
+						</div>
+						<div class="p-info">
+							<a href="return_goods_detail.html">
+								<p class="p-title">SK II神仙水 护肤精华露面部护肤保湿紧致毛孔</p>
+							</a>
+						</div>
+					</div>
+					<div class="orderlist-coun">
+						<span class="fcblack">共<em>1</em>件商品  实付款：<em>¥<i id="totalPrice" class="fs16">1370.00</i></em></span>
+						<p>2017-03-22 16:59:33</p>
+						<span class="order-btn"><a href="javascript:void(0)" class="btn btn-default" >取消退货</a></span>
+					</div>
+				</div>
+			</div>
+			<div class="row mt8">
+				<div class="orderlist2">
+					<div class="orderlist-stat">
+						<div class="logobar-left">订单编号：4545454545545</div>
+						<div class="logobar-right"><span class="logobar-text pull-right yellow">退货完成</span></div>
 					</div>
 					<div class="orderlist-prod">
 						<div class="p-pic">
@@ -62,12 +86,41 @@
 					</div>
 					<div class="orderlist-coun">
 						<span class="fcblack">共<em>1</em>件商品  实付款：<em>¥<i id="totalPrice" class="fs16">1370.00</i></em></span>
-						<!--<span class="order-btn"><a href="javascript:void(0)" class="btn btn-default" disabled>退款/退货</a></span>-->
+						<span class="order-btn"><a href="javascript:void(0)" class="btn btn-default" >删除订单</a></span>
+					</div>
+				</div>
+			</div>
+			<div class="row mt8">
+				<div class="orderlist2">
+					<div class="orderlist-stat">
+						<div class="logobar-left">订单编号：4545454545545</div>
+						<div class="logobar-right"><span class="logobar-text pull-right yellow">退货已取消</span></div>
+					</div>
+					<div class="orderlist-prod">
+						<div class="p-pic">
+							<a href="#"><img class="img-responsive" src="images/cartproduct_1.png"></a>
+						</div>
+						<div class="p-info">
+							<a href="#">
+								<p class="p-title">SK II神仙水 护肤精华露面部护肤保湿紧致毛孔</p>
+							</a>
+						</div>
+					</div>
+					<div class="orderlist-coun">
+						<span class="fcblack">共<em>1</em>件商品  实付款：<em>¥<i id="totalPrice" class="fs16">1370.00</i></em></span>
+						<span class="order-btn"><a href="javascript:void(0)" class="btn btn-default" >删除订单</a></span>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="clear"></div>
+		<div class="tk-bg"></div>
+		<div class="tk-alert">
+			<div>
+				<img src="images/duig.png"/>
+				退货已取消
+			</div>
+		</div>
 		 <div class="ifooter">
 			<ul>
 				<li class="fl">
@@ -94,6 +147,18 @@
 		<script charset="utf-8" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript">
 			// var contextPath = '';
+			$('.orderlist-coun span a').click(function(){
+				if ($(this).html()=="取消退货") {
+					$('.tk-bg').show()
+					$('.tk-alert').fadeIn()
+				}else{
+					alert('删除成功')
+				}
+			})
+			$('.tk-bg').click(function(){
+				$('.tk-bg').hide()
+				$('.tk-alert').hide()
+			})
 		</script>
 	</body>
 
