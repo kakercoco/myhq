@@ -777,6 +777,20 @@ a:hover, a:focus{
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+    width: 80%;
+}
+.p-suyuan{
+	border: 1px solid #ff7c08;
+    padding: 0 0.05rem;
+    border-radius: 0.1rem;
+    display: inline-block;
+    width: 0.45rem;
+    text-align: center;
+    font-size: 0.14rem;
+    margin: 0.05rem 0.1rem 0 0;
+}
+.frommes img{
+	width: 100%;
 }
 .pl-tt p{
 	margin-top: 0.1rem;
@@ -921,6 +935,9 @@ a:hover, a:focus{
 	width: 100%;
 }
 .pcontent2{
+	display: none;
+}
+.pcontent3{
 	display: none;
 }
 .p-chooce{
@@ -2995,7 +3012,7 @@ a:hover, a:focus{
 	background-color: #aee8ff;
 	color: #106b99;
 }
-.from-mes-title{
+.from-add .from-mes-title{
 	margin: 0.15rem 0.3rem;
 	font-size: 0.125rem;
 	height: 0.28rem;

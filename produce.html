@@ -43,12 +43,14 @@
 				<ul>
 					<li class="fl selected top2-p">商品</li>
 					<li class="fl top2-d">详情</li>
+					<li class="fl top2-s">溯源</li>
 				</ul>
 			</div>
 		</div>
 		<div class="icontent pcontent clearfix">
 			<div class="pl-title clearfix">
 				<div class="pl-tt" style="height: 0.4rem;">
+					<span class="fl c-fc3  p-suyuan">溯源</span>
 					<h3 class="fl">SK II skii神仙水sk2面部护肤精华液保湿 紧致毛孔</h3>
 					
 					<!--<p class="fr p-share"><img src="images/share.png" alt="" />分享</p>-->
@@ -98,6 +100,40 @@
 			<img src="images/producedetail.png" />
 			<img src="images/producedetail.png" />
 			<img src="images/producedetail.png" />
+		</div>
+		<div class="pcontent3 clearfix">
+			<div class="from-add">
+			<ul>
+				<h3 class="c-fff tac mb-20">·溯源信息</h3>
+				<li>
+					<span class="fl tac">商品名</span><span class="fr tac">商品名</span>
+				</li>
+				<li>
+					<span class="fl tac">二维码号</span><span class="fr tac">二维码号</span>
+				</li>
+				<li>
+					<span class="fl tac">查询结果</span><span class="fr tac">正品</span>
+				</li>
+				<li>
+					<span class="fl tac">第一次查询时间</span><span class="fr tac">第一次查询时间</span>
+				</li>
+				<li>
+					<span class="fl tac">第一次查询地点</span><span class="fr tac">第一次查询地点</span>
+				</li>
+				<li>
+					<span class="fl tac">上一次查询时间</span><span class="fr tac">上一次查询时间</span>
+				</li>
+				<li>
+					<span class="fl tac">查询次数</span><span class="fr tac">查询次数</span>
+				</li>
+			</ul>
+			<h3 class="from-mes-title" style="margin: 0.15rem 0;">·检测报告/产品执行标准</h3>
+			<div class="frommes">
+				<img src="images/from_img/0001.jpg"/>
+				<img src="images/from_img/0002.jpg"/>
+				<img src="images/from_img/0003.jpg"/>
+			</div>
+		</div>
 		</div>
 		<div class="ifooter pfooter">
 			<ul>
@@ -213,24 +249,9 @@
 				$('#myCarousel').carousel({
 					interval: 5000
 				}); //每隔5秒自动轮播 
-//				$(document).scroll(function(){
-//				viewH =$(window).height(),//可见高度  
-//		         contentH =$('body').height(),//内容高度  
-//		         scrollTop =$(document).scrollTop();//滚动高度  
-////				console.log(contentH)
-////				console.log(viewH)
-////				console.log(scrollTop)
-//				
-//				if((contentH - viewH - scrollTop) <= -60) { 
-//		       // if(scrollTop/(contentH -viewH)>=0.95){ //到达底部100px时,加载新内容  
-//					$('.top2-p').removeClass('selected')
-//					$('.top2-d').addClass('selected')
-//					$('.pcontent').css('display','none')
-//					$('.itop2').css('height','0.42rem')
-//					$('#myCarousel').css('display','none')
-//					$('.pcontent2').css('display','block')
-//			        }  
-//				}) 
+				if($('.top2 ul li').length=="3"){
+					$('.top2 ul li').css('margin-left','13%')
+				}
 			});
 		  
 		</script>

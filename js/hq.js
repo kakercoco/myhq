@@ -23,21 +23,33 @@ $(function(){
 	}
 	(function tabchange(){
 		$('.top2-p').click(function(){
-			$('.top2-d').removeClass('selected')
+			$(this).parent().find('.selected').removeClass('selected')
 			$(this).addClass('selected')
 			$('.pcontent').css('display','block')
 			$('#myCarousel').css('display','block')
 			$('.itop2').css('height','4rem')
 			$('.pcontent2').css('display','none')
+			$('.pcontent3').css('display','none')
 			$('.btop').hide()
 		})
 		$('.top2-d').click(function(){
-			$('.top2-p').removeClass('selected')
+			$(this).parent().find('.selected').removeClass('selected')
 			$(this).addClass('selected')
 			$('.pcontent').css('display','none')
+			$('.pcontent3').css('display','none')
 			$('.itop2').css('height','0.42rem')
 			$('#myCarousel').css('display','none')
 			$('.pcontent2').css('display','block')
+			$('.btop').show()
+		})
+		$('.top2-s').click(function(){
+			$(this).parent().find('.selected').removeClass('selected')
+			$(this).addClass('selected')
+			$('.pcontent').css('display','none')
+			$('.pcontent2').css('display','none')
+			$('.itop2').css('height','0.42rem')
+			$('#myCarousel').css('display','none')
+			$('.pcontent3').css('display','block')
 			$('.btop').show()
 		})
 		
