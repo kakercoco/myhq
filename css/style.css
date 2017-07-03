@@ -687,7 +687,7 @@ a:hover, a:focus{
     position: absolute;
     top:  0rem;
     left: 0rem;
-    width:0.5rem !important;
+    width:0.4rem !important;
     height: auto;
 }
 .i-suyuan{
@@ -703,6 +703,8 @@ a:hover, a:focus{
 	width: 0.45rem;
 	text-align: center;
 	font-size: 0.14rem;
+	height: 0.22rem;
+	line-height: 0.22rem;
 }
 /*首页样式结束*/
 
@@ -785,6 +787,8 @@ a:hover, a:focus{
     border-radius: 0.1rem;
     display: inline-block;
     width: 0.45rem;
+    height: 0.22rem;
+    line-height: 0.22rem;
     text-align: center;
     font-size: 0.14rem;
     margin: 0.05rem 0.1rem 0 0;
@@ -2384,6 +2388,26 @@ a:hover, a:focus{
 	height: 100%;
 	width: 100%;
 }
+.sett li.sett-face{
+	height:0.8rem ;
+	line-height: 0.8rem;
+}
+.sett .sett-face img{
+	margin-top: 0.33rem;
+}
+.sett .sett-face .sett-face-img{
+	height: 0.5rem;
+	width: 0.5rem;
+	margin-top: 0.15rem;
+	background: url(../images/face.png) no-repeat ;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.sett-face-img input{
+	opacity: 0;
+	height: 100%;
+	width: 100%;
+}
 .sett a span{
 	max-width: 90%;
 	display: inline-block;
@@ -2395,6 +2419,45 @@ a:hover, a:focus{
 .sett li img{
 	height: 0.13rem;
 	margin-top: 0.18rem;
+}
+.sett li p{
+	color: #999;
+}
+#USER_AGE{
+	outline: none;
+	border: none;
+	text-align: right;
+}
+.dwb-s{
+	background-color: #ffcc33;
+}
+.data-sex{
+	width: 100%;
+	padding: 0 0.1rem;
+	height: 1.4rem;
+	position: fixed;
+	top: 2rem;
+	display: none;
+}
+.data-sex ul{
+	width: 100%;
+	height: 100%;
+	border-radius: 0.1rem;
+	background-color: #fff;
+}
+.data-sex li{
+	height: 33.33%;
+	line-height: 0.46rem;
+	font-size: 0.156rem;
+	padding: 0 0.2rem;
+}
+.data-sex li:nth-of-type(2){
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+.data-sex li span{
+	margin: 0.1rem auto;
+	border: none;
 }
 .sett-btn{
 	padding: 0 0.1rem;

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width" name="viewport">
+		<meta name="Keywords" content="上海加缪物联网科技有限公司,加缪物联网,物联网,黄雀商城,防伪溯源,物联网全溯源F2C供销平台"/>
+		<meta name="Description" content="加缪物联网,物联网,黄雀商城,防伪溯源,物联网全溯源F2C供销平台"/>
+		<title>我的资料</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/media-100.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/mobiscroll_date.css"/>
+		<script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="sett mt-10">
+			<ul>
+				<li class="sett-face">
+					<a href="javascript:void(0)">
+						<span>头像</span>
+						<img src="images/myback.png" class="fr"/>
+						<p class="fr sett-face-img mr-10"><input type="file" name="" id="" value="" /></p>
+					</a>
+				</li>
+				<li class="mt-2">
+					<a href="myname.html">
+						<span>昵称</span>
+						<img src="images/myback.png" class="fr"/>
+						<p class="fr mr-10">kaker</p>
+					</a>
+				</li>
+				<li class="mt-2">
+					<a href="javascript:void(0)" >
+						<span>等级</span>
+						<p class="fr mr-20">★★</p>
+					</a>
+				</li>
+				<li class="mt-2">
+					<a href="javascript:void(0)" class="sett-sex" >
+						<span>性别</span>
+						<img src="images/myback.png" class="fr"/>
+						<p class="fr mr-10">男</p>
+					</a>
+				</li>
+				<li class="mt-2">
+					<a href="javascript:void(0)" >
+						<span>生日</span>
+						<img src="images/myback.png" class="fr"/>
+						<p class="fr mr-10">
+							<input type="text" name="USER_AGE" id="USER_AGE" readonly class="input" value="2000-02-14" >
+						</p>
+					</a>
+				</li>
+				<li class="mt-20">
+					<a href="myphone2.html" >
+						<span>手机换绑</span>
+						<img src="images/myback.png" class="fr"/>
+						<p class="fr mr-10">156****0667</p>
+					</a>
+				</li>
+				<li class="mt-2">
+					<a href="mychangepsd.html" >
+						<span>更换密码</span>
+						<img src="images/myback.png" class="fr"/>
+					</a>
+				</li>
+			</ul>
+			<div class="sett-btn">
+				<button class="btn btn-block bg-fff mt-20">退出登录</button>
+			</div>
+		</div>
+		<div class="return-bg"></div>
+		<div class="data-sex">
+			<ul>
+				<li>
+					<b>男</b>
+					<span class="amanb-s fr bg-fc3"><img src="images/duig2.png"/></span>
+				</li>
+				<li>
+					<b>女</b>
+					<span class="amanb-s fr "><img src="images/duig2.png"/></span>
+				</li>
+				<li>
+					<b>保密</b>
+					<span class="amanb-s fr "><img src="images/duig2.png"/></span>
+				</li>
+			</ul>
+		</div>
+		<script src="js/hq.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mobiscroll_date.js" charset="gb2312"></script>
+		<script src="js/mobiscroll.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				var currYear = (new Date()).getFullYear();
+				var opt = {};
+				opt.date = {
+					preset: 'date'
+				};
+				opt.datetime = {
+					preset: 'datetime'
+				};
+				opt.time = {
+					preset: 'time'
+				};
+				opt.default = {
+					theme: 'android-ics light', //皮肤样式
+					display: 'modal', //显示方式 
+					mode: 'scroller', //日期选择模式
+					dateFormat: 'yyyy-mm-dd',
+					lang: 'zh',
+//					showNow: true,
+//					nowText: "今天",
+					startYear: currYear - 50, //开始年份
+					endYear: currYear  //结束年份
+				};
+
+				$("#USER_AGE").mobiscroll($.extend(opt['date'], opt['default']));
+				$("#USER_AGE").change(function(){
+					var val=$('#USER_AGE').val()
+					alert("发送ajax"+val)
+				})
+				$('.sett-sex').click(function(){
+					$('.return-bg').fadeIn()
+					$('.data-sex').fadeIn()
+				})
+				$('.data-sex li').click(function(){
+					$('.data-sex li span').removeClass('bg-fc3')
+					$(this).find('span').addClass('bg-fc3')
+					$('.sett-sex p').html($(this).find('b').html())
+					$('.return-bg').hide()
+					$('.data-sex').hide()
+				})
+			});
+			
+		</script>
+	</body>
+
+</html>
