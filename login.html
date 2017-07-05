@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width" name="viewport">
+		<meta name="Keywords" content="上海加缪物联网科技有限公司,加缪物联网,物联网,黄雀商城,防伪溯源,物联网全溯源F2C供销平台"/>
+		<meta name="Description" content="加缪物联网,物联网,黄雀商城,防伪溯源,物联网全溯源F2C供销平台"/>
+		<title>黄雀登录</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/media-100.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body class="bg-fff">
+		<div class="login-mian">
+			<p>
+				<img src="images/login01.png" class="fl"/>
+				<input type="text" name="" placeholder="邮箱/用户名/手机号" class="fr" />
+			</p>
+			<p class="mt-20">
+				<img src="images/login02.png" class="fl"/>
+				<input type="password" name="" placeholder="密码"  class="fr" id="login-psd" maxlength="20" />
+				<span id="hide-show-psd"></span>
+			</p>
+			<p class="tar ">
+				<a href="forget_psd.html" class="c-999" style="text-decoration: underline;">忘记密码?</a>
+			</p>
+			<p class="login-btn mt-10">
+				<button class="btn btn-block bg-fc3">登录</button>
+			</p>
+			<p class="tac login-none">
+				没有账号？<a href="register.html" class="c-fc3">快速注册 ></a>
+			</p>
+			<p class="tac login-wx">
+				<a href="#"><img src="images/login05.png"/><span class="c-999">微信登录</span></a>
+			</p>
+		</div>
+		
+		
+		<script src="js/hq.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('#hide-show-psd').click(function(){
+					if ($('#login-psd')[0].type=="password") {
+						$(this).toggleClass('show-psd-bg')
+						$('#login-psd')[0].type="text"
+					}else{
+						$('#login-psd')[0].type="password"
+						$(this).toggleClass('show-psd-bg')
+					}
+				})
+			})
+		</script>
+	</body>
+
+</html>

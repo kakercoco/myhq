@@ -2785,7 +2785,7 @@ a:hover, a:focus{
 .ps-cout-btn{margin:0.15rem auto!important;}
 .confirmrec button{
 	height: 100%;
-	width: 50%;
+	width: 100%;
 	border-radius: 0;
 	color: #fff;
 }
@@ -3849,3 +3849,87 @@ a:hover, a:focus{
 
 
 /*使用指南结束*/
+/*登录注册开始*/
+.login-mian{
+	width: 3rem;
+	margin: 0.9rem auto;
+}
+.login-mian img{
+	width: 0.22rem;
+	margin-top: 0.09rem;
+}
+.login-mian input{
+	width: 85%;
+	height: 100%;
+	outline: none;
+	border: none;
+	font-size: 0.156rem;
+	border-bottom: 1px solid #ccc;
+}
+.login-mian p{
+	height: 0.4rem;
+	line-height: 0.4rem;
+	position: relative;
+}
+#login-psd{
+	padding-right: 0.3rem;
+}
+#hide-show-psd{
+	position: absolute;
+	top: 0.09rem;
+	right: 0;
+	width: 0.22rem;
+	height: 0.22rem;
+	background: url(../images/login04.png) no-repeat;
+	background-size: contain;
+}
+.show-psd-bg{
+	background-image: url(../images/login03.png) !important;
+	margin-top: 0.02rem;
+}
+.login-btn button{
+	border-radius: 0.4rem;
+}
+.login-none{
+	font-size: 0.146rem;
+}
+.login-wx{
+	margin-top: 1rem;
+}
+.login-wx img{
+	width: 0.66rem;
+}
+.login-wx span{
+	display: block;
+	font-size: 0.125rem;
+}
+.user-xieyi span{
+	display: inline-block;
+    width: 0.2rem;
+    height: 0.2rem;
+    border: 1px solid #ccc;
+    border-radius: 0.2rem;
+    margin-top: 0.07rem;
+    margin-right: 0.07rem;
+    line-height: 0.2rem;
+    text-align: center;
+    position: relative;
+}
+.user-xieyi input{
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.register-error-img b{
+	font-size: 0.156rem;
+}
+.register-error-img img{
+	width: .17rem;
+}
+.myphone-btn-find button{
+	border:1px solid #ffcc33;
+}
+/*登录注册结束*/
