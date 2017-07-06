@@ -395,6 +395,13 @@
 				<span>去查看</span>
 			</p>
 		</div>
+		<div class="index-bg"></div>
+		<div class="frist-come">
+			<p>
+				<img src="images/close.png" class="come-close fr"/>
+				<img src="images/gift02.png" class="come-gift"/>
+			</p>
+		</div>
 		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/hq.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/mp.mansory.min.js" type="text/javascript" charset="utf-8"></script>
@@ -482,6 +489,24 @@
 					$('.show_more')[4].innerHTML="收起"
 					$('.buy-show-more img')[4].style.transform="rotate(-90deg)"
 				}
+				setTimeout(function(){
+					if (sessionStorage.getItem('come')!=="yes") {
+						$('.index-bg').fadeIn()
+						$('.frist-come').fadeIn()
+						sessionStorage.setItem('come','yes')
+						setTimeout(function(){
+							$('.index-bg').fadeOut()
+							$('.frist-come').fadeOut()
+						},3000)
+					}else{
+						console.log('第二次进入')
+//						localStorage.removeItem('come')
+					}
+				},3000)
+				$('.come-close').click(function(){
+					$('.index-bg').fadeOut()
+					$('.frist-come').fadeOut()
+				})
 			});
 		</script>
 	</body>
