@@ -25,7 +25,7 @@
 		<div class="return-cont">
 			<h5 class="c-999 return-cont-h5">选择退货商品</h5>
 			<div class="return-cont-all">
-				<p class="fl"><span class="fl bg-fc33 tac"><img src="images/duig2.png"/></span>全选</p>
+				<p class="fl"><span class="fl  tac"><img src="images/duig2.png"/></span>全选</p>
 				<p class="fr">已选择<i class="choose-num">9</i>件商品</p>
 			</div>
 			<ul>
@@ -50,7 +50,7 @@
 				</li>
 				<li class="clearfix">
 					<div class="rgs-item-l fl">
-						<span class="fl bg-fc33 tac"><img src="images/duig2.png"/><input type="checkbox"   /></span>
+						<span class="fl  tac"><img src="images/duig2.png"/><input type="checkbox"   /></span>
 						<img src="images/qq1.png" class="rgs-item-l-img" />
 					</div>
 					<div class="rgs-item-c fl">
@@ -69,7 +69,7 @@
 				</li>
 				<li class="clearfix">
 					<div class="rgs-item-l fl">
-						<span class="fl bg-fc33 tac"><input type="checkbox"  /><img src="images/duig2.png"/></span>
+						<span class="fl  tac"><input type="checkbox"  /><img src="images/duig2.png"/></span>
 						<img src="images/qq1.png" class="rgs-item-l-img" />
 					</div>
 					<div class="rgs-item-c fl">
@@ -182,7 +182,12 @@
 			$('.return-cont-all p span').click(function(){
 				if ($(this).hasClass('bg-fc33')) {
 					$(this).removeClass('bg-fc33')
+					var checkipt= $('.rgs-item-l span.bg-fc33 input')
 					$('.rgs-item-l span.bg-fc33').removeClass('bg-fc33')
+					console.log(checkipt)
+					for(a=0;a<checkipt.length;a++){
+						checkipt[a].checked=false
+					}
 					chooseNum()
 				} else{
 					$(this).addClass('bg-fc33')
@@ -193,6 +198,7 @@
 							
 						}else{
 							$(span[i]).addClass('bg-fc33')
+							$(span[i]).find('input')[0].checked=true
 						}
 					}
 					chooseNum()
@@ -203,13 +209,23 @@
 				if ($(this).hasClass('bg-ccc')) {
 					
 				}else{
-					$(this).toggleClass('bg-fc33')
-					chooseNum()
+					if ($(this).hasClass('bg-fc33')) {
+						$(this).toggleClass('bg-fc33')
+						$(this).find('input')[0].checked=false
+						console.log($(this).find('input')[0].checked)
+						chooseNum()
+					} else{
+						$(this).find('input')[0].checked=true
+						console.log($(this).find('input')[0].checked)
+						$(this).toggleClass('bg-fc33')
+						chooseNum()
+					}
+					
 				}
 				var gou=$('.rgs-item-l span.bg-fc33').length
 				var ungou=$('.rgs-item-l span.bg-ccc').length
 				var all=$('.rgs-item-l span').length
-				console.log(gou+ungou)
+//				console.log(gou+ungou)
 				if (all==gou+ungou) {
 					$('.return-cont-all p span').addClass('bg-fc33')
 				}else{
