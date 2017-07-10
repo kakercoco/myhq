@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>周边比价</title>
+		<meta content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width" name="viewport">
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/media-100.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="app-header c-fff">
+			<span class="fl back"><</span>
+			<span class="fr add">+</span>
+			<h4 class="tac">周边比价</h4>
+		</div>
+		<div class="app-cont2">
+			<ul>
+				<li>
+					<h3>商铺名称：京东商城</h3>
+					<p class="mt-10">地址：天长市xxx路1900号2楼<span class="fr">价格：￥20.00</span></p>
+				</li>
+				<li>
+					<h3>商铺名称：京东商城</h3>
+					<p class="mt-10">地址：天长市xxx路1900号2楼<span class="fr">价格：￥20.00</span></p>
+				</li>
+			</ul>
+		</div>
+		<div class="index-bg"></div>
+		<div class="app-cont-alert bg-fff clearfix">
+			<h4 class="c-f7c08 tac">比价</h4>
+			<ul class="mt-20">
+				<li>
+					<span class="fl"><img src="images/pop_i_shop.png"/></span>
+					<input type="text" class="fr" placeholder="商铺名称" maxlength="10" />
+				</li>
+				<li>
+					<span class="fl"><img src="images/pop_i_address.png"/></span>
+					<input type="text" class="fr" placeholder="商铺地址" maxlength="20" />
+				</li>
+				<li>
+					<span class="fl"><img src="images/pop_i_price.png"/></span>
+					<input type="tel" class="fr" placeholder="商铺单价" maxlength="4"/>
+				</li>
+			</ul>
+			<div class="app-alert-btn">
+				<button class="bg-fff">取消</button><button class="bg-fc3">确定</button>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$('.app-header .back').click(function(){
+				window.history.back()
+			})
+			$('.app-header .add').click(function(){
+				$('.index-bg').fadeIn()
+				$('.app-cont-alert').fadeIn()
+			})
+			$('.app-alert-btn button:nth-of-type(1)').click(function(){
+				$('.index-bg').fadeOut()
+				$('.app-cont-alert').fadeOut()
+			})
+		})
+	</script>
+</html>
