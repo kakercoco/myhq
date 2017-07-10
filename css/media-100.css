@@ -3,6 +3,11 @@
          font-size:288px;
      }
    }
+   @media only screen and (max-width: 1024px), only screen and (max-device-width:1024px) {
+     html,body {
+         font-size:273px;
+     }
+   }
      @media only screen and (max-width: 960px), only screen and (max-device-width:960px) {
      html,body {
          font-size:256px;
@@ -11,6 +16,11 @@
      @media only screen and (max-width: 800px), only screen and (max-device-width:800px) {
      html,body {
          font-size:213.5px;
+     }
+   }
+     @media only screen and (max-width: 768px), only screen and (max-device-width:768px) {
+     html,body {
+         font-size:204.8px;
      }
    }
      @media only screen and (max-width: 720px), only screen and (max-device-width:720px) {

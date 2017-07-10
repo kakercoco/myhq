@@ -390,10 +390,33 @@
 			</ul>
 		</div>
 		<div class="frist-alert">
-			<p>
-				<img src="images/close.png"/>
-				<span>去查看</span>
-			</p>
+			<div class="frist-alert-wrap clearfix">
+				<img src="images/close.png" class="aclose"/>
+				<img src="images/gift03.png" class="frist-alert-imgup"/>
+				<ul class="alert-cont clearfix">
+					<li>
+						<div class="fa-left fl">
+							<h5 class="c-fc3 tac"><small class="c-fc3">￥</small>10</h5>
+							<p class="c-999 tac">满100元可用</p>
+						</div>
+						<div class="fa-right fr tac mt-10">
+						<h5>全品类优惠券看见啥地方很快</h5>
+						<p><a href="#" class="c-fff">立即查看</a></p>
+					</div>
+					</li>
+					<li>
+						<div class="fa-left fl">
+							<h5 class="c-fc3 tac"><small class="c-fc3">￥</small>10</h5>
+							<p class="c-999 tac">满100元可用</p>
+						</div>
+						<div class="fa-right fr tac mt-10">
+						<h5>全品类优惠券</h5>
+						<p><a href="#" class="c-fff">立即查看</a></p>
+					</div>
+					</li>
+				</ul>
+				<img src="images/gift04.png" class="frist-alert-imgdown"/>
+			</div>
 		</div>
 		<div class="index-bg"></div>
 		<div class="frist-come">
@@ -502,10 +525,14 @@
 						console.log('第二次进入')
 //						localStorage.removeItem('come')
 					}
-				},3000)
+				},5000)
 				$('.come-close').click(function(){
 					$('.index-bg').fadeOut()
 					$('.frist-come').fadeOut()
+				})
+				$('.frist-alert').fadeIn()
+				$('.aclose').click(function(){
+					$('.frist-alert').fadeOut()
 				})
 			});
 		</script>
