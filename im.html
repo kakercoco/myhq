@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width" name="viewport">
+		<meta name="Keywords" content="上海加缪物联网科技有限公司,加缪物联网,物联网,黄雀商城,防伪溯源,物联网全溯源F2C供销平台"/>
+		<meta name="Description" content="加缪物联网,物联网,黄雀商城,防伪溯源,物联网全溯源F2C供销平台"/>
+		<title>黄雀客服</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/media-100.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body style="padding: 0;">
+		<div class="im-top">
+			<div class="myserve">
+				<div class="myservei fl">
+					<img src="images/serve.png" class="fl"/>
+				</div>
+				<div class="myserver fl">
+					<p class="">您的专属客服</p>
+					<h3 class="c-fc3 b-b1">晨晨</h3>
+					<p class="mt-5">服务电话</p>
+					<h3><a href="tel://13912345678" class="c-fc3">13912345678</a></h3>
+				</div>
+			</div>
+		</div>
+		<div class="im-item">
+			<p class="tac"><span class="bg-ccc c-fff time">12:00</span></p>
+			<div class="item im-item-you clearfix">
+				<img src="images/loading.png" class="img"/>
+				<div class="im-mes">水电费了就好盛开的金凤凰刷卡机俯拾地芥发过火看韩剧的空间韩国可接受的和广阔的世界恢复过的痕迹规范大家思考合格看到就好</div>
+			</div>
+			<div class="item im-item-me clearfix">
+				<img src="images/serve.png" class="img"/>
+				<div class="im-mes">水电费了就好盛思考合格看到跟就好</div>
+			</div>
+			<div class="item im-item-me clearfix">
+				<img src="images/serve.png" class="img"/>
+				<div class="im-mes">水电费了就好盛思考合格看到跟就好</div>
+			</div>
+			<div class="item im-item-you clearfix">
+				<img src="images/loading.png" class="img"/>
+				<div class="im-mes">范大家思考合格看到跟就好</div>
+			</div>
+			<div class="item im-item-you clearfix">
+				<img src="images/loading.png" class="img"/>
+				<div class="im-mes">范大家思考合格看到好</div>
+			</div>
+		</div>
+		<div class="im-foot">
+			<p class="im-ft-all">
+				<span class="fl">+</span>
+				<input type="text" name="" id="" value="" class="fl" />
+				<img src="images/im-smail.png"/>
+				<button class="btn bg-fc3 fr">发送</button>
+			</p>
+			<ul class="im-ft-img">
+				<li class="fl tac c-999">
+					<i class="glyphicon glyphicon-picture mb-10"></i>
+					<b>照片</b>
+				</li>
+				<li class="fl tac c-999 im-ft-hert">
+					<i class="glyphicon glyphicon-heart mb-10"></i>
+					<b>满意度</b>
+				</li>
+			</ul>
+		</div>
+		<div class="im-heart tac">
+			<h5 class="tac">评价<span class="fr c-999">×</span></h5>
+			<ul>
+				<li class="fl c-999">
+					<i class="glyphicon glyphicon-heart "></i>
+					<span>非常不满意</span>
+				</li>
+				<li class="fl c-999">
+					<i class="glyphicon glyphicon-heart"></i>
+					<span>不满意</span>
+				</li>
+				<li class="fl c-999">
+					<i class="glyphicon glyphicon-heart"></i>
+					<span>一般</span>
+				</li>
+				<li class="fl c-999">
+					<i class="glyphicon glyphicon-heart"></i>
+					<span>满意</span>
+				</li>
+				<li class="fl c-999">
+					<i class="glyphicon glyphicon-heart"></i>
+					<span>非常满意</span>
+				</li>
+			</ul>
+			<textarea maxlength="200" rows="" cols="" placeholder="您的指导对我们非常重要"></textarea>
+			<p class="tar">(200字)</p>
+			<button class="btn bg-fc3 mt-15">提交</button>
+		</div>
+		<div class="index-bg"></div>
+		<script src="js/hq.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('.im-ft-all span').click(function(){
+					if ($('.im-item').hasClass('pb-170')) {
+						$('.im-item').removeClass('pb-170')
+						$('.im-ft-img').slideUp()
+					} else{
+						$('.im-ft-img').slideDown()
+						$('.im-item').addClass('pb-170')
+					}
+				})
+				$('.im-ft-hert').click(function(){
+					$('.index-bg').show()
+					$('.im-heart').slideDown()
+				})
+				$('.im-heart h5 span').click(function(){
+					$('.im-heart').slideUp()
+					$('.index-bg').hide()
+				})
+				$('.im-heart li').each(function(i){
+					$(this).click(function(){
+						$('.im-heart li').removeClass('c-red').addClass('c-999').find('span').hide()
+						for (a=0;a<5;a++) {
+							if (a<=i) {
+								$($('.im-heart li')[a]).addClass('c-red').removeClass('c-999')
+							}
+						}
+						$(this).find('span').show()
+					})
+				})
+				
+			})
+		</script>
+	</body>
+
+</html>

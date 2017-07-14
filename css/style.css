@@ -4104,3 +4104,203 @@ a:hover, a:focus{
 	border:1px solid #ffcc33;
 }
 /*登录注册结束*/
+/*-------------------------------------------*/
+/*客服聊天开始*/
+.im-top{
+	position: fixed;
+	top: 0rem;
+	width: 100%;
+	z-index: 10;
+	background-color: #f3f3f3;
+}
+.im-top .myserve{
+	margin: 0.1rem;
+	padding: 0.1rem;
+	border-radius: 0.05rem;
+}
+.im-top .myserver{
+	padding: 0;
+}
+.im-item .time{
+	padding: 0.03rem 0.1rem;
+	border-radius: 0.05rem;
+}
+.im-item{
+	padding: 1.5rem 0.1rem 0.6rem 0.1rem;
+	height: 100vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.im-item .item{
+	margin-top: 0.2rem;
+}
+.im-item .img{
+	width: 0.4rem;
+	height: 0.4rem;
+}
+.im-item .im-mes{
+	max-width: 78%;
+	font-size: 0.156rem;
+	padding: 0.1rem;
+	border-radius: 0.1rem;
+	box-shadow: 2px 3px 2px #ccc;
+	position: relative;
+}
+.im-mes:before,.im-mes:after{
+	content: ' ';
+    position: absolute;
+    top: 13px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    width: 0;
+    height: 0;
+}
+.im-item-you .img{
+	float: left;
+}
+.im-item-you .im-mes{
+	float: left;
+	background-color: #fff;
+	margin-left: 0.1rem;
+}
+.im-item-you .im-mes:after{
+	right: 100%;
+    border-right: 5px solid #fff;
+}
+.im-item-me .im-mes:before{
+	left: 100%;
+    border-left: 5px solid #ffcc33;
+}
+.im-item-me .img{
+	float: right;
+}
+.im-item-me .im-mes{
+	float: right;
+	background-color: #ffcc33;
+	margin-right: 0.1rem;
+}
+.im-foot{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	border-top: 1px solid #ccc;
+	background-color: #f3f3f3;
+}
+.im-ft-all{
+	height: 0.5rem;
+	padding: 0.1rem 0.05rem;
+	border-bottom: 1px solid #ccc;
+}
+.im-foot span{
+	font-size: 0.3rem;
+	width: 0.3rem;
+	height: 0.3rem;
+	text-align: center;
+	line-height: 0.25rem;
+	border: 1px solid #ccc;
+	border-radius: 0.3rem;
+	color: #999;
+	padding: 0;
+	margin-right: .1rem;
+}
+.im-foot img{
+	width: 0.3rem;
+	height: 0.3rem;
+	margin-left: 0.1rem;
+}
+.im-foot input{
+	width: 60%;
+	height: 0.3rem;
+	font-size: 0.156rem;
+	text-indent: 0.5em;
+	border: none;
+	border:1px solid #ccc;
+	outline: none;
+	border-radius: 0.05rem;
+}
+.im-foot button{
+	height: 0.3rem;
+	width: 0.54rem;
+	font-size: 0.146rem;
+}
+.im-ft-img{
+	height: 1.1rem;
+	padding: 0.15rem 0.4rem;
+	display: none;
+}
+.im-ft-img li{
+	width: 0.6rem;
+	margin-right: 0.3rem;
+}
+.im-ft-img li i{
+	width: 0.6rem;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	background-color: #fff;
+	font-size: 0.3rem;
+	display: block;
+	border-radius: 0.15rem;
+	border: 1px solid #ccc;
+}
+.im-ft-img li b{
+	font-size: 0.115rem;
+	font-weight: normal;
+}
+.pb-170{
+	padding-bottom: 1.7rem;
+}
+.im-heart{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 3.7rem;
+	background-color: #fff;
+	z-index: 30;
+	display: none;
+}
+.im-heart h5{
+	font-size: 0.156rem;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	border-bottom: 1px solid #f3f3f3;
+	padding: 0 0.1rem;
+}
+.im-heart h5 span{
+	font-size: 0.17rem;
+}
+.im-heart ul{
+	width: 3rem;
+	height: 0.7rem;
+	margin: 0.2rem auto;
+}
+.im-heart li{
+	text-align: center;
+	width: 0.6rem;
+}
+.im-heart li i{
+	display: block;
+	font-size: 0.3rem;
+	margin-bottom: 0.1rem;
+}
+.im-heart li span{
+	font-size: 0.115rem;
+	display: none;
+}
+.im-heart textarea{
+	width: 2.5rem;
+	margin: 0 auto;
+	height: 1.4rem;
+	border: none;
+	border: 1px solid #ccc;
+	padding: 0.1rem;
+	outline: none;
+	font-size: 0.115rem ;
+}
+.im-heart p{
+	width: 2.5rem;
+	margin: 0 auto;
+}
+.im-heart button{
+	width: 2.5rem;
+}
+/*客服聊天结束*/
