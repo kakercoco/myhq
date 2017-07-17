@@ -79,7 +79,7 @@
 					<span class="fl">优惠券</span><span class="fr rc-quan">请选择优惠券<b class="fr"><img src="images/myback.png" class="fr mt-15"/></b></span>
 				</li>
 				<li class="rc-sel">
-					<span class="fl">支付方式</span><span class="fr rc-pay">货到付款<b class="fr"><img src="images/myback.png" class="fr mt-15"/></b></span>
+					<span class="fl">支付方式</span><span class="fr rc-pay"><i>货到付款</i><b class="fr"><img src="images/myback.png" class="fr mt-15"/></b></span>
 				</li>
 				<li class="rc-sel">
 					<span class="fl">配送方式</span><span class="fr rc-choose"><i>快递</i><b class="fr"><img src="images/myback.png" class="fr mt-15"/></b></span>
@@ -116,6 +116,21 @@
 				</ul>
 				<button class="btn bg-fc3">完成</button>
 			</div>
+			<div class="r-pay-method">
+				<ul>
+					<li class="paymt mt-10">
+						<img src="images/method01.png" class="fl mr-10 pm-img"/>
+						<h4 class="fl">微信支付</h4>
+						<i class="fr pm-i bg-fc333"><img src="images/duig2.png" class=""/></i>
+					</li>
+					<li class="paymt mt-10">
+						<img src="images/method02.png" class="fl mr-10 pm-img"/>
+						<h4 class="fl">货到付款</h4>
+						<i class="fr pm-i"><img src="images/duig2.png" class=""/></i>
+					</li>
+					<button class="btn bg-fc3 btn-block mt-30">完成</button>
+				</ul>
+			</div>
 		</div>
 		<div class="r-alert">
 			<p class="tac"><img src="images/quan03.png" class="mr-10"/>订单提交后不可取消</p>
@@ -144,6 +159,21 @@
 				$('.r-choose .gdc-ri').removeClass('bg-fc33')
 				$(this).find('.gdc-ri').addClass('bg-fc33')
 				$('.rc-choose i').html($(this).children('h4').html())
+			})
+			$('.rc-pay').click(function(){
+				$('.r-pay-method').slideDown()
+				$('.r-wrap').show()
+			})
+			$('.r-pay-method li').click(function(){
+				$('.rc-pay i').html($(this).find('h4').html())
+				$('.r-pay-method').slideUp()
+				$('.r-wrap').hide()
+				$('.r-pay-method li i').removeClass('bg-fc333')
+				$(this).find('i').addClass('bg-fc333')
+			})
+			$('.r-pay-method button').click(function(){
+				$('.r-pay-method').slideUp()
+				$('.r-wrap').hide()
 			})
 		</script>
 	</body>

@@ -137,17 +137,17 @@ $(function(){
 		$('.unaddbtn').click(function(){
 			window.location.href="produce.html";
 		})
-		$('.rf-btn').click(function(){
-			$(".r-wrap").height($("window").height()); 
-			if($('.rc-pay').html().indexOf('货到付款')!==-1){
-				$('.r-wrap').fadeIn('fast')
-				$('.r-alert').fadeIn('fast')
-				$('.r-wrap').css('z-index','20')
-			}else{
-				window.location.href="wchatpay.html"
-			}
-			
-		})
+//		$('.rf-btn').click(function(){
+//			$(".r-wrap").height($("window").height()); 
+//			if($('.rc-pay').html().indexOf('货到付款')!==-1){
+//				$('.r-wrap').fadeIn('fast')
+//				$('.r-alert').fadeIn('fast')
+//				$('.r-wrap').css('z-index','20')
+//			}else{
+//				//window.location.href="wchatpay.html"
+//			}
+//			
+//		})
 		$('.ra-q').click(function(){
 			$('.r-wrap').fadeOut('fast')
 			$('.r-alert').fadeOut('fast')
@@ -171,17 +171,17 @@ $(function(){
 		$('.addr3').click(function(){
 			window.location.href="address.html";
 		})
-		$('.rc-pay').click(function(){
-			window.location.href="paymethod.html";
-		})
+//		$('.rc-pay').click(function(){
+//			window.location.href="paymethod.html";
+//		})
 		$('.rc-quan').click(function(){
 			window.location.href="quan.html";
 		})
-		$('.paymt').click(function(){
-			$('.paymt i').removeClass('bg-fc333')
-			$(this).find('i').addClass('bg-fc333')
-			window.location.href="order.html";
-		})
+//		$('.paymt').click(function(){
+//			$('.paymt i').removeClass('bg-fc333')
+//			$(this).find('i').addClass('bg-fc333')
+//			window.location.href="order.html";
+//		})
 		$('.quanl-r .c-333').click(function(){
 			window.location.href="order.html";
 		})
