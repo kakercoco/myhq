@@ -4318,3 +4318,37 @@ a:hover, a:focus{
 	width: 2.5rem;
 }
 /*客服聊天结束*/
+/*------------------------------------------------------------------*/
+/*选择站点开始*/
+.cg-site{
+	height: 100vh;
+	width: 100%;
+	background: url(../images/cg-site.png) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	
+}
+.cg-site h3,.cg-site h4,.cg-site li{
+	padding: 0 0.1rem;
+	height: 0.45rem;
+	line-height: 0.45rem;
+	font-size: 0.16rem;
+}
+.cg-site p{
+	padding: 0 0.1rem;
+	font-size: 0.12rem;
+}
+.cg-site h3 img{
+	width: 0.15rem;
+}
+.cg-site li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #333;
+}
+.cg-site li img{
+	margin: 0.15rem 0;
+	display: none;
+}
+/*选择站点结束*/

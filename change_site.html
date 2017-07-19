@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width" name="viewport">
+		<title>站点选择</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/media-100.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+
+	<body style="padding: 0;">
+		<div class="cg-site">
+			<h4 class="c-f7c08">欢迎来到黄雀商城</h4>
+			<h3 class="bg-fff"><img src="images/ditu2.png" class="mr-10"/>当前位置：<span>上海站</span></h3>
+			<p>请选择你对应的站点</p>
+			<ul>
+				<li class="bg-fff mt-2"><a href="index.html">上海站<img src="images/duig.png" alt="" class="fr" /></a></li>
+				<li class="bg-fff mt-2"><a href="index.html">天長站<img src="images/duig.png" alt="" class="fr" /></a></li>
+			</ul>
+		</div>
+		<script src="js/hq.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$('.cg-site li').click(function(){
+				$('.cg-site li img').hide()
+				$(this).find('img').show()
+			})
+		</script>
+	</body>
+
+</html>
