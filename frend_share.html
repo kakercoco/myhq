@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width" name="viewport">
+		<title>星级详情</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/media-100.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+
+	<body style="padding: 0;">
+		<div class="frend-share-title bg-fff">
+			<h3>客户编号：<span>1001</span></h3>
+			<h3 class="mt-10">客户星级：<span class="c-f7c08">
+				<i class="glyphicon glyphicon-star"></i>
+				<i class="glyphicon glyphicon-star"></i>
+				<i class="glyphicon glyphicon-star"></i>
+				<i class="glyphicon glyphicon-star"></i>
+				<i class="glyphicon glyphicon-star"></i>
+			</span></h3>
+		</div>
+		<div class="share-num bg-fff mt-10 mb-10">
+			<p class="fl">您已分享<span class="c-f7c08 ml-10 mr-10">56</span>人</p>
+			<p class="fr c-999 share-show"><i class="glyphicon glyphicon-question-sign"></i>分享说明</p>
+		</div>
+		<h3 class="share-num bg-fff">朋友分享详情</h3>
+		<div class="index-bg"></div>
+		<ul class="share-ltem">
+			<li>
+				<p class="fl">微信号</p>
+				<span class="fr c-999">2017-06-06</span>
+			</li>
+			<li>
+				<p class="fl">微信号</p>
+				<span class="fr c-999">2017-06-06</span>
+			</li>
+			<li>
+				<p class="fl">微信号</p>
+				<span class="fr c-999">2017-06-06</span>
+			</li>
+			<li>
+				<p class="fl">微信号</p>
+				<span class="fr c-999">2017-06-06</span>
+			</li>
+			<li>
+				<p class="fl">微信号</p>
+				<span class="fr c-999">2017-06-06</span>
+			</li>
+			<li>
+				<p class="fl">微信号</p>
+				<span class="fr c-999">2017-06-06</span>
+			</li>
+			<li>
+				<p class="fl">微信号</p>
+				<span class="fr c-999">2017-06-06</span>
+			</li>
+			<li>
+				<p class="fl">微信号</p>
+				<span class="fr c-999">2017-06-06</span>
+			</li>
+			<li>
+				<p class="fl">微信号</p>
+				<span class="fr c-999">2017-06-06</span>
+			</li>
+			<li>
+				<p class="fl">微信号</p>
+				<span class="fr c-999">2017-06-06</span>
+			</li>
+			<li>
+				<p class="fl">微信号</p>
+				<span class="fr c-999">2017-06-06</span>
+			</li>
+			<li>
+				<p class="fl">微信号</p>
+				<span class="fr c-999">2017-06-06</span>
+			</li>
+			<li>
+				<p class="fl">微信号</p>
+				<span class="fr c-999">2017-06-06</span>
+			</li>
+			<li>
+				<p class="fl">微信号</p>
+				<span class="fr c-999">2017-06-06</span>
+			</li>
+		</ul>
+		<div class="share-alert">
+			<div class="share-l-wrap  bg-fff">
+				<div class="share-wrap-title">
+					<span class="fl close mt-2">×</span>
+					<h3 class="tac c-f7c08">分享说明</h3>
+				</div>
+				<p class="mt-30">已下单并成功签收的客户可以分享商城首页或详情页给朋友，24小时内朋友的首单金额计入您可享受折扣的额度。</p>
+   				<p class="mt-10">在额度范围内您可享受五折优惠哦！</p>
+   				<p class="tar mt-30"><small class="c-999">首单和折扣订单不可退货</small></p>
+			</div>
+		</div>
+		<script src="js/hq.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+				$('.share-show').click(function(){
+					$('.index-bg').fadeIn()
+					$('.share-alert').slideDown()
+				})
+				$('.share-wrap-title .close').click(function(){
+					$('.index-bg').fadeOut()
+					$('.share-alert').slideUp()
+				})
+		</script>
+	</body>
+
+</html>

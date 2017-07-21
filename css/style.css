@@ -1555,7 +1555,6 @@ a:hover, a:focus{
 	width: 0.08rem;
 }
 .rc-detail{
-	height: 0.79rem;
 	background-color: #fff;
 	padding: 0.1rem;
 	
@@ -1613,7 +1612,7 @@ a:hover, a:focus{
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
 }
-.rc-choose i,.rc-pay i{
+.rc-choose i,.rc-pay i,.rc-frend i{
 	font-style: normal;
 }
 .r-choose li{
@@ -2251,7 +2250,6 @@ a:hover, a:focus{
 	width: 75%;
 }
 .odc-detail {
-    height: 0.79rem;
     background-color: #fff;
     padding: 0.1rem;
 }
@@ -4352,3 +4350,78 @@ a:hover, a:focus{
 	display: none;
 }
 /*选择站点结束*/
+/*-------------------------------------------------------------------*/
+/*星级详情开始*/
+.frend-share-title{
+	height: 0.72rem;
+	padding: 0.15rem 0.1rem;
+}
+.frend-share-title h3{
+	font-size: 0.146rem;
+}
+.share-num{
+	height: 0.45rem;
+	line-height: 0.45rem;
+	font-size: 0.135rem;
+	padding:0 0.1rem;
+}
+.share-num p span{
+	font-size: 0.16rem;
+}
+.share-ltem{
+	border-top: 1px solid #ccc;
+}
+.share-ltem li{
+	height: 0.45rem;
+	line-height: 0.45rem;
+	font-size: 0.135rem;
+	padding:0 0.1rem;
+	background-color: #fff;
+	border-bottom: 1px solid #ccc;
+}
+.share-ltem li p{
+	max-width: 80%;
+	overflow: hidden;
+	height: 100%;
+}
+.share-alert{
+	position: fixed;
+	width: 100%;
+	height: 2.5rem;
+	top: 1.5rem;
+	left: 0;
+	z-index: 35;
+	display: none;
+}
+.share-l-wrap{
+	width: 3rem;
+	height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	border-radius: 0.1rem;
+}
+.share-l-wrap .close{
+	font-size: 0.3rem;
+	margin-left: 0.1rem;
+}
+.share-l-wrap h3{
+	font-size: 0.167rem;
+	height: 0.35rem;
+	line-height: 0.35rem;
+	width: 70%;
+	margin: 0 auto;
+}
+.share-wrap-title{
+	border-bottom: 1px solid #fc3;
+}
+.share-l-wrap p{
+	font-size: 0.125rem;
+	text-indent: 2em;
+	margin-left: 0.1rem;
+	margin-right: 0.1rem;
+}
+
+
+
+
+/*星级详情结束*/

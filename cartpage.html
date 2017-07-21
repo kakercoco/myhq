@@ -65,7 +65,7 @@
 							<p class="pull-left yellow">¥<em class="price">1370</em></p>
 							<div class="btn-group btn-group-sm control-num">
 								<a onclick="decrease(this)" href="javascript:void(0);" class="control-numa">-</a>
-								<input type="tel" class="gary2 Amount"  value="1" maxlength="2" itemkey="" onkeyup ="calculateTotal()" pattern="[0-9]*">
+								<input type="tel" class="gary2 Amount" value="1" maxlength="2" itemkey="" onkeyup="calculateTotal()" pattern="[0-9]*">
 								<a onclick="increase(this)" href="javascript:void(0);" class="control-numa">+</a>
 							</div>
 						</div>
@@ -100,8 +100,9 @@
 							<p class="pull-left yellow">¥<em class="price">179</em></p>
 							<div class="btn-group btn-group-sm control-num">
 								<a onclick="decrease(this)" href="javascript:void(0);" class="control-numa">-</a>
-								<input type="tel" class="gary2 Amount"  value="1" maxlength="2">
-								<a onclick="increase(this)" href="javascript:void(0);" class="control-numa">+</span></a>
+								<input type="tel" class="gary2 Amount" value="1" maxlength="2">
+								<a onclick="increase(this)" href="javascript:void(0);" class="control-numa">+</span>
+								</a>
 							</div>
 						</div>
 
@@ -147,7 +148,7 @@
 					<div class="icheck pull-left mr10">
 						<input type="checkbox" id="buy-sele-all" value="0">
 						<label for="buy-sele-all" class="cartall">
-                <span class="p-cartcheck"></span>全选
+              			  <span class="p-cartcheck"></span>全选
             </label>
 					</div>
 					<div class="totalcount">
@@ -163,101 +164,109 @@
 					<a href="javascript:deleteAll();" class="btn-del">删除</a>
 				</div>
 			</div>
+
 			<div class="clear"></div>
-
-			<!--<footer class="footer">
-				<div class="foot-con">
-					<div class="foot-con_2">
-						<a href="index.html">
-							<i class="navIcon home"></i>
-							<span class="text">首页</span>
-						</a>
-				
-						<a href="cartpage.html">
-							<i class="navIcon shop"></i>
-							<span class="text">购物车</span>
-						</a>
-						<a href="self.html">
-							<i class="navIcon member"></i>
-							<span class="text">我的</span>
-						</a>
-					</div>
-				</div>
-			</footer>-->
+			<div class="frend-order">查看朋友下单额</div>
+			<div class="index-bg"></div>
+			<div class="frend-order-detail">
+				<h3><span>×</span>查看详情</h3>
+				<p class="frend-all">朋友下单总额<span>50元</span></p>
+				<p class="detail"><a href="frend_share.html" class="c-999">详细说明</a></p>
+			</div>
 			<div class="ifooter">
-			<ul>
-				<li class="fl">
-					<a href="index.html">
-						<img src="images/home2.png" alt="" />
-						<span>首页</span>
-					</a>
-				</li>
-				<li class="fl">
-					<a href="cartpage.html">
-						<img src="images/shop02.png" alt="" />
-						<span class="footet-shop" style="color: #333;">购物车</span>
-					</a>
-				</li>
-				<li class="fl">
-					<a href="self.html">
-						<img src="images/my.png" alt="" />
-						<span>我的</span>
-					</a>
-				</li>
-			</ul>
+				<ul>
+					<li class="fl">
+						<a href="index.html">
+							<img src="images/home2.png" alt="" />
+							<span>首页</span>
+						</a>
+					</li>
+					<li class="fl">
+						<a href="cartpage.html">
+							<img src="images/shop02.png" alt="" />
+							<span class="footet-shop" style="color: #333;">购物车</span>
+						</a>
+					</li>
+					<li class="fl">
+						<a href="self.html">
+							<img src="images/my.png" alt="" />
+							<span>我的</span>
+						</a>
+					</li>
+				</ul>
+			</div>
 		</div>
-			<script charset="utf-8" src="js/jquery-1.11.0.min.js"></script>
-			<!-- <script charset="utf-8" src="js/global.js?v=01291"></script> -->
-			<script charset="utf-8" src="js/bootstrap.min.js"></script>
-			<!-- <script charset="utf-8" src="js/template.js?v=01291"></script> -->
-			<script charset="utf-8" src="js/shopCart.js?v=01291"></script>
-			<!-- <script charset="utf-8" src="js/touchMove.js"></script> -->
-			<script type="text/javascript">
-				var contextPath = '';
-				//失效产品标题变灰
-				$(".p-cartinvalid").parent().parent().find(".p-title").css("color", "#ccc");
-				//点击编辑全部变换样式
-				$("#cart-edit").click(function() {
-					var textlength = this.innerHTML.length;
-					if(textlength == 4) {
-						this.innerHTML = "完成";
-						$(".p-cartcheck").css({ "background": "url(images/cart-check_2.png)no-repeat", "-webkit-background-size": "cover", "background-size": "cover" });
-						$(".totalcount").hide();
-						$(".buy-btn-fix").hide().next().removeClass("btn-hidden");
-						$(".ids").attr("checked", false);
-                        $(".ids").val(0);
-                        $("#buy-sele-all").attr("checked", false);
-            	        $("#buy-sele-all").val(0);
-						calculateTotal();
-					} else if(textlength == 2) {
-						this.innerHTML = "编辑全部";
-						$(".p-cartcheck").css({ "background": "url(images/cart-check.png)no-repeat", "-webkit-background-size": "cover", "background-size": "cover" });
-						$(".totalcount").show();
-						$(".buy-btn-fix").show().next().addClass("btn-hidden");
-						$(".ids").attr("checked", false);
-                        $(".ids").val(0);
-                        $("#buy-sele-all").attr("checked", false);
-            	        $("#buy-sele-all").val(0);
-						calculateTotal();
-					}
-
-				})
-				$('.buy-btn-fix').click(function(){
-					$(".p-cartcheck").css({ "background": "url(images/cart-check.png)no-repeat", "-webkit-background-size": "cover", "background-size": "cover" });
+		<script charset="utf-8" src="js/jquery-1.11.0.min.js"></script>
+		<!-- <script charset="utf-8" src="js/global.js?v=01291"></script> -->
+		<script charset="utf-8" src="js/bootstrap.min.js"></script>
+		<!-- <script charset="utf-8" src="js/template.js?v=01291"></script> -->
+		<script charset="utf-8" src="js/shopCart.js?v=01291"></script>
+		<!-- <script charset="utf-8" src="js/touchMove.js"></script> -->
+		<script type="text/javascript">
+			var contextPath = '';
+			//失效产品标题变灰
+			$(".p-cartinvalid").parent().parent().find(".p-title").css("color", "#ccc");
+			//点击编辑全部变换样式
+			$("#cart-edit").click(function() {
+				var textlength = this.innerHTML.length;
+				if(textlength == 4) {
+					this.innerHTML = "完成";
+					$(".p-cartcheck").css({
+						"background": "url(images/cart-check_2.png)no-repeat",
+						"-webkit-background-size": "cover",
+						"background-size": "cover"
+					});
+					$(".totalcount").hide();
+					$(".buy-btn-fix").hide().next().removeClass("btn-hidden");
 					$(".ids").attr("checked", false);
-                    $(".ids").val(0);
-                    $("#buy-sele-all").attr("checked", false);
-            	    $("#buy-sele-all").val(0);
-            	    calculateTotal();
-					window.location.href="order.html";
-				})
-				var needRefresh = sessionStorage.getItem("need-refresh");
-			    if(needRefresh){
-			        sessionStorage.removeItem("need-refresh");
-			        location.reload();
-			    }
+					$(".ids").val(0);
+					$("#buy-sele-all").attr("checked", false);
+					$("#buy-sele-all").val(0);
+					calculateTotal();
+				} else if(textlength == 2) {
+					this.innerHTML = "编辑全部";
+					$(".p-cartcheck").css({
+						"background": "url(images/cart-check.png)no-repeat",
+						"-webkit-background-size": "cover",
+						"background-size": "cover"
+					});
+					$(".totalcount").show();
+					$(".buy-btn-fix").show().next().addClass("btn-hidden");
+					$(".ids").attr("checked", false);
+					$(".ids").val(0);
+					$("#buy-sele-all").attr("checked", false);
+					$("#buy-sele-all").val(0);
+					calculateTotal();
+				}
 
-			</script>
+			})
+			$('.buy-btn-fix').click(function() {
+				$(".p-cartcheck").css({
+					"background": "url(images/cart-check.png)no-repeat",
+					"-webkit-background-size": "cover",
+					"background-size": "cover"
+				});
+				$(".ids").attr("checked", false);
+				$(".ids").val(0);
+				$("#buy-sele-all").attr("checked", false);
+				$("#buy-sele-all").val(0);
+				calculateTotal();
+				window.location.href = "order.html";
+			})
+			var needRefresh = sessionStorage.getItem("need-refresh");
+			if(needRefresh) {
+				sessionStorage.removeItem("need-refresh");
+				location.reload();
+			}
+			$('.frend-order').click(function(){
+				$('.index-bg').fadeIn()
+				$('.frend-order-detail').slideDown()
+			})
+			$('.frend-order-detail h3 span').click(function(){
+				$('.index-bg').fadeOut()
+				$('.frend-order-detail').slideUp()
+			})
+		</script>
 	</body>
 
 </html>
