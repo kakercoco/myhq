@@ -14,22 +14,16 @@
 				padding: 0;
 			}
 		</style>
-		<style type="text/css">
-			.ifooter li{
-				width: 25%;
-			}
-
-		</style>
 	</head>
 
 	<body>
-		<div class="sort-top fl">
+		<!--<div class="sort-top fl">
 			<img src="images/logo2.png" class="fl sort-logo2"/>
 			<p class="fr sort-serch mr-10">
 				<img src="images/search.png" class="fl sort-serch-logo"/>
 				<input type="text" name="sort-ipt"  value="" class="sort-serch-ipt" placeholder="搜索您想要的商品"/>
 			</p>
-		</div>
+		</div>-->
 		<div class="sort-cont">
 			<div class="sort-c-l fl">
 				<ul>
@@ -183,12 +177,12 @@
 				$('.sort-c-l li').removeClass('on')
 				$(this).addClass('on')
 			})
-			$(window).keypress(function(e){
-				var keycode=event.keyCode ? event.keyCode : event.which
-				if(keycode==13){
-					window.location.href="sort_search.html"
-				}
-			})
+//			$(window).keypress(function(e){
+//				var keycode=event.keyCode ? event.keyCode : event.which
+//				if(keycode==13){
+//					window.location.href="sort_search.html"
+//				}
+//			})
 		</script>
 	</body>
 
