@@ -8,61 +8,212 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/media-100.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
 		<script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
 		<style type="text/css">
-			.container img {
+			.swiper-container {
+			    width: 100%;
+			    height: 1.72rem;
+			}  
+			.swiper-wrapper img{
 				width: 100%;
 			}
-			.container .item{
-				background-color: #fff;
-				margin: 0.05rem 0.025rem;
-				padding-bottom:0.1rem ;
-				position: relative;
+			.swiper-pagination-bullet-active{
+				background: #fc3;
 			}
-			.container .item .i-zero{
-				position: absolute;
-				bottom: 0.4rem;
-			    right: 0rem;
-			    width: 1rem;
-			    height: auto;
-			    opacity: 0.5;
+			.swiper-pagination-bullet{
+				width: 12px;
+				height: 12px;
 			}
-			.col-xs-6{
+		</style>
+		<style type="text/css">
+			.tuij-top,.tuij-center{
+				height: 1.05rem;
+				width: 100%;
+			}
+			.buy-s p{
+				padding: 0;
+				height: auto; 
+     			line-height: none; 
+			}
+			.buy{
+				margin: 0;
+			}
+			.tj-top-l,.tj-top-r{
+				width: 50%;
+				height: 100%;
+			}
+			.tj-top-l{
+				padding-right: 0.02rem;
+			}
+			.tj-top-r{
+				padding-left: 0.02rem;
+			}
+			.tj-top-ll,.tj-top-lr{
+				width: 50%;
+				height: 100%;
+				background-color: #ddf9ff;
+			}
+			.tj-top-rl,.tj-top-rr{
+				width: 50%;
+				height: 100%;
+				background-color: #ffffef;
+			}
+			.tj-top-ll,.tj-top-rl{
+				padding: 0.35rem 0.1rem;
+			}
+			.tj-top-lr,.tj-top-rr{
+				padding: 0.1rem;
+			}
+			.tj-top-ll h3,.tj-top-rl h3{
+				font-size: 0.156rem;
+			}
+			.tj-top-ll h4{
+				font-size: 0.114rem;
+				color: #0080da;
+				border: 1px solid #0080da;
+				border-radius:0.03rem ;
+				padding: 0.05rem;
+			}
+			.tj-top-rl h4{
+				font-size: 0.114rem;
+				color: #f36700;
+				border: 1px solid #f36700;
+				border-radius:0.03rem ;
+				padding: 0.05rem;
+			}
+			.tj-top-lr img,.tj-top-rr img{
+				width: 100%;
+				height: 100%;
+			}
+			.tj-c1,.tj-c2,.tj-c3,.tj-c4{
+				width: 24%;
+				height: 100%;
+				padding: 0.05rem 0.1rem;
+				margin-right: 1.3%;
+			}
+			.tj-c1{
+				background-color: #ffeeff;
+			}
+			.tj-c2{
+				background-color: #fffbf3;
+			}
+			.tj-c3{
+				background-color: #edfeff;
+			}
+			.tj-c4{
+				background-color: #fff4f2;
+				margin-right: 0rem;
+				float: right;
+			}
+			.tuij-center img{
+				display: block;
+				width: 100%;
+			}
+			.tuij-center p{
+				font-size: 0.125rem;
+				height: 0.15rem;
+				line-height: 0.15rem;
 				padding: 0;
 			}
-			.container {
+			.tuij-down{
+				width: 3.6rem;
+				height: 0.8rem;
+				margin: 0.1rem auto;
+				border-radius: 0.1rem;
+				overflow: hidden;
+			}
+			.tuij-down img{
+				width: 100%;
+			}
+			.rhyp-top,.rhyp-down{
+				width: 100%;
+				height: 1.15rem;
+			}
+			.rhyp-tl{
+				width: 66%;
+				height: 100%;
+				padding: 0.1rem;
+			}
+			.rhyp-tr{
+				width: 33%;
+				height: 100%;
+				padding: 0.1rem;
+			}
+			.rhyp-tll,.rhyp-tlr,.rhyp-trl,.rhyp-trr{
+				width: 50%;
+				height: 100%;
+			}
+			.rhyp-tll h3,.rhyp-trl h3{
+				font-size: 0.135rem;
+			}
+			.rhyp-tll h4{
+				font-size: 0.18rem;
+			}
+			.rhyp-tll p,.rhyp-trl p{
 				padding: 0;
+				font-size: 0.115rem;
+				color: #fc3;
+				line-height: 0.15rem;
+			}
+			.rhyp-tlr img,.rhyp-trr img{
+				width: 100%;
+				height: 100%;
+			}
+			.rhyp-down{
+				width: 100%;
+				height: 1.15rem;
+			}
+			.rhyp-d{
+				width: 32.5%;
+				height: 100%;
+				padding: 0.1rem;
+			}
+			.rhyp-d h3{
+				font-size: 0.135rem;
+			}
+			.rhyp-d p{
+				padding: 0;
+				font-size: 0.115rem;
+				color: #fc3;
+				line-height: 0.15rem;
+			}
+			.rhyp-dl,.rhyp-dr{
+				width: 50%;
+				height: 100%;
+			}
+			.rhyp-dr img{
+				width: 100%;
+				height: 100%;
+			}
+			.rhyp-d2{
+				margin: 0 1%;
+			}
+			.buy-t2 p{
+				background-image: url('images/buy_title_bg2.png');
 			}
 		</style>
 	</head>
 
 	<body>
 		<div class="itop">
-			<div id="myCarousel" class="carousel slide">
-				<!-- 轮播（Carousel）指标 -->
-				<ol class="carousel-indicators">
-					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#myCarousel" data-slide-to="1"></li>
-					<li data-target="#myCarousel" data-slide-to="2"></li>
-				</ol>
-				<!-- 轮播（Carousel）项目 -->
-				<div class="carousel-inner">
-					<div class="item active">
-						<a href=""><img src="images/banner.png" alt="First slide"></a>
-					</div>
-					<div class="item">
-						<a href=""><img src="images/banner.png" alt="Second slide"></a>
-					</div>
-					<div class="item">
-						<a href=""><img src="images/banner.png" alt="Third slide"></a>
-					</div>
-				</div>
-				<!-- 轮播（Carousel）导航 -->
-				<a class="carousel-control left" href="#myCarousel" 
-				   data-slide="prev">&lsaquo;</a>
-				<a class="carousel-control right" href="#myCarousel" 
-				   data-slide="next">&rsaquo;</a>
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide"><a href="#"><img src="images/banner.png" alt="First slide"></a></div>
+			        <div class="swiper-slide"><a href="#"><img src="images/banner.png" alt="First slide"></a></div>
+			        <div class="swiper-slide"><a href="#"><img src="images/banner.png" alt="First slide"></a></div>
+			    </div>
+			    <!-- 如果需要分页器 -->
+			    <div class="swiper-pagination"></div>
+			    
+			    <!-- 如果需要导航按钮 -->
+			    <!--<div class="swiper-button-prev"></div>
+			    <div class="swiper-button-next"></div>-->
+			    
+			    <!-- 如果需要滚动条 -->
+			    <!--<div class="swiper-scrollbar"></div>-->
 			</div>
+			
 			<div class="top" style="display: none;">
 				<img src="images/logo@2x.png" class="fl logo" />
 				<img src="images/mes.png" alt="" class="fr imes" />
@@ -85,6 +236,43 @@
 				<img src="images/ewm.png" alt="" />
 				<p>长按二维码关注公众微信</p>
 			</div>
+		</div>
+		<div class="banner-down">
+			<img src="images/banner_down.png"/>
+		</div>
+		<div class="nav">
+			<ul>
+				<li class="tac">
+					<a href="#1F" onclick="open_more(1)">
+						<img src="images/nav01.png"/>
+						<span>个人洗护</span>
+					</a>
+				</li>
+				<li class="tac">
+					<a href="#2F" onclick="open_more(2)">
+						<img src="images/nav02.png"/>
+						<span>家庭清洁</span>
+					</a>
+				</li>
+				<li class="tac">
+					<a href="#3F" onclick="open_more(3)">
+						<img src="images/nav03.png"/>
+						<span>粮油干货</span>
+					</a>
+				</li>
+				<li class="tac">
+					<a href="#4F" onclick="open_more(4)">
+						<img src="images/nav04.png"/>
+						<span>食品饮料</span>
+					</a>
+				</li>
+				<li class="tac">
+					<a href="#5F" onclick="open_more(5)">
+						<img src="images/nav05.png"/>
+						<span>物勒工名</span>
+					</a>
+				</li>
+			</ul>
 		</div>
 		<div class="icontent clearfix">
 			<div class="hot">
@@ -111,107 +299,175 @@
 			</div>
 			<div class="buy">
 				<div class="buy-t buy-t-hot">
-					<p class="fl fw-b">爆款抢购</p>
-					<span class="yellowb"></span>
-					<div class="fr dog mt-10"><img src="images/dog.png"/></div>
-					<p class="timer fl"><i class="c-red">距结束仅剩</i><span id="timerhh"></span> : <span id="timermm"></span> : <span id="timerss"></span></p>
+					<p class="tac fw-b"><span class="c-f7c08">爆</span>款抢购</p>
+					
 				</div>
 				<div class="buy-c clearfix">
 					<ul>
-						<li class="fl">
+						<li class="fl buy-cl">
 							<a href="hot.html">
 								<img src="images/qq1.png"/>
-								<h5>SK II 多元元气面霜多元元气面霜</h5>
-								<p><span class="bgc-000">¥1280</span> 285人付款</p>
+								<h5 class="c-fff">¥<span class="">1280</span>气面霜多元元气面霜</h5>
 							</a>
 							<img src="images/zero.png" alt="" class="zero" />
-							<img src="images/hotIcon.png" class="hotIcon"/>	
+							<p class="timer fl"><span id="timerhh"></span> : <span id="timermm"></span> : <span id="timerss"></span></p>
 						</li>
-						<li class="fl">
+						<li class="fl buy-cr">
 							<a href="hot.html">
-								<img src="images/qq1.png"/>
-								<h5>SK II 多元元气面霜多元元气面多元元气面</h5>
-								<p><span class="bgc-000">¥1280</span> 285人付款</p>
+								<div class="section-l fl">
+									<span class="c-fc3">¥1280</span>
+									<h5>元元气面霜多元元气面多元元气面</h5>
+								</div>
+								<div class="section-r fr">
+									<img src="images/qq1.png"/>
+								</div>
 							</a>
-							<img src="images/hotIcon.png" class="hotIcon"/>
+							<img src="images/zero.png" alt="" class="zero" />
+							<p class="timer fl"><span >00</span> : <span >00</span> : <span >00</span></p>
+						</li>
+						<li class="fl buy-cr">
+							<a href="hot.html">
+								<div class="section-l fl">
+									<span class="c-fc3">¥1280</span>
+									<h5>元元气面霜多元元气面多元元气面</h5>
+								</div>
+								<div class="section-r fr">
+									<img src="images/qq1.png"/>
+								</div>
+							</a>
+							<p class="timer fl"><span >00</span> : <span >00</span> : <span >00</span></p>
 						</li>
 					</ul>
 				</div>
 			</div>
 			<img src="images/buybg.jpg" class="buy-bg"/>
-			<div class="buy" style="margin-top: 0;">
+			<div class="buy">
 				<div class="buy-t">
-					<p class="fl fw-b">热销单品</p>
-					<span class="yellowb"></span>
+					<p class="tac fw-b"><span class="c-f7c08">特</span>色推荐</p>
 				</div>
-				<div class="buy-s">
-					<div class="container">
-					
-						<div id="my-gallery-container">
-						
-							<div class="item" data-order="1">
-							<img src="images/zero.png" alt="" class="i-zero" />
-								<a href="produce.html">
-									<img src="images/qq3.png" />
-									<h5>韩国代购春夏女西装裤 春夏女西装裤 春夏女西装裤 修身显瘦休闲百搭小脚裤</h5>
-									<p><span class="bgc-000 bgc-00">¥1280</span> 285人付款</p>
-								</a>
-								</div>
-						
-							<div class="item " data-order="2">
-							
-								<a href="produce.html">
-									<img src="images/qq4.png" />
-									<h5>韩国代购春夏女西装裤 春夏女西装裤 春夏女西装裤 修身显瘦休闲百搭小脚裤</h5>
-									<p><span class="bgc-000 bgc-00">¥1280</span> 285人付款</p>
-								</a>
-								</div>
-						
-							<div class="item " data-order="3">
-							
-								<a href="produce.html">
-									<img src="images/qq1.png" />
-									<h5>韩国代购春夏女西装裤 春夏女西装裤 春夏女西装裤 修身显瘦休闲百搭小脚裤</h5>
-									<p><span class="bgc-000 bgc-00">¥1280</span> 285人付款</p>
-								</a>
-								</div>
-						
-							<div class="item " data-order="4">
-							
-								<a href="produce.html">
-									<img src="images/qq4.png" />
-									<h5>韩国代购春夏女西装裤 春夏女西装裤 春夏女西装裤 修身显瘦休闲百搭小脚裤</h5>
-									<p><span class="bgc-000 bgc-00">¥1280</span> 285人付款</p>
-								</a>
-								</div>
-							<div class="item " data-order="5">
-							
-								<a href="produce.html">
-									<img src="images/qq4.png" />
-									<h5>韩国代购春夏女西装裤 春夏女西装裤 春夏女西装裤 修身显瘦休闲百搭小脚裤</h5>
-									<p><span class="bgc-000 bgc-00">¥1280</span> 285人付款</p>
-								</a>
-								</div>
-							<div class="item " data-order="6">
-							
-								<a href="produce.html">
-									<img src="images/qq4.png" />
-									<h5>韩国代购春夏女西装裤 春夏女西装裤 春夏女西装裤 修身显瘦休闲百搭小脚裤</h5>
-									<p><span class="bgc-000 bgc-00">¥1280</span> 285人付款</p>
-								</a>
-								</div>
+				<div class="buy-s tuij">
+					<div class="tuij-top">
+						<div class="tj-top-l fl">
+							<div class="tj-top-ll fl">
+								<h3 class="tac">洗护组合</h3>
+								<h4 class="tac">实惠想不到</h4>
 							</div>
+							<div class="tj-top-lr fl">
+								<img src="images/png.png"/>
+							</div>
+						</div>
+						<div class="tj-top-r fr">
+							<div class="tj-top-rl fl">
+								<h3 class="tac">进口零食</h3>
+								<h4 class="tac">聚会吃什么</h4>
+							</div>
+							<div class="tj-top-rr fl">
+								<img src="images/png.png"/>
+							</div>
+						</div>
 					</div>
-				
+					<div class="tuij-center mt-5">
+						<div class="tj-c1 fl">
+							<img src="images/png.png"/>
+							<p class="tac mt-10">轻奢新主张</p>
+						</div>
+						<div class="tj-c2 fl">
+							<img src="images/png.png"/>
+							<p class="tac mt-10">发现好货</p>
+						</div>
+						<div class="tj-c3 fl">
+							<img src="images/png.png"/>
+							<p class="tac mt-10">户外精品</p>
+						</div>
+						<div class="tj-c4 fl">
+							<img src="images/png.png"/>
+							<p class="tac mt-10">优纸钜惠</p>
+						</div>
+					</div>
+					<div class="tuij-down">
+						<img src="images/banner_down.png"/>
+					</div>
 				</div>
 			</div>
+			<div class="buy">
+				<div class="buy-t">
+					<p class="tac fw-b"><span class="c-f7c08">日</span>化用品</p>
+				</div>
+				<div class="rhyp">
+					<div class="rhyp-top">
+						<div class="rhyp-tl fl bg-fff">
+							<div class="rhyp-tll fl">
+								<h3>超值组合</h3>
+								<p>* 佳洁士牙膏 </p>
+								<p>* 飘柔润发精华</p>
+								<p>* 舒肤佳洗手液</p>
+								<h4 class="mt-20">¥49.9</h4>
+							</div>
+							<div class="rhyp-tlr fl">
+								<img src="images/png.png"/>
+							</div>
+							<div class="rhyp-tlr"></div>
+						</div>
+						<div class="rhyp-tr fr bg-fff">
+							<div class="rhyp-trl fl">
+								<h3>洗手液</h3>
+								<p>健康天然 </p>
+							</div>
+							<div class="rhyp-trr fl">
+								<img src="images/png.png"/>
+							</div>
+						</div>
+					</div>
+					<div class="rhyp-down mt-5">
+						<div class="rhyp-d fl bg-fff">
+							<div class="rhyp-dl fl">
+								<h3>洗手液</h3>
+								<p>健康天然 </p>
+							</div>
+							<div class="rhyp-dr fr">
+								<img src="images/png.png"/>
+							</div>
+						</div>
+						<div class="rhyp-d rhyp-d2 fl bg-fff">
+							<div class="rhyp-dl fl">
+								<h3>洗手液</h3>
+								<p>健康天然 </p>
+							</div>
+							<div class="rhyp-dr fr">
+								<img src="images/png.png"/>
+							</div>
+						</div>
+						<div class="rhyp-d fl bg-fff">
+							<div class="rhyp-dl fl">
+								<h3>洗手液</h3>
+								<p>健康天然 </p>
+							</div>
+							<div class="rhyp-dr fr">
+								<img src="images/png.png"/>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="buy">
+				<div class="buy-t buy-t2">
+					<p class="tac fw-b"><span class="c-f7c08">日</span>化用品</p>
+				</div>
+			<div>
 		</div>
 		<div class="ifooter">
 			<ul>
 				<li class="fl">
 					<a href="index.html">
-						<img src="images/home.png" alt="" />
-						<span class="footet-home">首页</span>
+						<img src="images/home2.png" alt="" />
+						<span class="">首页</span>
+					</a>
+				</li>
+				<li class="fl">
+					<a href="sort.html">
+						<img src="images/sort.png" alt="" />
+						<span class="">分类</span>
 					</a>
 				</li>
 				<li class="fl">
@@ -235,29 +491,22 @@
 				<span>去查看</span>
 			</p>
 		</div>
-		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/hq.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/mp.mansory.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper-3.4.2.jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		<script>
 			$(document).ready(function($) {
-				$('#myCarousel').carousel({
-					interval: 100000
-				}); //每隔5秒自动轮播 
-				$("#my-gallery-container").mpmansory({
-					childrenClass: 'item', // default is a div
-					columnClasses: '', //add classes to items
-					breakpoints: {
-						lg: 3,
-						md: 4,
-						sm: 6,
-						xs: 6
-					},
-					distributeBy: { order: false, height: false, attr: 'data-order', attrOrder: 'asc' }, //default distribute by order, options => order: true/false, height: true/false, attr => 'data-order', attrOrder=> 'asc'/'desc'
-					onload: function(items) {
-						//make somthing with items
-					}
-				});
-				
+				var mySwiper = new Swiper ('.swiper-container', {
+			    pagination: '.swiper-pagination', //分页器/导航点
+		        nextButton: '.swiper-button-next',//左右切换按钮
+		        prevButton: '.swiper-button-prev',
+		        slidesPerView: 1,//设置slider容器能够同时显示的slides数量
+		        paginationClickable: true,//点击分页器的指示点分页器会控制Swiper切换
+		        spaceBetween: 0,	//slide之间的间隔
+		        loop: true,			//是否衔接滑动
+		        autoplay: 4000,		//多久滑动一次
+		        speed:1000	,		//滑动动画时间
+		        
+			  })     
 			});
 			
 		</script>

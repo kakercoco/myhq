@@ -497,6 +497,7 @@ a:hover, a:focus{
 	height: 0.47rem;
 	width: 100%;
 	padding: 0.07rem 0.1rem;
+	z-index: 20;
 }
 .iatt {
 	font-size: 0.125rem;
@@ -3719,6 +3720,7 @@ a:hover, a:focus{
 	bottom:1rem;
 	right: 0.2rem;
 	border-radius: 0.22rem;
+	border: 1px solid #ccc;
 }
 .sort-logo{
 	width: 0.22rem;
@@ -3831,8 +3833,21 @@ a:hover, a:focus{
 	height: 0.4rem;
 	line-height: 0.4rem;
 	font-size: 0.1335rem;
+	position: relative;
 }
-
+.sort-price-top-bottom{
+	width: 0.15rem;
+	height: 100%;
+	float: left;
+	padding: 0.07rem 0;
+	position: absolute;
+	top: 0;
+	right: 0.15rem;
+}
+.sort-price-top-bottom i{
+	float: left;
+	font-size: 0.11rem
+}
 .sort-search-title li img {
 	height: 0.15rem;
 }
