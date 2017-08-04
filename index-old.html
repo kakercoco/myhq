@@ -8,189 +8,519 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/media-100.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css" />
 		<script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
 		<style type="text/css">
 			.swiper-container {
-			    width: 100%;
-			    height: 1.72rem;
-			}  
-			.swiper-wrapper img{
+				width: 100%;
+				height: 1.72rem;
+			}
+			
+			.swiper-wrapper img {
 				width: 100%;
 			}
-			.swiper-pagination-bullet-active{
+			.swiper-container2 {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.swiper-wrapper2 img {
+				width: 100%;
+			}
+			
+			.swiper-pagination-bullet-active {
 				background: #fc3;
 			}
-			.swiper-pagination-bullet{
+			
+			.swiper-pagination-bullet {
 				width: 12px;
 				height: 12px;
 			}
 		</style>
 		<style type="text/css">
-			.tuij-top,.tuij-center{
+			.tuij-top,
+			.tuij-center {
 				height: 1.05rem;
 				width: 100%;
 			}
-			.buy-s p{
+			
+			.buy-s p {
 				padding: 0;
-				height: auto; 
-     			line-height: none; 
+				height: auto;
+				line-height: none;
 			}
-			.buy{
+			
+			.buy {
 				margin: 0;
 			}
-			.tj-top-l,.tj-top-r{
+			
+			.tj-top-l,
+			.tj-top-r {
 				width: 50%;
 				height: 100%;
 			}
-			.tj-top-l{
+			
+			.tj-top-l {
 				padding-right: 0.02rem;
 			}
-			.tj-top-r{
+			
+			.tj-top-r {
 				padding-left: 0.02rem;
 			}
-			.tj-top-ll,.tj-top-lr{
+			
+			.tj-top-ll,
+			.tj-top-lr {
 				width: 50%;
 				height: 100%;
 				background-color: #ddf9ff;
 			}
-			.tj-top-rl,.tj-top-rr{
+			
+			.tj-top-rl,
+			.tj-top-rr {
 				width: 50%;
 				height: 100%;
 				background-color: #ffffef;
 			}
-			.tj-top-ll,.tj-top-rl{
+			
+			.tj-top-ll,
+			.tj-top-rl {
 				padding: 0.35rem 0.1rem;
 			}
-			.tj-top-lr,.tj-top-rr{
+			
+			.tj-top-lr,
+			.tj-top-rr {
 				padding: 0.1rem;
 			}
-			.tj-top-ll h3,.tj-top-rl h3{
+			
+			.tj-top-ll h3,
+			.tj-top-rl h3 {
 				font-size: 0.156rem;
 			}
-			.tj-top-ll h4{
+			
+			.tj-top-ll h4 {
 				font-size: 0.114rem;
 				color: #0080da;
 				border: 1px solid #0080da;
-				border-radius:0.03rem ;
+				border-radius: 0.03rem;
 				padding: 0.05rem;
 			}
-			.tj-top-rl h4{
+			
+			.tj-top-rl h4 {
 				font-size: 0.114rem;
 				color: #f36700;
 				border: 1px solid #f36700;
-				border-radius:0.03rem ;
+				border-radius: 0.03rem;
 				padding: 0.05rem;
 			}
-			.tj-top-lr img,.tj-top-rr img{
+			
+			.tj-top-lr img,
+			.tj-top-rr img {
 				width: 100%;
 				height: 100%;
 			}
-			.tj-c1,.tj-c2,.tj-c3,.tj-c4{
+			
+			.tj-c1,
+			.tj-c2,
+			.tj-c3,
+			.tj-c4 {
 				width: 24%;
 				height: 100%;
 				padding: 0.05rem 0.1rem;
 				margin-right: 1.3%;
 			}
-			.tj-c1{
+			
+			.tj-c1 {
 				background-color: #ffeeff;
 			}
-			.tj-c2{
+			
+			.tj-c2 {
 				background-color: #fffbf3;
 			}
-			.tj-c3{
+			
+			.tj-c3 {
 				background-color: #edfeff;
 			}
-			.tj-c4{
+			
+			.tj-c4 {
 				background-color: #fff4f2;
 				margin-right: 0rem;
 				float: right;
 			}
-			.tuij-center img{
+			
+			.tuij-center img {
 				display: block;
 				width: 100%;
 			}
-			.tuij-center p{
+			
+			.tuij-center p {
 				font-size: 0.125rem;
 				height: 0.15rem;
 				line-height: 0.15rem;
 				padding: 0;
 			}
-			.tuij-down{
+			
+			.tuij-down {
 				width: 3.6rem;
 				height: 0.8rem;
 				margin: 0.1rem auto;
 				border-radius: 0.1rem;
 				overflow: hidden;
 			}
-			.tuij-down img{
+			
+			.tuij-down img {
 				width: 100%;
 			}
-			.rhyp-top,.rhyp-down{
+			
+			.rhyp-top,
+			.rhyp-down {
 				width: 100%;
 				height: 1.15rem;
 			}
-			.rhyp-tl{
+			
+			.rhyp-tl {
 				width: 66%;
 				height: 100%;
 				padding: 0.1rem;
 			}
-			.rhyp-tr{
+			
+			.rhyp-tr {
 				width: 33%;
 				height: 100%;
 				padding: 0.1rem;
 			}
-			.rhyp-tll,.rhyp-tlr,.rhyp-trl,.rhyp-trr{
+			
+			.rhyp-tll,
+			.rhyp-tlr,
+			.rhyp-trl,
+			.rhyp-trr {
 				width: 50%;
 				height: 100%;
 			}
-			.rhyp-tll h3,.rhyp-trl h3{
+			
+			.rhyp-tll h3,
+			.rhyp-trl h3 {
 				font-size: 0.135rem;
 			}
-			.rhyp-tll h4{
+			
+			.rhyp-tll h4 {
 				font-size: 0.18rem;
 			}
-			.rhyp-tll p,.rhyp-trl p{
+			
+			.rhyp-tll p,
+			.rhyp-trl p {
 				padding: 0;
 				font-size: 0.115rem;
 				color: #fc3;
 				line-height: 0.15rem;
 			}
-			.rhyp-tlr img,.rhyp-trr img{
+			
+			.rhyp-tlr img,
+			.rhyp-trr img {
 				width: 100%;
 				height: 100%;
 			}
-			.rhyp-down{
+			
+			.rhyp-down {
 				width: 100%;
 				height: 1.15rem;
 			}
-			.rhyp-d{
+			
+			.rhyp-d {
 				width: 32.5%;
 				height: 100%;
 				padding: 0.1rem;
 			}
-			.rhyp-d h3{
+			
+			.rhyp-d h3 {
 				font-size: 0.135rem;
 			}
-			.rhyp-d p{
+			
+			.rhyp-d p {
 				padding: 0;
 				font-size: 0.115rem;
 				color: #fc3;
 				line-height: 0.15rem;
 			}
-			.rhyp-dl,.rhyp-dr{
+			
+			.rhyp-dl,
+			.rhyp-dr {
 				width: 50%;
 				height: 100%;
 			}
-			.rhyp-dr img{
+			
+			.rhyp-dr img {
 				width: 100%;
 				height: 100%;
 			}
-			.rhyp-d2{
+			
+			.rhyp-d2 {
 				margin: 0 1%;
 			}
-			.buy-t2 p{
+			
+			.buy-t2 p {
 				background-image: url('images/buy_title_bg2.png');
+			}
+			
+			.c-blue {
+				color: #33b0ff;
+			}
+			
+			.hwyp-top,
+			.hwyp-down {
+				width: 100%;
+				height: 1.15rem;
+			}
+			
+			.hwyp-tl,
+			.hwyp-tr {
+				width: 49.5%;
+				height: 100%;
+			}
+			
+			.hwyp h3 {
+				font-size: 0.135rem;
+			}
+			
+			.hwyp p {
+				font-size: 0.115rem;
+				color: #33b0ff;
+			}
+			
+			.hwyp-tll {
+				width: 40%;
+				padding-top: 0.1rem;
+				padding-left: 0.1rem;
+				height: 100%;
+			}
+			
+			.hwyp-tll h4 {
+				font-size: 0.18rem;
+				margin-top: 0.4rem;
+			}
+			
+			.hwyp-tlr {
+				width: 60%;
+			}
+			
+			.hwyp-tlr img {
+				width: 100%;
+			}
+			
+			.hwyp-trl,
+			.hwyp-trr {
+				width: 49%;
+				height: 100%;
+				padding: 0.1rem;
+			}
+			
+			.hwyp-trl img,
+			.hwyp-trr img {
+				width: 100%;
+				height: 0.7rem;
+			}
+			
+			.hwyp-dd {
+				width: 24%;
+				height: 100%;
+				margin-right: 1.3%;
+				padding: 0.1rem;
+			}
+			
+			.hwyp-dd img {
+				width: 100%;
+				height: 0.7rem;
+			}
+			
+			.hwyp-d {
+				margin-right: 0;
+			}
+			
+			.buy-t3 p {
+				background-image: url('images/buy_title_bg3.png');
+			}
+			
+			.c-pink {
+				color: #f0a3ff;
+			}
+			
+			.qscp {
+				width: 100%;
+				height: 2.3rem;
+			}
+			
+			.qscp-l,
+			.qscp-r {
+				height: 100%;
+				width: 49.5%;
+			}
+			
+			.qscp-l {
+				padding: 0.1rem;
+			}
+			
+			.qscp-l img {
+				width: 100%;
+				height: 1.4rem;
+			}
+			
+			.qscp h3 {
+				font-size: 0.135rem;
+			}
+			
+			.qscp h4 {
+				font-size: 0.18rem;
+			}
+			
+			.qscp p {
+				font-size: 0.115rem;
+				color: #f0a3ff;
+				line-height: 0.15rem;
+			}
+			
+			.qscp-rt,
+			.qscp-rd {
+				width: 100%;
+				height: 49%;
+				padding: 0.1rem;
+			}
+			
+			.qscp-rd {
+				margin-top: 0.04rem;
+			}
+			
+			.qscp-rt img,
+			.qscp-rd img {
+				width: 50%;
+				height: 0.7rem;
+			}
+			.xxsp-t{
+				width: 100%;
+				height:1.15rem ;
+			}
+			.xxsp h3{
+				font-size: 0.135rem;
+			}
+			.xxsp p{
+				font-size: 0.115rem;
+				color: #ff8533;
+			}
+			.xxsp img{
+				width: 100%;
+			}
+			.xxsp-tl {
+				width: 24%;
+				height: 100%;
+				margin-right: 1.3%;
+				padding: 0.1rem;
+			}
+			.buy-t4 p{
+				background-image: url(images/buy_title_bg4.png);
+			}
+			.c-org{
+				color: #ff8533;
+			}
+			.xxsp-tlr{
+				margin-right: 0;
+			}
+			.zbhh-l{
+				width: 49.5%;
+				margin-right: 1%;
+				height: 1.15rem;
+				margin-bottom: 0.05rem;
+				padding: 0.1rem;
+				position: relative;
+			}
+			.zbhh-l:nth-of-type(2n){
+				margin-right: 0;
+			}
+			.c-green{
+				color: #7fda6d;
+			}
+			.zbhh-l p{
+				font-size: 0.115rem;
+				color: #7fda6d;
+				z-index: 20;
+			}
+			.zbhh-l h3{
+				font-size: 0.135rem;
+			}
+			.zbhh-l img{
+				width: 1rem;
+				height: 1rem;
+				position: absolute;
+				right: 0.1rem;
+				top: 0.1rem;
+			}
+			.buy-t5 p{
+				background-image: url(images/buy_title_bg5.png);
+			}
+			.c-ying{
+				color: #14e6bc;
+			}
+			.buy-t6 p{
+				background-image: url(images/buy_title_bg6.png);
+			}
+			.hqzb{
+				height: 1.8rem;
+				background: url(images/banner-bg.png) no-repeat;
+				background-size: cover;
+				/*-webkit-filter: blur(15px);
+	            -moz-filter: blur(15px);
+	            -o-filter: blur(15px);
+	            -ms-filter: blur(15px);
+	            filter: blur(15px);*/
+			}
+			.hqzb .swiper-container{
+				height: 1.8rem;
+			}
+			.hqzb .swiper-slide{
+				margin: 0.2rem 0;
+				height: 1.4rem;
+			}
+			.hqzb .swiper-slide img{
+				height: 100%;
+			}
+			.rxsp-l{
+				width: 32.5%;
+				height: 2.1rem;
+				padding: 0.1rem 0.05rem;
+				margin-bottom: 0.05rem;
+			}
+			.rxsp-l:nth-of-type(3n-1){
+				margin-left: 1%;
+				margin-right: 1%;
+			}
+			.rxsp-l img{
+				width: 100%;
+				height: 1.1rem;
+			}
+			.rxsp-l h3{
+				font-size: 0.135rem;
+				margin-top: 0.2rem;
+				overflow: hidden;
+			    text-overflow: ellipsis;
+			    display: -webkit-box;
+			    -webkit-line-clamp: 2;
+			    -webkit-box-orient: vertical;
+			    min-height: 0.34rem;
+			    line-height: 0.17rem;
+			}
+			.rxsp-l p{
+				width: 100%;
+				height: 0.2rem;
+			}
+			.rxsp-l p span{
+				font-size: 0.13rem;
+				width: 40%;
+				color: #ff7c08;
+			}
+			.rxsp-l p i{
+				font-size: 0.115rem;
+				font-style: normal;
+				width: 60%;
+				color: #999;
+				margin-top: 0.02rem;
+				text-align: right;
 			}
 		</style>
 	</head>
@@ -198,22 +528,28 @@
 	<body>
 		<div class="itop">
 			<div class="swiper-container">
-			    <div class="swiper-wrapper">
-			        <div class="swiper-slide"><a href="#"><img src="images/banner.png" alt="First slide"></a></div>
-			        <div class="swiper-slide"><a href="#"><img src="images/banner.png" alt="First slide"></a></div>
-			        <div class="swiper-slide"><a href="#"><img src="images/banner.png" alt="First slide"></a></div>
-			    </div>
-			    <!-- 如果需要分页器 -->
-			    <div class="swiper-pagination"></div>
-			    
-			    <!-- 如果需要导航按钮 -->
-			    <!--<div class="swiper-button-prev"></div>
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a href="#"><img src="images/banner.png" alt="First slide"></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#"><img src="images/banner.png" alt="First slide"></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#"><img src="images/banner.png" alt="First slide"></a>
+					</div>
+				</div>
+				<!-- 如果需要分页器 -->
+				<div class="swiper-pagination"></div>
+
+				<!-- 如果需要导航按钮 -->
+				<!--<div class="swiper-button-prev"></div>
 			    <div class="swiper-button-next"></div>-->
-			    
-			    <!-- 如果需要滚动条 -->
-			    <!--<div class="swiper-scrollbar"></div>-->
+
+				<!-- 如果需要滚动条 -->
+				<!--<div class="swiper-scrollbar"></div>-->
 			</div>
-			
+
 			<div class="top" style="display: none;">
 				<img src="images/logo@2x.png" class="fl logo" />
 				<img src="images/mes.png" alt="" class="fr imes" />
@@ -238,37 +574,37 @@
 			</div>
 		</div>
 		<div class="banner-down">
-			<img src="images/banner_down.png"/>
+			<img src="images/banner_down.png" />
 		</div>
 		<div class="nav">
 			<ul>
 				<li class="tac">
 					<a href="#1F" onclick="open_more(1)">
-						<img src="images/nav01.png"/>
+						<img src="images/nav01.png" />
 						<span>个人洗护</span>
 					</a>
 				</li>
 				<li class="tac">
 					<a href="#2F" onclick="open_more(2)">
-						<img src="images/nav02.png"/>
+						<img src="images/nav02.png" />
 						<span>家庭清洁</span>
 					</a>
 				</li>
 				<li class="tac">
 					<a href="#3F" onclick="open_more(3)">
-						<img src="images/nav03.png"/>
+						<img src="images/nav03.png" />
 						<span>粮油干货</span>
 					</a>
 				</li>
 				<li class="tac">
 					<a href="#4F" onclick="open_more(4)">
-						<img src="images/nav04.png"/>
+						<img src="images/nav04.png" />
 						<span>食品饮料</span>
 					</a>
 				</li>
 				<li class="tac">
 					<a href="#5F" onclick="open_more(5)">
-						<img src="images/nav05.png"/>
+						<img src="images/nav05.png" />
 						<span>物勒工名</span>
 					</a>
 				</li>
@@ -283,30 +619,31 @@
 				<div class="hot-h fl">
 					<marquee direction="left" scrollamount="2">
 						<div style="width: 500%;height: 0.3rem;overflow: hidden;">
-							<p class="fl"><span class="hot-hh">热</span>
-							春季上新，火热销售中</p>
-							<p class="fl"><span class="hot-hh">热</span>
-							春季上新，火热销售中</p>
-							<p class="fl"><span class="hot-hh">热</span>
-							春季上新，火热销售中</p>
-							<p class="fl"><span class="hot-hh">热</span>
-							春季上新，火热销售中</p>
+							<p class="fl"><span class="hot-hh">热</span> 春季上新，火热销售中
+							</p>
+							<p class="fl"><span class="hot-hh">热</span> 春季上新，火热销售中
+							</p>
+							<p class="fl"><span class="hot-hh">热</span> 春季上新，火热销售中
+							</p>
+							<p class="fl"><span class="hot-hh">热</span> 春季上新，火热销售中
+							</p>
 						</div>
 					</marquee>
 				</div>
-				<div class="more fr"><a href="kbao.html">更多 <img src="images/myback.png" class="fr"/></a>
+				<div class="more fr">
+					<a href="kbao.html">更多 <img src="images/myback.png" class="fr" /></a>
 				</div>
 			</div>
 			<div class="buy">
 				<div class="buy-t buy-t-hot">
 					<p class="tac fw-b"><span class="c-f7c08">爆</span>款抢购</p>
-					
+
 				</div>
 				<div class="buy-c clearfix">
 					<ul>
 						<li class="fl buy-cl">
 							<a href="hot.html">
-								<img src="images/qq1.png"/>
+								<img src="images/qq1.png" />
 								<h5 class="c-fff">¥<span class="">1280</span>气面霜多元元气面霜</h5>
 							</a>
 							<img src="images/zero.png" alt="" class="zero" />
@@ -319,11 +656,11 @@
 									<h5>元元气面霜多元元气面多元元气面</h5>
 								</div>
 								<div class="section-r fr">
-									<img src="images/qq1.png"/>
+									<img src="images/qq1.png" />
 								</div>
 							</a>
 							<img src="images/zero.png" alt="" class="zero" />
-							<p class="timer fl"><span >00</span> : <span >00</span> : <span >00</span></p>
+							<p class="timer fl"><span>00</span> : <span>00</span> : <span>00</span></p>
 						</li>
 						<li class="fl buy-cr">
 							<a href="hot.html">
@@ -332,20 +669,20 @@
 									<h5>元元气面霜多元元气面多元元气面</h5>
 								</div>
 								<div class="section-r fr">
-									<img src="images/qq1.png"/>
+									<img src="images/qq1.png" />
 								</div>
 							</a>
-							<p class="timer fl"><span >00</span> : <span >00</span> : <span >00</span></p>
+							<p class="timer fl"><span>00</span> : <span>00</span> : <span>00</span></p>
 						</li>
 					</ul>
 				</div>
 			</div>
-			<img src="images/buybg.jpg" class="buy-bg"/>
+			<img src="images/buybg.jpg" class="buy-bg" />
 			<div class="buy">
 				<div class="buy-t">
 					<p class="tac fw-b"><span class="c-f7c08">特</span>色推荐</p>
 				</div>
-				<div class="buy-s tuij">
+				<div class="tuij">
 					<div class="tuij-top">
 						<div class="tj-top-l fl">
 							<div class="tj-top-ll fl">
@@ -353,7 +690,7 @@
 								<h4 class="tac">实惠想不到</h4>
 							</div>
 							<div class="tj-top-lr fl">
-								<img src="images/png.png"/>
+								<img src="images/png.png" />
 							</div>
 						</div>
 						<div class="tj-top-r fr">
@@ -362,30 +699,30 @@
 								<h4 class="tac">聚会吃什么</h4>
 							</div>
 							<div class="tj-top-rr fl">
-								<img src="images/png.png"/>
+								<img src="images/png.png" />
 							</div>
 						</div>
 					</div>
 					<div class="tuij-center mt-5">
 						<div class="tj-c1 fl">
-							<img src="images/png.png"/>
+							<img src="images/png.png" />
 							<p class="tac mt-10">轻奢新主张</p>
 						</div>
 						<div class="tj-c2 fl">
-							<img src="images/png.png"/>
+							<img src="images/png.png" />
 							<p class="tac mt-10">发现好货</p>
 						</div>
 						<div class="tj-c3 fl">
-							<img src="images/png.png"/>
+							<img src="images/png.png" />
 							<p class="tac mt-10">户外精品</p>
 						</div>
 						<div class="tj-c4 fl">
-							<img src="images/png.png"/>
+							<img src="images/png.png" />
 							<p class="tac mt-10">优纸钜惠</p>
 						</div>
 					</div>
 					<div class="tuij-down">
-						<img src="images/banner_down.png"/>
+						<img src="images/banner_down.png" />
 					</div>
 				</div>
 			</div>
@@ -404,7 +741,7 @@
 								<h4 class="mt-20">¥49.9</h4>
 							</div>
 							<div class="rhyp-tlr fl">
-								<img src="images/png.png"/>
+								<img src="images/png.png" />
 							</div>
 							<div class="rhyp-tlr"></div>
 						</div>
@@ -414,7 +751,7 @@
 								<p>健康天然 </p>
 							</div>
 							<div class="rhyp-trr fl">
-								<img src="images/png.png"/>
+								<img src="images/png.png" />
 							</div>
 						</div>
 					</div>
@@ -425,7 +762,7 @@
 								<p>健康天然 </p>
 							</div>
 							<div class="rhyp-dr fr">
-								<img src="images/png.png"/>
+								<img src="images/png.png" />
 							</div>
 						</div>
 						<div class="rhyp-d rhyp-d2 fl bg-fff">
@@ -434,7 +771,7 @@
 								<p>健康天然 </p>
 							</div>
 							<div class="rhyp-dr fr">
-								<img src="images/png.png"/>
+								<img src="images/png.png" />
 							</div>
 						</div>
 						<div class="rhyp-d fl bg-fff">
@@ -443,18 +780,226 @@
 								<p>健康天然 </p>
 							</div>
 							<div class="rhyp-dr fr">
-								<img src="images/png.png"/>
+								<img src="images/png.png" />
 							</div>
 						</div>
-						
+
 					</div>
 				</div>
 			</div>
 			<div class="buy">
 				<div class="buy-t buy-t2">
-					<p class="tac fw-b"><span class="c-f7c08">日</span>化用品</p>
+					<p class="tac fw-b"><span class="c-blue">户</span>外用品</p>
 				</div>
-			<div>
+				<div class="hwyp">
+					<div class="hwyp-top">
+						<div class="hwyp-tl fl bg-fff">
+							<div class="hwyp-tll fl">
+								<h3>野营帐篷</h3>
+								<p>军工品质</p>
+								<h4>¥269</h4>
+							</div>
+							<div class="hwyp-tlr fl">
+								<img src="images/png.png" />
+							</div>
+						</div>
+						<div class="hwyp-tr fr">
+							<div class="hwyp-trl bg-fff fl">
+								<h3>强光手电</h3>
+								<p>军工品质</p>
+								<img src="images/png.png" />
+							</div>
+							<div class="hwyp-trr bg-fff fr">
+								<h3>强光手电</h3>
+								<p>军工品质</p>
+								<img src="images/png.png" />
+							</div>
+						</div>
+					</div>
+					<div class="hwyp-down mt-5">
+						<div class="hwyp-dd bg-fff fl">
+							<h3>强光手电</h3>
+							<p>军工品质</p>
+							<img src="images/png.png" />
+						</div>
+						<div class="hwyp-dd bg-fff fl">
+							<h3>强光手电</h3>
+							<p>军工品质</p>
+							<img src="images/png.png" />
+						</div>
+						<div class="hwyp-dd bg-fff fl">
+							<h3>强光手电</h3>
+							<p>军工品质</p>
+							<img src="images/png.png" />
+						</div>
+						<div class="hwyp-dd bg-fff fl hwyp-d">
+							<h3>强光手电</h3>
+							<p>军工品质</p>
+							<img src="images/png.png" />
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="buy">
+				<div class="buy-t buy-t3">
+					<p class="tac fw-b"><span class="c-pink">轻</span>奢产品</p>
+				</div>
+				<div class="qscp">
+					<div class="qscp-l fl bg-fff">
+						<h3>CHLOE(克洛伊) 单肩包</h3>
+						<p>品牌精选 </p>
+						<h4 class="mt-20">¥11500</h4>
+						<img src="images/png.png" />
+					</div>
+					<div class="qscp-r fr ">
+						<div class="qscp-rt bg-fff">
+							<h3>CHLOE(克洛伊) 单肩包</h3>
+							<p>品牌精选 </p>
+							<img src="images/png.png" class="fl" />
+							<img src="images/png.png" class="fl" />
+						</div>
+						<div class="qscp-rd bg-fff mt-5">
+							<h3>CHLOE(克洛伊) 单肩包</h3>
+							<p>品牌精选 </p>
+							<img src="images/png.png" class="fl" />
+							<img src="images/png.png" class="fl" />
+						</div>
+					</div>
+				</div>
+				<div class="tuij-down">
+					<img src="images/banner_down.png" />
+				</div>
+			</div>
+			<div class="buy">
+				<div class="buy-t buy-t4">
+					<p class="tac fw-b"><span class="c-org">轻</span>奢产品</p>
+				</div>
+				<div class="xxsp">
+					<div class="xxsp-t">
+						<div class="xxsp-tl fl bg-fff">
+							<h3 class="tac">锅巴</h3>
+							<p class="tac">品牌精选</p>
+							<img src="images/png.png" />
+						</div>
+						<div class="xxsp-tl fl bg-fff">
+							<h3 class="tac">锅巴</h3>
+							<p class="tac">品牌精选</p>
+							<img src="images/png.png" />
+						</div>
+						<div class="xxsp-tl fl bg-fff">
+							<h3 class="tac">锅巴</h3>
+							<p class="tac">品牌精选</p>
+							<img src="images/png.png" />
+						</div>
+						<div class="xxsp-tl xxsp-tlr fl bg-fff">
+							<h3 class="tac">锅巴</h3>
+							<p class="tac">品牌精选</p>
+							<img src="images/png.png" />
+						</div>
+					</div>
+					<div class="xxsp-t mt-5">
+						<div class="xxsp-tl fl bg-fff">
+							<h3 class="tac">锅巴</h3>
+							<p class="tac">品牌精选</p>
+							<img src="images/png.png" />
+						</div>
+						<div class="xxsp-tl fl bg-fff">
+							<h3 class="tac">锅巴</h3>
+							<p class="tac">品牌精选</p>
+							<img src="images/png.png" />
+						</div>
+						<div class="xxsp-tl fl bg-fff">
+							<h3 class="tac">锅巴</h3>
+							<p class="tac">品牌精选</p>
+							<img src="images/png.png" />
+						</div>
+						<div class="xxsp-tl xxsp-tlr fl bg-fff">
+							<h3 class="tac">锅巴</h3>
+							<p class="tac">品牌精选</p>
+							<img src="images/png.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="buy clearfix">
+				<div class="buy-t buy-t5">
+					<p class="tac fw-b"><span class="c-green">周</span>边好货</p>
+				</div>
+				<div class="zbhh">
+					<div class="zbhh-l fl bg-fff">
+						<h3 class="fl">火龙果</h3>
+						<p class="fl ml-10">品牌精选</p>
+						<img src="images/png.png"/>
+					</div>
+					<div class="zbhh-l fl bg-fff">
+						<h3 class="fl">火龙果</h3>
+						<p class="fl ml-10">品牌精选</p>
+						<img src="images/png.png"/>
+					</div>
+					<div class="zbhh-l fl bg-fff">
+						<h3 class="fl">火龙果</h3>
+						<p class="fl ml-10">品牌精选</p>
+						<img src="images/png.png"/>
+					</div>
+					<div class="zbhh-l fl bg-fff">
+						<h3 class="fl">火龙果</h3>
+						<p class="fl ml-10">品牌精选</p>
+						<img src="images/png.png"/>
+					</div>
+				</div>
+			</div>
+			<div class="buy">
+				<div class="buy-t buy-t6">
+					<p class="tac fw-b"><span class="c-ying">黄</span>雀直播</p>
+				</div>
+				<div class="hqzb">
+					<div class="swiper-container">
+				        <div class="swiper-wrapper">
+				            <div class="swiper-slide"><img src="images/banner.png" alt="First slide"></div>
+				            <div class="swiper-slide"><img src="images/banner.png" alt="First slide"></div>
+				            <div class="swiper-slide"><img src="images/banner.png" alt="First slide"></div>
+				        </div>
+				    </div>
+				</div>
+			</div>
+			<div class="buy">
+				<div class="buy-t buy-t">
+					<p class="tac fw-b"><span class="c-f7c08">热</span>销商品</p>
+				</div>
+				<div class="rxsp">
+					<div class="rxsp-l fl bg-fff">
+						<img src="images/png.png"/>
+						<h3>飘柔滋润去屑润发精华素 400ml</h3>
+						<p class="mt-10"><span class="fl">￥199.99</span><i class="fr">200人付款</i></p>
+					</div>
+					<div class="rxsp-l fl bg-fff">
+						<img src="images/png.png"/>
+						<h3>飘柔</h3>
+						<p class="mt-10"><span class="fl">￥19.9</span><i class="fr">206人付款</i></p>
+					</div>
+					<div class="rxsp-l fl bg-fff">
+						<img src="images/png.png"/>
+						<h3>飘柔滋润 400ml</h3>
+						<p class="mt-10"><span class="fl">￥19.9</span><i class="fr">206人付款</i></p>
+					</div>
+					<div class="rxsp-l fl bg-fff">
+						<img src="images/png.png"/>
+						<h3>飘柔滋润去屑润发精华素 400ml飘柔滋润去屑润发精华素 400ml飘柔滋润去屑润发精华素 400ml</h3>
+						<p class="mt-10"><span class="fl">￥19.9</span><i class="fr">20人付款</i></p>
+					</div>
+					<div class="rxsp-l fl bg-fff">
+						<img src="images/png.png"/>
+						<h3>飘柔滋润去屑润发精华素 400ml</h3>
+						<p class="mt-10"><span class="fl">￥19.9</span><i class="fr">206人付款</i></p>
+					</div>
+					<div class="rxsp-l fl bg-fff">
+						<img src="images/png.png"/>
+						<h3>飘柔滋润去屑润发精华素 400ml</h3>
+						<p class="mt-10"><span class="fl">￥19.9</span><i class="fr">206人付款</i></p>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="ifooter">
 			<ul>
@@ -487,7 +1032,7 @@
 		</div>
 		<div class="frist-alert">
 			<p>
-				<img src="images/close.png"/>
+				<img src="images/close.png" />
 				<span>去查看</span>
 			</p>
 		</div>
@@ -495,20 +1040,33 @@
 		<script src="js/swiper-3.4.2.jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		<script>
 			$(document).ready(function($) {
-				var mySwiper = new Swiper ('.swiper-container', {
-			    pagination: '.swiper-pagination', //分页器/导航点
-		        nextButton: '.swiper-button-next',//左右切换按钮
-		        prevButton: '.swiper-button-prev',
-		        slidesPerView: 1,//设置slider容器能够同时显示的slides数量
-		        paginationClickable: true,//点击分页器的指示点分页器会控制Swiper切换
-		        spaceBetween: 0,	//slide之间的间隔
-		        loop: true,			//是否衔接滑动
-		        autoplay: 4000,		//多久滑动一次
-		        speed:1000	,		//滑动动画时间
-		        
-			  })     
+				var mySwiper =$('.itop .swiper-container').swiper({
+					pagination: '.swiper-pagination', //分页器/导航点
+					nextButton: '.swiper-button-next', //左右切换按钮
+					prevButton: '.swiper-button-prev',
+					slidesPerView: 1, //设置slider容器能够同时显示的slides数量
+					paginationClickable: true, //点击分页器的指示点分页器会控制Swiper切换
+					spaceBetween: 0, //slide之间的间隔
+					loop: true, //是否衔接滑动
+					autoplay: 4000, //多久滑动一次
+					speed: 1000, //滑动动画时间
+					autoplayDisableOnInteraction : false//用户操作是否停止autoplay
+				})
+				var mySwiper2 =$('.hqzb .swiper-container').swiper({
+				    effect : 'coverflow',
+					slidesPerView: 1.5,
+					centeredSlides: true,
+					lazyLoading: true,
+					loop:true,
+					coverflow: {
+					        rotate: 30,
+					        stretch: 10,
+					        depth: 60,
+					        modifier: 2,
+					        slideShadows : true
+					    }
+				  })    
 			});
-			
 		</script>
 	</body>
 
