@@ -808,8 +808,9 @@ a:hover, a:focus{
 		background: url(../images/jp03.png) no-repeat;
 		-webkit-background-size: cover;
 		background-size: cover;
-		margin: 0 auto;
-		display: block;
+		position: absolute;
+	    top: 1.05rem;
+	    left: 1.4rem;
 	}
 .g-content .g-lottery-case .g-left h2 {
 	width: 2rem;
