@@ -4519,3 +4519,51 @@ a:hover, a:focus{
 
 
 /*星级详情结束*/
+/*乘车优惠开始*/
+.ride{
+	padding: 0.2rem;
+}
+.ride-title h3{
+	font-size: 0.156rem;
+}
+.ride-title p{
+	font-size: 0.187rem;
+}
+.ride-ing{
+	height: 1.6rem;
+	margin: 0.2rem auto;
+	display: block;
+}
+.ride-cont h3{
+	font-size: 0.187rem;
+}
+.ride-cont p{
+	margin-top: 0.9rem;
+	font-size: 0.125rem;
+}
+.ride-cont p img{
+	width: 1.4rem;
+}
+.ride-cont button{
+	width: 1.4rem;
+	height: 0.36rem;
+	box-shadow: 2px 2px 0px #aaa;
+	border: 1px solid #434343;
+	border-radius: 0;
+}
+.ride-off{
+	width: 1.7rem;
+	margin: 0 auto;
+	margin-top: 0.9rem;
+	height: 0.5rem;
+	line-height: 0.5rem;
+}
+.ride-off h5{
+	font-size: 0.125rem;
+	line-height: 0.3rem;
+}
+.ride-off img{
+	width: 0.8rem;
+	
+}
+/*乘车优惠結束*/
