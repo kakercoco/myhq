@@ -567,9 +567,9 @@
 			var data = [1, 2, 4, 5];
 			//data为随机出来的结果，根据概率后的结果
 			num = Math.floor(Math.random() * 100);
-			if (num>=1&&num<10) {
+			if (num==1) {
 				data=data[0]
-			}else if(num>=10&&num<50){
+			}else if(num>1&&num<50){
 				data=data[1]
 			}else if(num>=50&&num<70){
 				data=data[2]
@@ -579,7 +579,7 @@
 			//alert(data)
 			switch(data) {
 				case 1:
-					rotateFunc(1, 45, '不要灰心~再来一次吧~');
+					rotateFunc(1, 45, '酵素大米一袋~');
 					break;
 				case 2:
 					rotateFunc(2, 90, '恭喜您获得满100元减5优惠券！');

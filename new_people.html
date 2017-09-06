@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width" name="viewport">
+		<title>新人红包</title>
+		<link rel="stylesheet" type="text/css" href="css/media-100.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	<body style="padding: 0;">
+		<div class="lucky_money">
+			<div class="money-top">
+				<img src="images/lucky_money.png"/>
+				<img src="images/money_over.png" class="over"/>
+			</div>
+			<div class="money-center tac">				
+				<span class="fl">快去商城抽奖吧</span>
+				<b class="fl"></b>
+				<i class="c-f7c08 fl">黄雀平台</i>
+				<button class="fl"><a href="index.html" class="c-333">进入商城</a></button>
+			</div>
+			<div class="money-down">				
+				<p class="tac c-fff"><span>活动规则</span></p>
+				<p class="tac mt-10">新注册用户有1次领取机会！</p>
+				<p class="tac mt-10">限天长本地用户领取</p>
+			</div>
+		</div>
+		<div class="showMes">
+			<p>恭喜您已领取现金红包1元</p>
+		</div>
+	</body>
+	<script charset="utf-8" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript">
+		$('.money-top').click(function(){
+			$('.showMes').fadeIn()
+			setTimeout(function(){
+				$('.showMes').fadeOut()
+				setTimeout(function(){
+					$('.money-top .over').fadeIn()
+				},500)
+			},2000)
+		})
+	</script>
+</html>
