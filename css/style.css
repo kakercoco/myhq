@@ -837,6 +837,26 @@ a:hover, a:focus{
 	right: 0.5rem;
 	width: 0.3rem;
 }
+.no-xl{
+	width: 100%;
+	height: 1.05rem;
+	background: url(../images/no-xl-bg.png) no-repeat;
+	background-size: cover;
+	padding: 0.1rem 0.1rem;
+}
+.no-xl ul{
+	height: 100%;
+}
+.no-xl li{
+	width: 0.75rem;
+	height: 100%;
+	margin-left: 0.1rem;
+}
+.no-xl li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
 /*首页样式结束*/
 
 /*---------------------------------------------------------------------------*/
