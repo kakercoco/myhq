@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width" name="viewport">
+		<title>特惠组合</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/media-100.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="sale-main">
+			<div class="sale-mtitle">必选商品 
+				<!--<span class="fr">组合已过期</span>--> <!--过期就显示-->
+			</div>
+			<ul class="sale-list">
+				<li>
+					<a href="#">
+						<img src="images/qq1.png" class="fl"/>
+						<div class="fl sale-center ml-10">
+							<h3>Vinda/维达 超韧系列抽取式面纸3层 120抽</h3>
+							<del class="mt-10">零售价<span>￥9.8</span></del>
+							<p><b class="fl mt-2">活动价</b> <span class="fl">¥<em class="list-price">6.9</em></span><i class="c-fff ml-10">优惠 ￥2.9</i></p>
+						</div>
+						<span class="fr c-999 sale-num">x<em class="list-num">1</em></span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/qq1.png" class="fl"/>
+						<div class="fl sale-center ml-10">
+							<h3>Vinda/维达 超韧系列抽取式面纸3层 120抽</h3>
+							<del class="mt-10">零售价<span>￥9.8</span></del>
+							<p><b class="fl mt-2">活动价</b> <span class="fl">¥<em class="list-price">9.9</em></span><i class="c-fff ml-10">优惠 ￥2.9</i></p>
+						</div>
+						<span class="fr c-999 sale-num">x<em class="list-num">2</em></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="return-cont sale-second">
+			<div class="sale-mtitle">可选商品</div>
+			<ul >
+				<li class="clearfix" >
+					<div class="rgs-item-l fl">
+						<span class="fl bg-ccc tac"><input type="checkbox"  /><img src="images/duig2.png"/></span>
+						<img src="images/qq1.png" class="rgs-item-l-img" />
+						<em class="">已下架</em>
+					</div>
+					<div class="fl sale-center ml-10">
+						<a href="#">
+							<h3>Vinda/维达 超韧系列抽取式面纸3层 120抽</h3>
+							<del class="mt-10">零售价<span>￥9.8</span></del>
+							<p><b class="fl mt-2">活动价</b> <span class="fl">¥<em class="list-price">6.9</em></span><i class="c-fff ml-10">优惠 ￥2.9</i></p>
+						</a>
+					</div>
+					<span class="fr c-999 sale-num">x<em class="list-num">1</em></span>
+				</li>
+				<li class="clearfix">
+					<div class="rgs-item-l fl">
+						<span class="fl  tac"><img src="images/duig2.png"/><input type="checkbox"   /></span>
+						<img src="images/qq1.png" class="rgs-item-l-img" />
+					</div>
+					<div class="fl sale-center ml-10">
+						<a href="#">
+							<h3>Vinda/维达 超韧系列抽取式面纸3层 120抽</h3>
+							<del class="mt-10">零售价<span>￥9.8</span></del>
+							<p><b class="fl mt-2">活动价</b> <span class="fl">¥<em class="list-price">6.9</em></span><i class="c-fff ml-10">优惠 ￥2.9</i></p>
+						</a>
+					</div>
+					<span class="fr c-999 sale-num">x<em class="list-num">1</em></span>
+				</li>
+				<li class="clearfix">
+					<div class="rgs-item-l fl">
+						<span class="fl  tac"><input type="checkbox"  /><img src="images/duig2.png"/></span>
+						<img src="images/qq1.png" class="rgs-item-l-img" />
+					</div>
+					<div class="fl sale-center ml-10">
+						<a href="#">
+							<h3>Vinda/维达 超韧系列抽取式面纸3层 120抽</h3>
+							<del class="mt-10">零售价<span>￥9.8</span></del>
+							<p><b class="fl mt-2">活动价</b> <span class="fl">¥<em class="list-price">6.98</em></span><i class="c-fff ml-10">优惠 ￥2.9</i></p>
+						</a>
+					</div>
+					<span class="fr c-999 sale-num">x <em class="list-num">1</em></span>
+				</li>
+			</ul>
+		</div>
+		<div class="sale-buy bg-fff">
+			<p class="fl sale-ckall"><span class="fl  tac "><img src="images/duig2.png"/></span>全选</p>
+			<a href="#" class="fr sale-buy-now c-fff tac bg-ccc">立即购买</a>
+			<div class="fr mr-10 sale-detail">
+				<p class="tar">合计:  <span class="">¥ <b class="choose-num">38.8</b></span></p>
+				<p>已优惠 ¥ <span>0</span> 运费 ¥ <span>0</span></p>
+			</div>
+		</div>
+		
+		<script src="js/hq.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			
+			//全选
+			$('.sale-ckall span').click(function(){
+				if ($(this).hasClass('bg-fc33')) {
+					$(this).removeClass('bg-fc33')
+					var checkipt= $('.rgs-item-l span.bg-fc33 input')
+					$('.rgs-item-l span.bg-fc33').removeClass('bg-fc33')
+					console.log(checkipt)
+					for(a=0;a<checkipt.length;a++){
+						checkipt[a].checked=false
+					}
+					totalPrice();
+				} else{
+					$(this).addClass('bg-fc33')
+					var span=$('.rgs-item-l span')
+					var len=span.length
+					for(i=0;i<len;i++){
+						if ($(span[i]).hasClass('bg-ccc')) {
+							
+						}else{
+							$(span[i]).addClass('bg-fc33')
+							$(span[i]).find('input')[0].checked=true
+						}
+					}
+					totalPrice();
+				}
+			})
+			//单选
+			$('.rgs-item-l span').click(function(){
+				if ($(this).hasClass('bg-ccc')) {
+					
+				}else{
+					if ($(this).hasClass('bg-fc33')) {
+						$(this).toggleClass('bg-fc33')
+						$(this).find('input')[0].checked=false
+						//console.log($(this).find('input')[0].checked)
+						totalPrice()
+					} else{
+						$(this).find('input')[0].checked=true
+						//console.log($(this).find('input')[0].checked)
+						$(this).toggleClass('bg-fc33')
+						totalPrice()
+					}
+					
+				}
+				var gou=$('.rgs-item-l span.bg-fc33').length
+				var ungou=$('.rgs-item-l span.bg-ccc').length
+				var all=$('.rgs-item-l span').length
+				if (all==gou+ungou) {
+					$('.sale-ckall span').addClass('bg-fc33')
+				}else{
+					$('.sale-ckall span').removeClass('bg-fc33')
+				}
+			})
+			
+			//计算选中总价
+			function totalPrice(){
+				var price=0,nprice=0
+				var m=$('.sale-main .list-price').length
+				var n=$('.sale-second .list-price').length
+				for (a=0;a<m;a++) {
+					price= Number( $($('.sale-main .list-price')[a]).html())*Number( $($('.sale-main .list-num')[a]).html())+price
+				}
+				for (b=0;b<n;b++) {
+					if($($('.rgs-item-l span')[b]).hasClass('bg-fc33')){
+						nprice= Number( $($('.sale-second .list-price')[b]).html())*Number( $($('.sale-second .list-num')[b]).html())+nprice
+					}
+				}
+				price=Number(price.toFixed(2))
+				all=price+nprice
+				$('.choose-num').html(all)
+			}
+			totalPrice();
+			if ($('.sale-mtitle span').html()=="组合已过期") {
+				$('.sale-buy-now').css({'background':'#ccc',"color":'#d8d8d8'})
+			}
+			function xxj(){
+				var n=$('.sale-second .list-price').length
+				for (a=0;a<n;a++) {
+					if($($('.rgs-item-l span')[a]).hasClass('bg-ccc')){
+						$($('.sale-second .sale-center p')[a]).css({"color":'#a0a0a0'})
+						$($('.sale-second .sale-center p i')[a]).css({"color":'#e1e1e1',"background":'#a0a0a0'})
+					}
+				}
+			}
+			xxj();
+		</script>
+	</body>
+
+</html>
