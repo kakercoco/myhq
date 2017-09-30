@@ -838,6 +838,22 @@ a:hover, a:focus{
 	right: 0.5rem;
 	width: 0.3rem;
 }
+.g-lottery-down{
+	background: url(../images/jp05.png) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	width: 3rem;
+	height: 0.9rem;
+	margin: 0 auto;
+	margin-top: -0.1rem;
+}
+.g-lottery-down img{
+	width: 0.6rem;
+	height: 0.6rem;
+	float: right;
+	margin-right: 0.25rem;
+	margin-top: 0.25rem;
+}
 .no-xl{
 	width: 100%;
 	height: 1.05rem;
@@ -4833,3 +4849,18 @@ em{
 
 
 /*特惠组合结束*/
+
+/*进群*/
+.join_cont{
+	position: relative;
+}
+.join_bg{
+	width: 100%;
+}
+.join_code{
+	position: absolute;
+	left: 1.1rem;
+	bottom: 0.1rem;
+	width: 1.55rem;
+}
+/*-----------------*/
