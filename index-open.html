@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width" name="viewport">
+		<title>黄雀商城</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/media-100.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css" />
+		<script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.itop .swiper-container {
+				width: 100%;
+				height: 1.72rem;
+			}
+			
+			.itop .swiper-wrapper img {
+				width: 100%;
+			}
+			
+			.swiper-pagination-bullet-active {
+				background: #fc3;
+			}
+			
+			.swiper-pagination-bullet {
+				width: 12px;
+				height: 12px;
+			}
+		</style>
+		<style type="text/css">
+			.hot {
+				height: 0.53rem;
+			}
+			
+			.hot-b {
+				height: 100%;
+				padding: 0.05rem;
+				width: auto;
+			}
+			
+			.hot-b img {
+				height: 100%;
+			}
+			
+			.hot-h {
+				height: 100%;
+				width: 80%;
+			}
+			
+			.hot-hh {
+				color: #ffa800;
+				border: 1px solid #ffa800;
+				padding: 0.03rem;
+				border-radius: 0.03rem;
+			}
+			
+			.hot-h p {
+				text-overflow: ellipsis;
+				overflow: hidden;
+				white-space: nowrap;
+				height: 0.24rem;
+			}
+			
+			.buy-bk {
+				padding: 0.05rem;
+				height: 1.9rem;
+			}
+			
+			.bk-l {
+				width: 2.33rem;
+				height: 100%;
+				position: relative;
+			}
+			
+			.bk-r {
+				width: 1.28rem;
+				height: 100%;
+			}
+			
+			.bk_logo {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 0.9rem;
+			}
+			
+			.bk-ll {
+				margin-top: 0.9rem;
+				width: 50%;
+			}
+			
+			.bk-lr {
+				width: 50%;
+			}
+			
+			.bk-ll p {
+				width: 70%;
+				margin: 0 auto;
+			}
+			
+			.bk-ll p:nth-of-type(1) {
+				font-size: 0.115rem;
+				color: #646464;
+			}
+			
+			.bk-ll p:nth-of-type(2) {
+				font-size: 0.105rem;
+				color: #fff;
+				background: linear-gradient(to right, #5500b3, #d100fe);
+				padding: 0 0.05rem;
+				margin-top: 0.05rem;
+				margin-bottom: 0.05rem;
+			}
+			
+			.bk-ll p:nth-of-type(3) {
+				font-size: 0.205rem;
+				color: #f20909;
+				font-weight: bold;
+			}
+			
+			.bk-ll p:nth-of-type(4) {
+				font-size: 0.115rem;
+				color: #bdbdbd;
+			}
+			
+			.bk-lr {
+				padding-right: 0.05rem;
+				padding-top: 0.1rem;
+			}
+			
+			.bk-pro {
+				width: 100%;
+			}
+			
+			.bk-lr p img {
+				width: 0.2rem;
+			}
+			
+			.bk-lr p {
+				color: #bdbdbd;
+				font-size: 0.11rem;
+			}
+			
+			.bk-r img {
+				width: 0.7rem;
+				margin: 0 auto;
+				display: block;
+			}
+			
+			.bk-r p:nth-of-type(1) {
+				font-size: 0.115rem;
+				color: #646464;
+			}
+			
+			.bk-r p:nth-of-type(2) {
+				font-size: 0.105rem;
+				color: #fff;
+				background: linear-gradient(to right, #5500b3, #d100fe);
+				padding: 0 0.05rem;
+				margin-top: 0.05rem;
+				margin-bottom: 0.05rem;
+				width: 60%;
+			}
+			
+			.bk-r p:nth-of-type(3) {
+				font-size: 0.205rem;
+				color: #f20909;
+				font-weight: bold;
+			}
+			
+			.bk-r p:nth-of-type(4) {
+				font-size: 0.115rem;
+				color: #bdbdbd;
+			}
+			
+			.nav li {
+				width: 25%;
+				margin-bottom: 0.1rem;
+			}
+			
+			.nav {
+				margin: 0;
+			}
+			
+			.hot {
+				border-top: 1px solid #eee;
+				overflow: hidden;
+			}
+			
+			.hot-h {
+				font-size: 0.115rem;
+				line-height: 0.24rem;
+			}
+			
+			.buy-item-title {
+				height: 0.4rem;
+				padding: 0.1rem;
+				position: relative;
+			}
+			
+			.buy-item-title .item-img {
+				height: 82%;
+				margin: 0 auto;
+				display: block;
+			}
+			
+			.buy-item-title a {
+				position: absolute;
+				right: 0.1rem;
+				top: 0;
+				line-height: 0.4rem;
+				color: #999;
+				font-size: 0.105rem;
+			}
+			
+			.buy-bk a {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+			
+			.buy-item-title a img {
+				height: 0.13rem;
+				margin-left: 0.1rem;
+				margin-top: 0.13rem;
+			}
+			
+			.thzh-ul {
+				width: 100%;
+				height: 2.2rem;
+			}
+			
+			.thzh-ul li {
+				width: 50%;
+				height: 1.05rem;
+				margin-bottom: 0.05rem;
+			}
+			
+			.thzh-ul li:nth-child(odd) {
+				padding-left: 0.05rem;
+				padding-right: 0.025rem;
+			}
+			
+			.thzh-ul li:nth-child(even) {
+				padding-left: 0.025rem;
+				padding-right: 0.05rem;
+			}
+			
+			.thzh-ul li a {
+				display: inline-block;
+				height: 100%;
+				width: 100%;
+			}
+			
+			.thzh-li-l,
+			.thzh-li-r {
+				width: 50%;
+				height: 100%;
+			}
+			
+			.thzh-li-l {
+				padding-top: 0.15rem;
+				padding-left: 0.1rem;
+			}
+			
+			.thzh-li-r img {
+				width: 100%;
+				margin-top: 0.1rem;
+			}
+			
+			.thzh-li-l h3 {
+				font-size: 0.156rem;
+				font-weight: bold;
+				height: 0.2rem;
+				line-height: 0.2rem;
+				overflow: hidden;
+			}
+			
+			.thzh-li-l p {
+				font-size: 0.105rem;
+				color: #464646;
+			}
+			
+			.thzh-ul li:nth-of-type(1) a {
+				background-color: #fff8eb;
+			}
+			
+			.thzh-ul li:nth-of-type(2) a {
+				background-color: #e9fcff;
+			}
+			
+			.thzh-ul li:nth-of-type(3) a {
+				background-color: #e6eef9;
+			}
+			
+			.thzh-ul li:nth-of-type(4) a {
+				background-color: #e2fcec;
+			}
+			
+			.thzh-ul li:nth-of-type(1) h3 {
+				color: #ff6600;
+			}
+			
+			.thzh-ul li:nth-of-type(2) h3 {
+				color: #1f8ce9;
+			}
+			
+			.thzh-ul li:nth-of-type(3) h3 {
+				color: #b250e4;
+			}
+			
+			.thzh-ul li:nth-of-type(4) h3 {
+				color: #63bf47;
+			}
+			
+			.thzh-ul-two {
+				height: 1rem;
+				width: 100%;
+			}
+			
+			.thzh-ul-two li {
+				width: 25%;
+				height: 100%;
+			}
+			
+			.thzh-ul-two li p {
+				font-size: 0.105rem;
+				color: #202020;
+			}
+			
+			.thzh-ul-two li img {
+				width: 95%;
+			}
+			
+			.thzh-ul-two a {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+			
+			.grxh-ul {
+				height: 2.2rem;
+				border-top: 0.01rem solid #eee;
+			}
+			
+			.grxh-ul li {
+				width: 50%;
+				height: 1.05rem;
+				border-bottom: 0.01rem solid #eee;
+			}
+			
+			.grxh-ul li:nth-child(odd) {
+				border-right: 0.01rem solid #eee;
+			}
+			
+			.grxh-li-r {
+				width: 40%;
+				height: 100%;
+			}
+			
+			.grxh-li-r img {
+				width: 100%;
+				margin-top: 0.1rem;
+			}
+			
+			.grxh-li-l {
+				width: 60%;
+				height: 100%;
+				padding-top: 0.15rem;
+				padding-left: 0.1rem
+			}
+			
+			.grxh-li-l h3 {
+				font-size: 0.156rem;
+				font-weight: bold;
+				color: #202020;
+				width: 100%;
+				height: 0.2rem;
+				overflow: hidden;
+				line-height: 0.2rem;
+			}
+			
+			.grxh-li-l h4 {
+				font-size: 0.135rem;
+				color: #ff5050;
+				font-weight: bold;
+				margin-top: 0.2rem;
+			}
+			
+			.grxh-li-l p {
+				font-size: 0.105rem;
+				color: #b7b7b7;
+			}
+			
+			.grxh-ul li a {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+			
+			.hq-card {
+				width: 100%;
+				height: 0.9rem;
+				padding: 0.05rem;
+			}
+			
+			.hq-card img {
+				height: 0.8rem;
+			}
+			
+			.hq-card .swiper-slide {
+				width: 3.4rem;
+			}
+			
+			.pzss-ul .grxh-li-l p {
+				color: #ab48f8;
+			}
+			
+			.hqzb {
+				background: url(images/banner-bg.png) no-repeat;
+				background-size: cover;
+				height: 2rem;
+			}
+			
+			.hqzb .swiper-slide {
+				height: 1.5rem;
+				border-radius: 0.05rem;
+				overflow: hidden;
+			}
+			
+			.hqzb .swiper-container {
+				height: 2rem;
+			}
+			
+			.hqzb .swiper-slide p {
+				height: 0.25rem;
+				line-height: 0.2rem;
+				font-size: 0.125rem;
+				padding: 0.04rem 0.1rem;
+			}
+			
+			.hqzb .swiper-slide p span {
+				width: 0.42rem;
+				height: 0.17rem;
+				display: inline-block;
+				background-color: #ff5959;
+				font-size: 0.09rem;
+				margin-right: 0.1rem;
+				text-align: center;
+				border-radius: 0.05rem;
+			}
+			
+			.hqzb .swiper-slide img {
+				width: 100%;
+			}
+			
+			.hhtj li {
+				width: 50%;
+				height: 2.5rem;
+				margin-bottom: 0.03rem;
+			}
+			
+			.hhtj li a {
+				display: block;
+				width: 100%;
+				height: 100%;
+				background-color: #fff;
+				position: relative;
+				padding: 0.05rem;
+			}
+			
+			.hhtj li:nth-child(odd) {
+				padding-right: 0.03rem;
+			}
+			
+			.hhtj .new-logo {
+				position: absolute;
+				width: 0.33rem;
+				top: -0.02rem;
+			}
+			
+			.hhtj .new-pro {
+				width: 90%;
+				display: block;
+				margin: 0 auto;
+			}
+			
+			.hhtj-title {
+				font-size: 0.135rem;
+				color: #333;
+				height: .35rem;
+			}
+			
+			.hhtj-title span {
+				height: 0.15rem;
+				width: 0.3rem;
+				border-radius: 0.15rem;
+				color: #ff2a2a;
+				border: 0.01rem solid #ff2a2a;
+				font-size: 0.105rem;
+				text-align: center;
+				line-height: 0.12rem;
+				margin-right: 0.05rem;
+				margin-top: 0.03rem;
+			}
+			
+			.hhtj-title b {
+				height: 100%;
+				width: 75%;
+				font-size: 0.135rem;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				display: -webkit-box;
+				-webkit-line-clamp: 2;
+				-webkit-box-orient: vertical;
+			}
+			
+			.hhtj-price b {
+				font-size: 0.155rem;
+				color: #ff2a2a;
+			}
+			
+			.hhtj-price span {
+				font-size: 0.105rem;
+				color: #999;
+				margin-top: 0.05rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="itop">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a href="#"><img src="images/banner.png" alt="First slide"></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#"><img src="images/banner.png" alt="First slide"></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#"><img src="images/banner.png" alt="First slide"></a>
+					</div>
+				</div>
+				<!-- 如果需要分页器 -->
+				<div class="swiper-pagination"></div>
+
+				<!-- 如果需要导航按钮 -->
+				<!--<div class="swiper-button-prev"></div>
+			    <div class="swiper-button-next"></div>-->
+
+				<!-- 如果需要滚动条 -->
+				<!--<div class="swiper-scrollbar"></div>-->
+			</div>
+
+			<div class="top" style="display: none;">
+				<img src="images/logo@2x.png" class="fl logo" />
+				<img src="images/mes.png" alt="" class="fr imes" />
+				<label class="t-search">
+					 <img src="images/search.png" alt="" />
+					<input type="search" placeholder="搜索店铺、商品">
+				</label>
+			</div>
+			<div class="itop-att">
+				<div class="fl iatt">
+					欢迎进入<span>黄雀商城</span> <br />关注公众号，享专属服务
+				</div>
+				<div class="fr iatt-btn">
+					立即关注
+				</div>
+			</div>
+		</div>
+		<div class="erwei">
+			<div class="ewwrap">
+				<img src="images/ewm.png" alt="" />
+				<p>长按二维码关注公众微信</p>
+			</div>
+		</div>
+		<div class="nav bg-fff">
+			<ul class=" mt-10">
+				<li class="tac">
+					<a href="#1F">
+						<img src="images/nav_01.png" />
+						<span>特惠组合</span>
+					</a>
+				</li>
+				<li class="tac">
+					<a href="#2F">
+						<img src="images/nav_02.png" />
+						<span>个人洗护</span>
+					</a>
+				</li>
+				<li class="tac">
+					<a href="#3F">
+						<img src="images/nav_03.png" />
+						<span>家庭清洁</span>
+					</a>
+				</li>
+				<li class="tac">
+					<a href="#4F">
+						<img src="images/nav_04.png" />
+						<span>粮油干货</span>
+					</a>
+				</li>
+				<li class="tac">
+					<a href="#5F">
+						<img src="images/nav_05.png" />
+						<span>食品饮料</span>
+					</a>
+				</li>
+				<li class="tac">
+					<a href="#6F">
+						<img src="images/nav_06.png" />
+						<span>食品饮料</span>
+					</a>
+				</li>
+				<li class="tac">
+					<a href="#7F">
+						<img src="images/nav_07.png" />
+						<span>食品饮料</span>
+					</a>
+				</li>
+				<li class="tac">
+					<a href="#8F">
+						<img src="images/nav_08.png" />
+						<span>食品饮料</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="icontent clearfix">
+			<div class="hot">
+				<div class="hot-b fl">
+					<img src="images/pic_kb.png" />
+				</div>
+				<div class="hot-h fl">
+					<p class=""><span class="hot-hh">活动</span> 春季上新，火热销售中春季上新!</p>
+					<p class=""><span class="hot-hh">上新</span> 春季上新，火热销售中</p>
+					<p class=""><span class="hot-hh">爆款</span> 春季上新，火热销售中</p>
+					<p class=""><span class="hot-hh">热4</span> 春季上新，火热销售中</p>
+				</div>
+			</div>
+			<div class="no-xl mt-10">
+				<ul>
+					<li class="fr">
+						<a href="#"></a>
+					</li>
+					<li class="fr">
+						<a href="#"></a>
+					</li>
+					<li class="fr">
+						<a href="#"></a>
+					</li>
+				</ul>
+			</div>
+			<!--商品分类start-->
+			<div class="buy-bk">
+				<div class="bk-l fl bg-fff">
+					<a href="#">
+						<img src="images/bk_logo.png" class="bk_logo" />
+						<div class="bk-ll fl">
+							<p>蓝月亮 洗衣液</p>
+							<p>劲爆价 5.3折</p>
+							<p>￥15.0</p>
+							<p><del>原价 ￥28.5</del></p>
+						</div>
+						<div class="bk-lr fr">
+							<img src="images/qq1.png" class="bk-pro" />
+							<p class="tac">
+								<img src="images/jd_logo.png" />
+								<span>¥ 23.00</span>
+							</p>
+
+							<p class="tac">
+								<img src="images/tm_logo.png" />
+								<span>¥ 23.00</span>
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="bk-r fr bg-fff">
+					<a href="#">
+						<p class="mt-10">可比克薯片</p>
+						<p>劲爆价 6.0折</p>
+						<img src="images/qq1.png" />
+						<p class="tac">￥4.5</p>
+						<p class="tac"><del>原价 ￥7.5</del></p>
+					</a>
+				</div>
+			</div>
+			<!--特惠组合-->
+			<div class="thzh bg-fff">
+				<div class="buy-item-title">
+					<img src="images/open_title01.png" class="item-img" />
+				</div>
+				<ul class="thzh-ul">
+					<li class="fl">
+						<a href="#">
+							<div class="fl thzh-li-l">
+								<h3>进口零食</h3>
+								<p>聚会吃什么</p>
+							</div>
+							<div class="fr thzh-li-r">
+								<img src="images/open-img02.png" alt="" />
+							</div>
+						</a>
+					</li>
+					<li class="fl">
+						<a href="#">
+							<div class="fl thzh-li-l">
+								<h3>进口零食</h3>
+								<p>聚会吃什么</p>
+							</div>
+							<div class="fr thzh-li-r">
+								<img src="images/open-img02.png" alt="" />
+							</div>
+						</a>
+					</li>
+					<li class="fl">
+						<a href="#">
+							<div class="fl thzh-li-l">
+								<h3>进口零食</h3>
+								<p>聚会吃什么</p>
+							</div>
+							<div class="fr thzh-li-r">
+								<img src="images/open-img02.png" alt="" />
+							</div>
+						</a>
+					</li>
+					<li class="fl">
+						<a href="#">
+							<div class="fl thzh-li-l">
+								<h3>进口零食</h3>
+								<p>聚会吃什么</p>
+							</div>
+							<div class="fr thzh-li-r">
+								<img src="images/open-img02.png" alt="" />
+							</div>
+						</a>
+					</li>
+				</ul>
+				<ul class="thzh-ul-two">
+					<li class="fl">
+						<a href="#">
+							<p class="tac">黄雀生鲜</p>
+							<img src="images/open-img01.png" alt="" />
+						</a>
+					</li>
+					<li class="fl">
+						<a href="#">
+							<p class="tac">黄雀生鲜</p>
+							<img src="images/open-img01.png" alt="" />
+						</a>
+					</li>
+					<li class="fl">
+						<a href="#">
+							<p class="tac">黄雀生鲜</p>
+							<img src="images/open-img01.png" alt="" />
+						</a>
+					</li>
+					<li class="fl">
+						<a href="#">
+							<p class="tac">黄雀生鲜</p>
+							<img src="images/open-img01.png" alt="" />
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--个人洗护-->
+			<div class="thzh mt-10 bg-fff">
+				<div class="buy-item-title">
+					<img src="images/open_title02.png" class="item-img" />
+					<a href="#">更多<img src="images/myback.png" class="fr"></a>
+				</div>
+				<ul class="grxh-ul">
+					<li class="fl">
+						<a href="#">
+							<div class="fl grxh-li-l">
+								<h3>进口零食</h3>
+								<p>聚会吃什么</p>
+								<h4>￥11.00</h4>
+							</div>
+							<div class="fr grxh-li-r">
+								<img src="images/open-img02.png" alt="" />
+							</div>
+						</a>
+					</li>
+					<li class="fl">
+						<a href="#">
+							<div class="fl grxh-li-l">
+								<h3>进口零食</h3>
+								<p>聚会吃什么</p>
+								<h4>￥11.00</h4>
+							</div>
+							<div class="fr grxh-li-r">
+								<img src="images/open-img02.png" alt="" />
+							</div>
+						</a>
+					</li>
+					<li class="fl">
+						<a href="#">
+							<div class="fl grxh-li-l">
+								<h3>进口零食</h3>
+								<p>聚会吃什么</p>
+								<h4>￥11.00</h4>
+							</div>
+							<div class="fr grxh-li-r">
+								<img src="images/open-img02.png" alt="" />
+							</div>
+						</a>
+					</li>
+					<li class="fl">
+						<a href="#">
+							<div class="fl grxh-li-l">
+								<h3>进口零食</h3>
+								<p>聚会吃什么</p>
+								<h4>￥11.00</h4>
+							</div>
+							<div class="fr grxh-li-r">
+								<img src="images/open-img02.png" alt="" />
+							</div>
+						</a>
+					</li>
+
+				</ul>
+				<ul class="thzh-ul-two">
+					<li class="fl">
+						<a href="#">
+							<p class="tac">黄雀生鲜</p>
+							<img src="images/open-img01.png" alt="" />
+						</a>
+					</li>
+					<li class="fl">
+						<a href="#">
+							<p class="tac">黄雀生鲜</p>
+							<img src="images/open-img01.png" alt="" />
+						</a>
+					</li>
+					<li class="fl">
+						<a href="#">
+							<p class="tac">黄雀生鲜</p>
+							<img src="images/open-img01.png" alt="" />
+						</a>
+					</li>
+					<li class="fl">
+						<a href="#">
+							<p class="tac">黄雀生鲜</p>
+							<img src="images/open-img01.png" alt="" />
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--卡片切换-->
+			<div class="hq-card">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="#">
+								<img src="images/card_banner.png" />
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<img src="images/card_banner.png" />
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<img src="images/card_banner.png" />
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<img src="images/card_banner.png" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--粮油干货-->
+			<div class="thzh bg-fff">
+				<div class="buy-item-title">
+					<img src="images/open_title03.png" class="item-img" />
+					<a href="#">更多<img src="images/myback.png" class="fr"></a>
+				</div>
+				<ul class="grxh-ul">
+					<li class="fl">
+						<a href="#">
+							<div class="fl grxh-li-l">
+								<h3>进口零食</h3>
+								<p>聚会吃什么</p>
+								<h4>￥11.00</h4>
+							</div>
+							<div class="fr grxh-li-r">
+								<img src="images/open-img02.png" alt="" />
+							</div>
+						</a>
+					</li>
+					<li class="fl">
+						<a href="#">
+							<div class="fl grxh-li-l">
+								<h3>进口零食</h3>
+								<p>聚会吃什么</p>
+								<h4>￥11.00</h4>
+							</div>
+							<div class="fr grxh-li-r">
+								<img src="images/open-img02.png" alt="" />
+							</div>
+						</a>
+					</li>
+					<li class="fl">
+						<a href="#">
+							<div class="fl grxh-li-l">
+								<h3>进口零食</h3>
+								<p>聚会吃什么</p>
+								<h4>￥11.00</h4>
+							</div>
+							<div class="fr grxh-li-r">
+								<img src="images/open-img02.png" alt="" />
+							</div>
+						</a>
+					</li>
+					<li class="fl">
+						<a href="#">
+							<div class="fl grxh-li-l">
+								<h3>进口零食</h3>
+								<p>聚会吃什么</p>
+								<h4>￥11.00</h4>
+							</div>
+							<div class="fr grxh-li-r">
+								<img src="images/open-img02.png" alt="" />
+							</div>
+						</a>
+					</li>
+
+				</ul>
+				<ul class="thzh-ul-two">
+					<li class="fl">
+						<a href="#">
+							<p class="tac">黄雀生鲜</p>
+							<img src="images/open-img01.png" alt="" />
+						</a>
+					</li>
+					<li class="fl">
+						<a href="#">
+							<p class="tac">黄雀生鲜</p>
+							<img src="images/open-img01.png" alt="" />
+						</a>
+					</li>
+					<li class="fl">
+						<a href="#">
+							<p class="tac">黄雀生鲜</p>
+							<img src="images/open-img01.png" alt="" />
+						</a>
+					</li>
+					<li class="fl">
+						<a href="#">
+							<p class="tac">黄雀生鲜</p>
+							<img src="images/open-img01.png" alt="" />
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--品质时尚-->
+			<div class="thzh mt-10 bg-fff">
+				<div class="buy-item-title">
+					<img src="images/open_title04.png" class="item-img" />
+					<a href="#">更多<img src="images/myback.png" class="fr"></a>
+				</div>
+				<ul class="grxh-ul pzss-ul">
+					<li class="fl">
+						<a href="#">
+							<div class="fl grxh-li-l">
+								<h3>进口零食</h3>
+								<p>聚会吃什么</p>
+							</div>
+							<div class="fr grxh-li-r">
+								<img src="images/open-img02.png" alt="" />
+							</div>
+						</a>
+					</li>
+					<li class="fl">
+						<a href="#">
+							<div class="fl grxh-li-l">
+								<h3>进口零食</h3>
+								<p>聚会吃什么</p>
+							</div>
+							<div class="fr grxh-li-r">
+								<img src="images/open-img02.png" alt="" />
+							</div>
+						</a>
+					</li>
+					<li class="fl">
+						<a href="#">
+							<div class="fl grxh-li-l">
+								<h3>进口零食</h3>
+								<p>聚会吃什么</p>
+							</div>
+							<div class="fr grxh-li-r">
+								<img src="images/open-img02.png" alt="" />
+							</div>
+						</a>
+					</li>
+					<li class="fl">
+						<a href="#">
+							<div class="fl grxh-li-l">
+								<h3>进口零食</h3>
+								<p>聚会吃什么</p>
+							</div>
+							<div class="fr grxh-li-r">
+								<img src="images/open-img02.png" alt="" />
+							</div>
+						</a>
+					</li>
+
+				</ul>
+				<ul class="thzh-ul-two">
+					<li class="fl">
+						<a href="#">
+							<p class="tac">黄雀生鲜</p>
+							<img src="images/open-img01.png" alt="" />
+						</a>
+					</li>
+					<li class="fl">
+						<a href="#">
+							<p class="tac">黄雀生鲜</p>
+							<img src="images/open-img01.png" alt="" />
+						</a>
+					</li>
+					<li class="fl">
+						<a href="#">
+							<p class="tac">黄雀生鲜</p>
+							<img src="images/open-img01.png" alt="" />
+						</a>
+					</li>
+					<li class="fl">
+						<a href="#">
+							<p class="tac">黄雀生鲜</p>
+							<img src="images/open-img01.png" alt="" />
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--黄雀直播-->
+			<div class="hqzb mt-10">
+				<div class="buy-item-title">
+					<img src="images/open_title06.png" class="item-img" />
+				</div>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="#">
+								<img src="images/banner.png" alt="First slide">
+								<p class="bg-fff c-333"><span class="c-fff bg-fc3">直播▶</span>黄雀商城第三期培训</p>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<img src="images/banner.png" alt="First slide">
+								<p class="bg-fff c-333"><span class="c-fff bg-fc3">直播▶</span>黄雀商城第三期培训</p>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<img src="images/banner.png" alt="First slide">
+								<p class="bg-fff c-333"><span class="c-fff bg-fc3">直播▶</span>黄雀商城第三期培训</p>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<img src="images/banner.png" alt="First slide">
+								<p class="bg-fff c-333"><span class="c-fff bg-fc3">直播▶</span>黄雀商城第三期培训</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--好货推荐-->
+			<div>
+				<div class="buy-item-title">
+					<img src="images/open_title05.png" class="item-img" />
+				</div>
+				<div class="hhtj">
+					<ul>
+						<li class="fl">
+							<a href="#">
+								<img src="images/pic_new.png" class="new-logo" />
+								<img src="images/qq1.png" class="new-pro" />
+								<p class="hhtj-title">
+									<span class="fl">溯源</span>
+									<b class="fr">飘柔滋润去屑润发精华素400ml </b>
+								</p>
+								<p class="hhtj-price mt-10"><b class="fl">￥19.9</b><span class="fr">销量：223</span></p>
+							</a>
+						</li>
+						<li class="fl">
+							<a href="#">
+								<img src="images/pic_new.png" class="new-logo" />
+								<img src="images/qq1.png" class="new-pro" />
+								<p class="hhtj-title">
+									<span class="fl">溯源</span>
+									<b class="fr">飘柔滋润去屑润发精华素400ml </b>
+								</p>
+								<p class="hhtj-price mt-10"><b class="fl">￥19.9</b><span class="fr">销量：223</span></p>
+							</a>
+						</li>
+						<li class="fl">
+							<a href="#">
+								<img src="images/pic_new.png" class="new-logo" />
+								<img src="images/qq1.png" class="new-pro" />
+								<p class="hhtj-title">
+									<span class="fl">溯源</span>
+									<b class="fr">飘柔滋润去屑润发精华素400ml </b>
+								</p>
+								<p class="hhtj-price mt-10"><b class="fl">￥19.9</b><span class="fr">销量：223</span></p>
+							</a>
+						</li>
+						<li class="fl">
+							<a href="#">
+								<img src="images/pic_new.png" class="new-logo" />
+								<img src="images/qq1.png" class="new-pro" />
+								<p class="hhtj-title">
+									<span class="fl">溯源</span>
+									<b class="fr">飘柔滋润去屑润发精华素400ml </b>
+								</p>
+								<p class="hhtj-price mt-10"><b class="fl">￥19.9</b><span class="fr">销量：223</span></p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--商品分类end-->
+		</div>
+		<div class="ifooter">
+			<ul>
+				<li class="fl">
+					<a href="index.html">
+						<img src="images/home2.png" alt="" />
+						<span class="">首页</span>
+					</a>
+				</li>
+				<li class="fl">
+					<a href="sort.html">
+						<img src="images/sort.png" alt="" />
+						<span class="">分类</span>
+					</a>
+				</li>
+				<li class="fl">
+					<a href="cartpage.html">
+						<img src="images/shop.png" alt="" />
+						<span class="mt-2">购物车</span>
+					</a>
+					<section>0</section>
+				</li>
+				<li class="fl">
+					<a href="self.html">
+						<img src="images/my.png" alt="" />
+						<span>我的</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="frist-alert">
+			<p>
+				<img src="images/close.png" />
+				<span>去查看</span>
+			</p>
+		</div>
+		<script src="js/hq.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper-3.4.2.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$(document).ready(function($) {
+				var mySwiper = $('.itop .swiper-container').swiper({
+					pagination: '.swiper-pagination', //分页器/导航点
+					nextButton: '.swiper-button-next', //左右切换按钮
+					prevButton: '.swiper-button-prev',
+					slidesPerView: 1, //设置slider容器能够同时显示的slides数量
+					paginationClickable: true, //点击分页器的指示点分页器会控制Swiper切换
+					spaceBetween: 0, //slide之间的间隔
+					loop: true, //是否衔接滑动
+					autoplay: 4000, //多久滑动一次
+					speed: 1000, //滑动动画时间
+					autoplayDisableOnInteraction: false //用户操作是否停止autoplay
+				})
+				var mySwiper2 = $('.hqzb .swiper-container').swiper({
+					effect: 'coverflow',
+					slidesPerView: 1.5,
+					centeredSlides: true,
+					lazyLoading: true,
+					loop: true,
+					coverflow: {
+						rotate: 30,
+						stretch: 10,
+						depth: 60,
+						modifier: 2,
+						slideShadows: true
+					}
+				})
+				var mySwiper3 = $('.hq-card .swiper-container').swiper({
+					slidesPerView: 'auto',
+					paginationClickable: true,
+					spaceBetween: 0
+				})
+				setInterval(function() {
+					var ph = $('.hot-h p').height() * 2
+					$(".hot-h").animate({
+						"marginTop": -ph
+					}, 1000, function() {
+						$(".hot-h").css('marginTop', '0').find("p:lt(2)").appendTo($(".hot-h"))
+					})
+
+				}, 000)
+
+			});
+		</script>
+	</body>
+
+</html>
