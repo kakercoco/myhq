@@ -874,6 +874,66 @@ a:hover, a:focus{
 	width: 100%;
 	height: 100%;
 }
+.bindPhone{
+	position: fixed;
+	width: 3.1rem;
+	height: 1.65rem;
+	z-index: 35;
+	top: 2rem;
+	left: 0.33rem;
+	border-radius: 0.05rem;
+	overflow: hidden;
+}
+.bindPhone h4{
+	font-size: 0.135rem;
+	padding:0 0.15rem;
+	height: 0.45rem;
+	line-height: 0.45rem;
+}
+.bindPhone h4 span{
+	font-size: 0.25rem;
+	color: #ccc;
+}
+.bindPhone p {
+	height: 0.4rem;
+}
+.bindPhone p:first-of-type{
+	padding:0 0.15rem;
+	height: 0.5rem;
+	line-height: 0.5rem;
+}
+.bindPhone p:last-child{
+	height: 0.4rem;
+	margin-top: 0.3rem;
+}
+.bindPhone p input{
+	width: 1.9rem;
+	height: 0.32rem;
+	background-color: #f1f1f1;
+	outline: none;
+	border: none;
+	padding:  0 0.1rem;
+}
+.bindPhone p span{
+	font-size: 0.167rem;
+}
+.bindPhone p input{
+	font-size: 0.125rem;
+}
+.bindPhone p a{
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+	font-size: 0.156rem;
+	line-height: 0.4rem;
+	
+}
+.bindPhone p a:first-child{
+	border-top: 1px solid #ccc;
+}
+.bindPhone p a:last-child{
+	border-top: 1px solid #fc3;
+}
 /*首页样式结束*/
 
 /*---------------------------------------------------------------------------*/
@@ -4980,7 +5040,78 @@ em{
 .choose-num{
 	font-size: 0.177rem;
 }
-
+.bindCode{
+	position: fixed;
+	width: 3.1rem;
+	height: 1.65rem;
+	z-index: 35;
+	top: 2rem;
+	left: 0.33rem;
+	border-radius: 0.05rem;
+	overflow: hidden;
+}
+.bindCode h4{
+	font-size: 0.135rem;
+	padding:0 0.15rem;
+	height: 0.45rem;
+	line-height: 0.65rem;
+}
+.bindCode h4 span{
+	font-size: 0.25rem;
+	color: #ccc;
+	height: 100%;
+	line-height: 0.45rem;
+}
+.bindCode p {
+	height: 0.4rem;
+}
+.bindCode p:first-of-type{
+	padding:0 0.15rem;
+	height: 0.5rem;
+	line-height: 0.5rem;
+}
+.bindCode p:last-child{
+	height: 0.4rem;
+}
+.bindCode p input{
+	width: 0.9rem;
+	height: 0.32rem;
+	outline: none;
+	border: none;
+	border-bottom: 0.01rem solid #ccc;
+}
+.bindCode p button{
+	height: 0.26rem;
+	width: 0.7rem;
+	background-color: #fc3;
+	font-size: 0.125rem;
+	margin-top: 0.12rem;
+	line-height: 0.26rem;
+	margin-right: 0.2rem;
+	outline: none;
+	border: none;
+	border-radius: 0.03rem;
+}
+.bindCode p span{
+	font-size: 0.167rem;
+}
+.bindCode p input{
+	font-size: 0.125rem;
+}
+.bindCode p a{
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+	font-size: 0.156rem;
+	line-height: 0.4rem;
+	
+}
+.bindCode p a:first-child{
+	border-top: 1px solid #ccc;
+}
+.bindCode p a:last-child{
+	border-top: 1px solid #fc3;
+}
 
 
 /*特惠组合结束*/

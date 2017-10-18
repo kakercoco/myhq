@@ -97,10 +97,35 @@
 				<p>已优惠 ¥ <span>0</span> 运费 ¥ <span>0</span></p>
 			</div>
 		</div>
-		
+		<div class="index-bg"></div>
+		<div class="bindCode bg-fff" >
+			<h4>手机号：15735922276	<span class="fr">×</span></h4>
+			<p class="mt-10"><span>支付密码:</span><input type="number" placeholder="请输入支付密码" /><button class="c-fff fr tac">免费获取</button></p>
+			<p class="mt-20"><a class="tac">取消</a><a class="bg-fc3 c-333 tac">提交</a></p>
+		</div>
 		<script src="js/hq.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
-			
+			$(".bindCode h4 span").click(function(){
+				$(".bindCode").hide()
+				$('.index-bg').hide()
+			})
+			$('.bindCode p button').click(function(){
+				var dm=60
+				$('.bindCode p button').attr('disabled','disabled')
+				$('.bindCode p button').css('background-color','#dfdfdf')
+				var timer=setInterval(function(){
+					dm--
+					if(dm==0){
+						$('.bindCode p button').css('background-color','#FFCC33')	
+						$('.bindCode p button').html('重新获取')
+						$('.bindCode p button').removeAttr('disabled')
+						clearInterval(timer)
+					}else{
+						$('.bindCode p button').css('background-color','#dfdfdf')	
+						$('.bindCode p button').html("剩余"+dm+'秒')
+					}
+				},1000)
+			})
 			//全选
 			$('.sale-ckall span').click(function(){
 				if ($(this).hasClass('bg-fc33')) {

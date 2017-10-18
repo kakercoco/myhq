@@ -429,6 +429,11 @@
 			</div>
 		</div>
 		<div class="index-bg"></div>
+		<div class="bindPhone bg-fff" >
+			<h4>请先验证手机号	<span class="fr">×</span></h4>
+			<p><span>手机号码：</span><input type="number" placeholder="请输入手机号" /></p>
+			<p><a class="tac">取消</a><a class="bg-fc3 c-333 tac">确认</a></p>
+		</div>
 		<div class="frist-come">
 			<p>
 				<img src="images/close.png" class="come-close fr"/>
@@ -494,7 +499,10 @@
 			}
 			 
 			$(document).ready(function($) {
-				
+				$(".bindPhone h4 span").click(function(){
+					$(".bindPhone").hide()
+					$('.index-bg').hide()
+				})
 				$(".nav a").click(function() {
 				    $("html, body").animate({
 				      scrollTop: $($(this).attr("href")).offset().top + "px"
