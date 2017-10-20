@@ -17,7 +17,7 @@ span,
 div,
 input,
 html,
-img {
+img ,a{
 	box-sizing: border-box;
 	font-family: "黑体";
 	margin: 0;
@@ -5130,3 +5130,18 @@ em{
 	width: 1.55rem;
 }
 /*-----------------*/
+/*	关于我们开始*/
+.about{
+	background-color: #fffcf0;
+	padding: 0.25rem 0.15rem;
+}
+.about p{
+	font-size: 0.135rem;
+	background-color: #fff;
+	padding: 0.2rem 0.15rem;
+}
+.about img{
+	width: 100%;
+	display: block;
+}
+/*	关于我们结束*/
