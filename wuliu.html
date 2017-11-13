@@ -9,6 +9,20 @@
 		<link rel="stylesheet" type="text/css" href="css/media-100.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.wl-btm{
+				position: relative;
+				overflow: hidden;
+			}
+			.wl-btm .wl-btm-i{
+				display: block;
+				position: absolute;
+				height: 100%;
+				width: 1px;
+				left: 30px;
+				background-color: #ccc;
+			}
+		</style>
 	</head>
 
 	<body> 
@@ -24,12 +38,12 @@
 			<div class="wl-btm clearfix mt-10">
 				<ul class="wlbtm-ul fr">
 					<li class="b-b1 wlbtm-li">
-						<h5>您的订单正在派件中</h5>
+						<h5>您的订单正在派件中您的订单通过审核,已发货您的订单通过审核,已发货</h5>
 						<p>2017-03-22 15:33 拷贝</p>
 						<i class="wlbtm-ii">●</i>
 					</li>
 					<li class="b-b1 wlbtm-li">
-						<h5 class="c-999">您的订单通过审核,已发货</h5>
+						<h5 class="c-999">您的订单通过审核,已发货您的订单通过审核,已发货您的订单通过审核,已发货您的订单通过审核,已发货您的订单通过审核,已发货</h5>
 						<p>2017-03-22 15:33 拷贝</p>
 						<i class="wlbtml-i">●</i>
 					</li>
@@ -40,12 +54,21 @@
 					</li>
 					
 				</ul>
+				<i class="wl-btm-i"></i>
 			</div>
 		</div>
 		
 		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/hq.js" type="text/javascript" charset="utf-8"></script>
-		
+		<script type="text/javascript">
+			var arr=$(".wlbtm-li")
+			var heightLi=[]
+			for (a=0;a<arr.length;a++) {
+				heightLi[a]=($(arr[a]).height()+20)
+				$(arr[a]).find('i').css("line-height",heightLi[a]+'px')
+				$(".wl-btm-i").css('top',heightLi[0]/2+'px')
+			}
+		</script>
 	</body>
 
 </html>
